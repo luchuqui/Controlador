@@ -1,0 +1,1093 @@
+15:51:35 No se puede encontrar una parte de la ruta de acceso 'D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\bin\ERROR\20012\17082015.txt'.
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:35 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:36 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:37 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:38 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:39 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:41 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:41 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:41 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:41 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:41 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:41 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:41 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:41 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:41 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:41 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:51:43 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 180
+15:54:48 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 181
+16:31:40 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 186
+17:05:24 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 186
+17:11:48 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 186
+17:23:42 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 186
+17:26:14 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 186
+17:37:07 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 186

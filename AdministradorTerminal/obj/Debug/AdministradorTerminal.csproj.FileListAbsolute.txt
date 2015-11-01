@@ -1,0 +1,33 @@
+D:\Documentos\Visual Studio 2008\Projects\controladorAtm\AdministradorTerminal\bin\AdministradorTerminal.dll
+D:\Documentos\Visual Studio 2008\Projects\controladorAtm\AdministradorTerminal\bin\AdministradorTerminal.pdb
+D:\Documentos\Visual Studio 2008\Projects\controladorAtm\AdministradorTerminal\obj\Debug\ResolveAssemblyReference.cache
+D:\Documentos\Visual Studio 2008\Projects\controladorAtm\AdministradorTerminal\obj\Debug\AdministradorTerminal.dll
+D:\Documentos\Visual Studio 2008\Projects\controladorAtm\AdministradorTerminal\obj\Debug\AdministradorTerminal.pdb
+D:\Documentos\GitHubWindows\lucho\controladorAtm\AdministradorTerminal\obj\Debug\ResolveAssemblyReference.cache
+D:\Documentos\GitHubWindows\lucho\controladorAtm\AdministradorTerminal\bin\AdministradorTerminal.dll
+D:\Documentos\GitHubWindows\lucho\controladorAtm\AdministradorTerminal\bin\AdministradorTerminal.pdb
+D:\Documentos\GitHubWindows\lucho\controladorAtm\AdministradorTerminal\obj\Debug\AdministradorTerminal.dll
+D:\Documentos\GitHubWindows\lucho\controladorAtm\AdministradorTerminal\obj\Debug\AdministradorTerminal.pdb
+D:\Documentos\GitHubWindows\lucho\controladorAtm\AdministradorTerminal\bin\ControlerAtm.dll
+D:\Documentos\GitHubWindows\lucho\controladorAtm\AdministradorTerminal\bin\ControlerAtm.pdb
+C:\Users\Darío\Documents\GitHub\lucho\controladorAtm\AdministradorTerminal\bin\AdministradorTerminal.dll
+C:\Users\Darío\Documents\GitHub\lucho\controladorAtm\AdministradorTerminal\bin\AdministradorTerminal.pdb
+C:\Users\Darío\Documents\GitHub\lucho\controladorAtm\AdministradorTerminal\obj\Debug\AdministradorTerminal.dll
+C:\Users\Darío\Documents\GitHub\lucho\controladorAtm\AdministradorTerminal\obj\Debug\AdministradorTerminal.pdb
+C:\Users\Darío\Documents\GitHub\lucho\controladorAtm\AdministradorTerminal\bin\ControlerAtm.dll
+C:\Users\Darío\Documents\GitHub\lucho\controladorAtm\AdministradorTerminal\bin\ControlerAtm.pdb
+C:\Users\Darío\Documents\GitHub\lucho\controladorAtm\AdministradorTerminal\obj\Debug\ResolveAssemblyReference.cache
+D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\AdministradorTerminal\bin\AdministradorTerminal.dll
+D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\AdministradorTerminal\bin\AdministradorTerminal.pdb
+D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\AdministradorTerminal\bin\ControlerAtm.dll
+D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\AdministradorTerminal\bin\ControlerAtm.pdb
+D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\AdministradorTerminal\obj\Debug\ResolveAssemblyReference.cache
+D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\AdministradorTerminal\obj\Debug\AdministradorTerminal.dll
+D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\AdministradorTerminal\obj\Debug\AdministradorTerminal.pdb
+C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\AdministradorTerminal\bin\AdministradorTerminal.dll
+C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\AdministradorTerminal\bin\AdministradorTerminal.pdb
+C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\AdministradorTerminal\bin\ControlerAtm.dll
+C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\AdministradorTerminal\bin\ControlerAtm.pdb
+C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\AdministradorTerminal\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\AdministradorTerminal\obj\Debug\AdministradorTerminal.dll
+C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\AdministradorTerminal\obj\Debug\AdministradorTerminal.pdb

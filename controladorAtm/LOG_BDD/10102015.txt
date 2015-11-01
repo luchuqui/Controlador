@@ -1,0 +1,19 @@
+11:26:29 Login failed for user 'ControladorBDD'.
+11:37:08 Login failed for user 'ControladorBDD'.
+11:52:22 Cannot open database "NDC_BDD" requested by the login. The login failed.
+Login failed for user 'controladorBDD'.
+11:53:37 Cannot open database "NDC_BDD" requested by the login. The login failed.
+Login failed for user 'ControladorBDD'.
+11:54:20 Cannot open database "NDC_BDD" requested by the login. The login failed.
+Login failed for user 'ControladorBDD'.
+11:55:40 Cannot open database "NDC_BDD" requested by the login. The login failed.
+Login failed for user 'ControladorBDD'.
+11:58:25 Cannot open database "NDC_BDD" requested by the login. The login failed.
+Login failed for user 'ControladorBDD'.
+12:00:02 Cannot open database "NDC_BDD" requested by the login. The login failed.
+Login failed for user 'ControladorBDD'.
+12:12:18 Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Proveedor de canalizaciones con nombre, error: 40 - No se pudo abrir una conexión con SQL Server)
+12:18:22 Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Proveedor de canalizaciones con nombre, error: 40 - No se pudo abrir una conexión con SQL Server)
+12:19:58 Cannot open database "NDC_BDD" requested by the login. The login failed.
+Login failed for user 'ControladorBDD'.
+12:20:57 Login failed for user 'ControladorBDD'.

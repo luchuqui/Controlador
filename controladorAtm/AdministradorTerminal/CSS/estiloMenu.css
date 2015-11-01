@@ -1,0 +1,48 @@
+﻿#menuPrincipal {
+ list-style: none;
+ padding: 0 0 0 0;
+ width: 220px;
+ margin: 0;
+ }
+ #menuPrincipal div {
+ display: block;
+ font-weight: bold;
+ font-size:8px;
+ color:white;
+ cursor: pointer;
+ padding: 5px;
+ margin:0;
+ background-color: #375d84;
+ background-image: url(../images/arrow-down.png);
+ background-position: right center;
+ background-repeat:no-repeat;
+ border-bottom: 1px solid #eff2f5;
+ }
+ #menuPrincipal ul {
+ list-style-type: none;
+ display: none;
+ background: #eff2f5 url(/images/stripes.png) repeat;
+ }
+ #menuPrincipal ul li {
+ font-weight: normal;
+ cursor: auto;
+ padding: 5px;
+ width: 210px;
+ height: 15px;
+ font-size:8px;
+ color: #375d84;
+ display:block;
+ }
+ #menuPrincipal ul li:hover {
+ background-color: #d6dfec;
+ font-weight: normal;
+ cursor: auto;
+ padding: 5px;
+ font-size:8px;
+ color: #375d84;
+ display:block;
+ }
+ #menuPrincipal a {
+ text-decoration: none;
+ color: #375d84;
+ }

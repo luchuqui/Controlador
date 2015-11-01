@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="servicio_web_controlador.asmx.cs" Class="servicioWebControl.Service1" %>

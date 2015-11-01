@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="controladorAtm.archivoRW">
+    <Position X="3.75" Y="0.75" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAgAICIoBgAGhAAABAQkQCAAAAAAAACBAAQgAVJAAA=</HashCode>
+      <FileName>archivoRW.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ConexionTCP" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="controladorAtm.ComandoNdcTerminal">
+    <Position X="11" Y="3.25" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAQAQAAAgAAAAIAAARAAgCAAoAQAAAAAAAAQCQAABQ=</HashCode>
+      <FileName>ProtocoloTerminal\ComandoNdcTerminal.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="controladorAtm.ConexionTCP">
+    <Position X="8" Y="4.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Events" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QAAQAAACAACAAAGEACUAAAAAhAAghAAIiABEAACASAI=</HashCode>
+      <FileName>ConexionTCP\ConexionTCP.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ComandoNdcTerminal" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="controladorAtm.ConfiguracionServicio">
+    <Position X="0.5" Y="1" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAASCQQIKAoAQCASaAgAABAAwAIAIQQCEEgEACQBAM=</HashCode>
+      <FileName>BeanObjetos\ConfiguracionServicio.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ServidorEscucha" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="controladorAtm.ServidorEscucha">
+    <Position X="4.5" Y="4.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AgACMAAAAAACCAGEAACAAAFAgAAwBEAAAAAMAhAAiAA=</HashCode>
+      <FileName>ConexionTCP\ServidorEscucha.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ConexionTCP" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="controladorAtm.BeanObjetos.TerminalAtm">
+    <Position X="8.25" Y="1" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAACAAAACAAAABEAAAAAAAAAggAACgM=</HashCode>
+      <FileName>BeanObjetos\TerminalAtm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ConexionTCP" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Servicios>
+  <Servicio>
+    <nombre>Servicio Atms</nombre>
+    <DireccionIP>0.0.0.0</DireccionIP>
+    <Puerto>1000</Puerto>
+    <conexionBDD>Data Source=127.0.0.1;Initial Catalog=NDC_BDD;User ID=ControladorBDD;Password=123456</conexionBDD>
+    <dllServicio>ServicioAtms.dll</dllServicio>
+  </Servicio>
+</Servicios>

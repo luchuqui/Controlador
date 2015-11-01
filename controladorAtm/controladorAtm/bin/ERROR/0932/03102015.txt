@@ -1,0 +1,12 @@
+13:03:59 Error al cerrar conexion   en System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   en System.Data.SqlClient.SqlConnection.Open()
+   en ControlerAtm.com.ec.BaseDatos.BddSQLServer.abrir_conexion_base() en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\ControlerAtm\com.ec.BaseDatos\BddSQLServer.cs:línea 37
+   en controladorAtm.ConexionTCP.cerrar_conexion() en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 226
+13:07:48 Error al cerrar conexion   en System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   en System.Data.SqlClient.SqlConnection.Open()
+   en ControlerAtm.com.ec.BaseDatos.BddSQLServer.abrir_conexion_base() en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\ControlerAtm\com.ec.BaseDatos\BddSQLServer.cs:línea 37
+   en controladorAtm.ConexionTCP.cerrar_conexion() en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 226
+13:51:05 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 206
+13:54:19 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 206

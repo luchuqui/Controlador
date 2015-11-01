@@ -1,0 +1,1 @@
+20:34:39 No se puede encontrar una parte de la ruta de acceso 'C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\controladorAtm\LOG_BDD\25082015.txt'.

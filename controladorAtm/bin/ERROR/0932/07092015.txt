@@ -1,0 +1,15 @@
+17:44:18 en System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)
+   en ControlerAtm.com.ec.BaseDatos.BddSQLServer.insertar_alarmas(AlarmasObj alarmas) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\ControlerAtm\com.ec.BaseDatos\BddSQLServer.cs:línea 319
+   en controladorAtm.ConexionTCP.cliente_servicio() en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 117
+17:45:55 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 206
+17:46:25 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 206
+17:46:55 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 206
+17:47:26 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 206
+17:50:49 en System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)
+   en controladorAtm.ConexionTCP.cliente_servicio() en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 126
+18:28:15 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 208

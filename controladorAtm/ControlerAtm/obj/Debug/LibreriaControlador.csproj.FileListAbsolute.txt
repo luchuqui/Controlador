@@ -1,0 +1,25 @@
+D:\Documentos\Visual Studio 2008\Projects\controladorAtm\ControlerAtm\obj\Debug\ResolveAssemblyReference.cache
+D:\Documentos\Visual Studio 2008\Projects\controladorAtm\ControlerAtm\bin\Debug\ControlerAtm.dll
+D:\Documentos\Visual Studio 2008\Projects\controladorAtm\ControlerAtm\bin\Debug\ControlerAtm.pdb
+D:\Documentos\Visual Studio 2008\Projects\controladorAtm\ControlerAtm\obj\Debug\ControlerAtm.dll
+D:\Documentos\Visual Studio 2008\Projects\controladorAtm\ControlerAtm\obj\Debug\ControlerAtm.pdb
+D:\Documentos\GitHubWindows\lucho\controladorAtm\ControlerAtm\bin\Debug\ControlerAtm.dll
+D:\Documentos\GitHubWindows\lucho\controladorAtm\ControlerAtm\bin\Debug\ControlerAtm.pdb
+D:\Documentos\GitHubWindows\lucho\controladorAtm\ControlerAtm\obj\Debug\ResolveAssemblyReference.cache
+D:\Documentos\GitHubWindows\lucho\controladorAtm\ControlerAtm\obj\Debug\ControlerAtm.dll
+D:\Documentos\GitHubWindows\lucho\controladorAtm\ControlerAtm\obj\Debug\ControlerAtm.pdb
+C:\Users\Darío\Documents\GitHub\lucho\controladorAtm\ControlerAtm\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Darío\Documents\GitHub\lucho\controladorAtm\ControlerAtm\bin\Debug\ControlerAtm.dll
+C:\Users\Darío\Documents\GitHub\lucho\controladorAtm\ControlerAtm\bin\Debug\ControlerAtm.pdb
+C:\Users\Darío\Documents\GitHub\lucho\controladorAtm\ControlerAtm\obj\Debug\ControlerAtm.dll
+C:\Users\Darío\Documents\GitHub\lucho\controladorAtm\ControlerAtm\obj\Debug\ControlerAtm.pdb
+D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\ControlerAtm\bin\Debug\ControlerAtm.dll
+D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\ControlerAtm\bin\Debug\ControlerAtm.pdb
+D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\ControlerAtm\obj\Debug\ResolveAssemblyReference.cache
+D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\ControlerAtm\obj\Debug\ControlerAtm.dll
+D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\ControlerAtm\obj\Debug\ControlerAtm.pdb
+C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\ControlerAtm\bin\Debug\ControlerAtm.dll
+C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\ControlerAtm\bin\Debug\ControlerAtm.pdb
+C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\ControlerAtm\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\ControlerAtm\obj\Debug\ControlerAtm.dll
+C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\ControlerAtm\obj\Debug\ControlerAtm.pdb

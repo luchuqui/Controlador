@@ -1,0 +1,3 @@
+10:23:25 No se puede encontrar una parte de la ruta de acceso 'D:\Documentos\GitHubWindows\lucho\lucho\controladorAtm\controladorAtm\LOG_BDD\29082015.txt'.
+10:23:55 ExecuteNonQuery requiere una conexión abierta y disponible. El estado actual de la conexión es cerrada.
+10:58:36 ExecuteNonQuery requiere una conexión abierta y disponible. El estado actual de la conexión es cerrada.

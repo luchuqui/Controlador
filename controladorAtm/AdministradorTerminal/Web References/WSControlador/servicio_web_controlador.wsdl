@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://controladorAtm.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://controladorAtm.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://controladorAtm.org/">
+      <s:element name="login_usuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nick_usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="contrase" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="login_usuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login_usuarioResult" type="tns:UsuarioObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UsuarioObj">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="apellido" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cedula" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="correo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="id_perfil" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="telefono" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="contrasenia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="estado" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="numero_intentos" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cambio_contrasenia" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="buscar_usuario_by">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="busqueda" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="opcion" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscar_usuario_byResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="buscar_usuario_byResult" type="tns:ArrayOfUsuarioObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfUsuarioObj">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="UsuarioObj" nillable="true" type="tns:UsuarioObj" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="buscar_terminal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="busqueda" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="tipo_busqueda" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscar_terminalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="buscar_terminalResult" type="tns:ArrayOfAtmObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAtmObj">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AtmObj" nillable="true" type="tns:AtmObj" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AtmObj">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id_atm" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ip" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="codigo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ubicacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="estado" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="id_modelo" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="conexion" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="obtenerTerminalPorUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="tns:UsuarioObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerTerminalPorUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenerTerminalPorUsuarioResult" type="tns:ArrayOfAtmObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerTerminalPorUsuario_NoAsignado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="tns:UsuarioObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerTerminalPorUsuario_NoAsignadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenerTerminalPorUsuario_NoAsignadoResult" type="tns:ArrayOfAtmObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtener_perfil">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="estado" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtener_perfilResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtener_perfilResult" type="tns:ArrayOfPerfilObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPerfilObj">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="PerfilObj" nillable="true" type="tns:PerfilObj" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PerfilObj">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="guardar_actualizar_usuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="tns:UsuarioObj" />
+            <s:element minOccurs="1" maxOccurs="1" name="actualizar" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="guardar_actualizar_usuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="guardar_actualizar_usuarioResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="guardar_actualizar_pass_usuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="tns:UsuarioObj" />
+            <s:element minOccurs="0" maxOccurs="1" name="passwordNuevo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="generar" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="guardar_actualizar_pass_usuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="guardar_actualizar_pass_usuarioResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerMenuUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="u" type="tns:UsuarioObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerMenuUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenerMenuUsuarioResult" type="tns:ArrayOfMenuObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfMenuObj">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="MenuObj" nillable="true" type="tns:MenuObj" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MenuObj">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id_menu" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="url" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="codigo_menu_padre" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="estado" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="guardar_actualizar_Perfil">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="perfil" type="tns:PerfilObj" />
+            <s:element minOccurs="0" maxOccurs="1" name="menus" type="tns:ArrayOfMenuObj" />
+            <s:element minOccurs="1" maxOccurs="1" name="actualizar" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="guardar_actualizar_PerfilResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="guardar_actualizar_PerfilResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtener_menu_codigo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="codigo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtener_menu_codigoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtener_menu_codigoResult" type="tns:ArrayOfMenuObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtener_modelo_terminal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="estadoTerminal" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtener_modelo_terminalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtener_modelo_terminalResult" type="tns:ArrayOfModeloObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfModeloObj">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ModeloObj" nillable="true" type="tns:ModeloObj" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ModeloObj">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id_modelo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="fabricante" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="guardar_actualizar_terminal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="terminal" type="tns:AtmObj" />
+            <s:element minOccurs="1" maxOccurs="1" name="actualizar" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="guardar_actualizar_terminalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="guardar_actualizar_terminalResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="guardar_actualizar_responsable_terminal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="terminales" type="tns:ArrayOfAtmObj" />
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="tns:UsuarioObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="guardar_actualizar_responsable_terminalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="guardar_actualizar_responsable_terminalResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtener_avance_by_usuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="tns:UsuarioObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtener_avance_by_usuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtener_avance_by_usuarioResult" type="tns:ArrayOfAvanceObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAvanceObj">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AvanceObj" nillable="true" type="tns:AvanceObj" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AvanceObj">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id_avance" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="fecha_atencion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="notificacion" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="atendido" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="observacion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="id_alarma" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="usuario_atiende" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="usuario_notifica" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="fecha_registro" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="actualizar_avance_by_usuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="tns:UsuarioObj" />
+            <s:element minOccurs="0" maxOccurs="1" name="avance" type="tns:AvanceObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="actualizar_avance_by_usuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="actualizar_avance_by_usuarioResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtener_alarma_atm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="alarma" type="tns:AlarmasObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AlarmasObj">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id_alarma" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="id_atm" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_registro" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="envio_recepcion" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="obtener_alarma_atmResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtener_alarma_atmResult" type="tns:ArrayOfAlarmasObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAlarmasObj">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AlarmasObj" nillable="true" type="tns:AlarmasObj" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="obtener_usuario_por_id">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usr" type="tns:UsuarioObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtener_usuario_por_idResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtener_usuario_por_idResult" type="tns:UsuarioObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="login_usuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:login_usuario" />
+  </wsdl:message>
+  <wsdl:message name="login_usuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:login_usuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="buscar_usuario_bySoapIn">
+    <wsdl:part name="parameters" element="tns:buscar_usuario_by" />
+  </wsdl:message>
+  <wsdl:message name="buscar_usuario_bySoapOut">
+    <wsdl:part name="parameters" element="tns:buscar_usuario_byResponse" />
+  </wsdl:message>
+  <wsdl:message name="buscar_terminalSoapIn">
+    <wsdl:part name="parameters" element="tns:buscar_terminal" />
+  </wsdl:message>
+  <wsdl:message name="buscar_terminalSoapOut">
+    <wsdl:part name="parameters" element="tns:buscar_terminalResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtenerTerminalPorUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenerTerminalPorUsuario" />
+  </wsdl:message>
+  <wsdl:message name="obtenerTerminalPorUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenerTerminalPorUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtenerTerminalPorUsuario_NoAsignadoSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenerTerminalPorUsuario_NoAsignado" />
+  </wsdl:message>
+  <wsdl:message name="obtenerTerminalPorUsuario_NoAsignadoSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenerTerminalPorUsuario_NoAsignadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtener_perfilSoapIn">
+    <wsdl:part name="parameters" element="tns:obtener_perfil" />
+  </wsdl:message>
+  <wsdl:message name="obtener_perfilSoapOut">
+    <wsdl:part name="parameters" element="tns:obtener_perfilResponse" />
+  </wsdl:message>
+  <wsdl:message name="guardar_actualizar_usuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:guardar_actualizar_usuario" />
+  </wsdl:message>
+  <wsdl:message name="guardar_actualizar_usuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:guardar_actualizar_usuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="guardar_actualizar_pass_usuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:guardar_actualizar_pass_usuario" />
+  </wsdl:message>
+  <wsdl:message name="guardar_actualizar_pass_usuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:guardar_actualizar_pass_usuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtenerMenuUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenerMenuUsuario" />
+  </wsdl:message>
+  <wsdl:message name="obtenerMenuUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenerMenuUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="guardar_actualizar_PerfilSoapIn">
+    <wsdl:part name="parameters" element="tns:guardar_actualizar_Perfil" />
+  </wsdl:message>
+  <wsdl:message name="guardar_actualizar_PerfilSoapOut">
+    <wsdl:part name="parameters" element="tns:guardar_actualizar_PerfilResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtener_menu_codigoSoapIn">
+    <wsdl:part name="parameters" element="tns:obtener_menu_codigo" />
+  </wsdl:message>
+  <wsdl:message name="obtener_menu_codigoSoapOut">
+    <wsdl:part name="parameters" element="tns:obtener_menu_codigoResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtener_modelo_terminalSoapIn">
+    <wsdl:part name="parameters" element="tns:obtener_modelo_terminal" />
+  </wsdl:message>
+  <wsdl:message name="obtener_modelo_terminalSoapOut">
+    <wsdl:part name="parameters" element="tns:obtener_modelo_terminalResponse" />
+  </wsdl:message>
+  <wsdl:message name="guardar_actualizar_terminalSoapIn">
+    <wsdl:part name="parameters" element="tns:guardar_actualizar_terminal" />
+  </wsdl:message>
+  <wsdl:message name="guardar_actualizar_terminalSoapOut">
+    <wsdl:part name="parameters" element="tns:guardar_actualizar_terminalResponse" />
+  </wsdl:message>
+  <wsdl:message name="guardar_actualizar_responsable_terminalSoapIn">
+    <wsdl:part name="parameters" element="tns:guardar_actualizar_responsable_terminal" />
+  </wsdl:message>
+  <wsdl:message name="guardar_actualizar_responsable_terminalSoapOut">
+    <wsdl:part name="parameters" element="tns:guardar_actualizar_responsable_terminalResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtener_avance_by_usuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:obtener_avance_by_usuario" />
+  </wsdl:message>
+  <wsdl:message name="obtener_avance_by_usuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:obtener_avance_by_usuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="actualizar_avance_by_usuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:actualizar_avance_by_usuario" />
+  </wsdl:message>
+  <wsdl:message name="actualizar_avance_by_usuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:actualizar_avance_by_usuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtener_alarma_atmSoapIn">
+    <wsdl:part name="parameters" element="tns:obtener_alarma_atm" />
+  </wsdl:message>
+  <wsdl:message name="obtener_alarma_atmSoapOut">
+    <wsdl:part name="parameters" element="tns:obtener_alarma_atmResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtener_usuario_por_idSoapIn">
+    <wsdl:part name="parameters" element="tns:obtener_usuario_por_id" />
+  </wsdl:message>
+  <wsdl:message name="obtener_usuario_por_idSoapOut">
+    <wsdl:part name="parameters" element="tns:obtener_usuario_por_idResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Service1Soap">
+    <wsdl:operation name="login_usuario">
+      <wsdl:input message="tns:login_usuarioSoapIn" />
+      <wsdl:output message="tns:login_usuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="buscar_usuario_by">
+      <wsdl:input message="tns:buscar_usuario_bySoapIn" />
+      <wsdl:output message="tns:buscar_usuario_bySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="buscar_terminal">
+      <wsdl:input message="tns:buscar_terminalSoapIn" />
+      <wsdl:output message="tns:buscar_terminalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerTerminalPorUsuario">
+      <wsdl:input message="tns:obtenerTerminalPorUsuarioSoapIn" />
+      <wsdl:output message="tns:obtenerTerminalPorUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerTerminalPorUsuario_NoAsignado">
+      <wsdl:input message="tns:obtenerTerminalPorUsuario_NoAsignadoSoapIn" />
+      <wsdl:output message="tns:obtenerTerminalPorUsuario_NoAsignadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtener_perfil">
+      <wsdl:input message="tns:obtener_perfilSoapIn" />
+      <wsdl:output message="tns:obtener_perfilSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="guardar_actualizar_usuario">
+      <wsdl:input message="tns:guardar_actualizar_usuarioSoapIn" />
+      <wsdl:output message="tns:guardar_actualizar_usuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="guardar_actualizar_pass_usuario">
+      <wsdl:input message="tns:guardar_actualizar_pass_usuarioSoapIn" />
+      <wsdl:output message="tns:guardar_actualizar_pass_usuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerMenuUsuario">
+      <wsdl:input message="tns:obtenerMenuUsuarioSoapIn" />
+      <wsdl:output message="tns:obtenerMenuUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="guardar_actualizar_Perfil">
+      <wsdl:input message="tns:guardar_actualizar_PerfilSoapIn" />
+      <wsdl:output message="tns:guardar_actualizar_PerfilSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtener_menu_codigo">
+      <wsdl:input message="tns:obtener_menu_codigoSoapIn" />
+      <wsdl:output message="tns:obtener_menu_codigoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtener_modelo_terminal">
+      <wsdl:input message="tns:obtener_modelo_terminalSoapIn" />
+      <wsdl:output message="tns:obtener_modelo_terminalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="guardar_actualizar_terminal">
+      <wsdl:input message="tns:guardar_actualizar_terminalSoapIn" />
+      <wsdl:output message="tns:guardar_actualizar_terminalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="guardar_actualizar_responsable_terminal">
+      <wsdl:input message="tns:guardar_actualizar_responsable_terminalSoapIn" />
+      <wsdl:output message="tns:guardar_actualizar_responsable_terminalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtener_avance_by_usuario">
+      <wsdl:input message="tns:obtener_avance_by_usuarioSoapIn" />
+      <wsdl:output message="tns:obtener_avance_by_usuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="actualizar_avance_by_usuario">
+      <wsdl:input message="tns:actualizar_avance_by_usuarioSoapIn" />
+      <wsdl:output message="tns:actualizar_avance_by_usuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtener_alarma_atm">
+      <wsdl:input message="tns:obtener_alarma_atmSoapIn" />
+      <wsdl:output message="tns:obtener_alarma_atmSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtener_usuario_por_id">
+      <wsdl:input message="tns:obtener_usuario_por_idSoapIn" />
+      <wsdl:output message="tns:obtener_usuario_por_idSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Service1Soap" type="tns:Service1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="login_usuario">
+      <soap:operation soapAction="http://controladorAtm.org/login_usuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscar_usuario_by">
+      <soap:operation soapAction="http://controladorAtm.org/buscar_usuario_by" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscar_terminal">
+      <soap:operation soapAction="http://controladorAtm.org/buscar_terminal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerTerminalPorUsuario">
+      <soap:operation soapAction="http://controladorAtm.org/obtenerTerminalPorUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerTerminalPorUsuario_NoAsignado">
+      <soap:operation soapAction="http://controladorAtm.org/obtenerTerminalPorUsuario_NoAsignado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtener_perfil">
+      <soap:operation soapAction="http://controladorAtm.org/obtener_perfil" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="guardar_actualizar_usuario">
+      <soap:operation soapAction="http://controladorAtm.org/guardar_actualizar_usuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="guardar_actualizar_pass_usuario">
+      <soap:operation soapAction="http://controladorAtm.org/guardar_actualizar_pass_usuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerMenuUsuario">
+      <soap:operation soapAction="http://controladorAtm.org/obtenerMenuUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="guardar_actualizar_Perfil">
+      <soap:operation soapAction="http://controladorAtm.org/guardar_actualizar_Perfil" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtener_menu_codigo">
+      <soap:operation soapAction="http://controladorAtm.org/obtener_menu_codigo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtener_modelo_terminal">
+      <soap:operation soapAction="http://controladorAtm.org/obtener_modelo_terminal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="guardar_actualizar_terminal">
+      <soap:operation soapAction="http://controladorAtm.org/guardar_actualizar_terminal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="guardar_actualizar_responsable_terminal">
+      <soap:operation soapAction="http://controladorAtm.org/guardar_actualizar_responsable_terminal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtener_avance_by_usuario">
+      <soap:operation soapAction="http://controladorAtm.org/obtener_avance_by_usuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizar_avance_by_usuario">
+      <soap:operation soapAction="http://controladorAtm.org/actualizar_avance_by_usuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtener_alarma_atm">
+      <soap:operation soapAction="http://controladorAtm.org/obtener_alarma_atm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtener_usuario_por_id">
+      <soap:operation soapAction="http://controladorAtm.org/obtener_usuario_por_id" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Service1Soap12" type="tns:Service1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="login_usuario">
+      <soap12:operation soapAction="http://controladorAtm.org/login_usuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscar_usuario_by">
+      <soap12:operation soapAction="http://controladorAtm.org/buscar_usuario_by" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscar_terminal">
+      <soap12:operation soapAction="http://controladorAtm.org/buscar_terminal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerTerminalPorUsuario">
+      <soap12:operation soapAction="http://controladorAtm.org/obtenerTerminalPorUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerTerminalPorUsuario_NoAsignado">
+      <soap12:operation soapAction="http://controladorAtm.org/obtenerTerminalPorUsuario_NoAsignado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtener_perfil">
+      <soap12:operation soapAction="http://controladorAtm.org/obtener_perfil" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="guardar_actualizar_usuario">
+      <soap12:operation soapAction="http://controladorAtm.org/guardar_actualizar_usuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="guardar_actualizar_pass_usuario">
+      <soap12:operation soapAction="http://controladorAtm.org/guardar_actualizar_pass_usuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerMenuUsuario">
+      <soap12:operation soapAction="http://controladorAtm.org/obtenerMenuUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="guardar_actualizar_Perfil">
+      <soap12:operation soapAction="http://controladorAtm.org/guardar_actualizar_Perfil" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtener_menu_codigo">
+      <soap12:operation soapAction="http://controladorAtm.org/obtener_menu_codigo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtener_modelo_terminal">
+      <soap12:operation soapAction="http://controladorAtm.org/obtener_modelo_terminal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="guardar_actualizar_terminal">
+      <soap12:operation soapAction="http://controladorAtm.org/guardar_actualizar_terminal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="guardar_actualizar_responsable_terminal">
+      <soap12:operation soapAction="http://controladorAtm.org/guardar_actualizar_responsable_terminal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtener_avance_by_usuario">
+      <soap12:operation soapAction="http://controladorAtm.org/obtener_avance_by_usuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizar_avance_by_usuario">
+      <soap12:operation soapAction="http://controladorAtm.org/actualizar_avance_by_usuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtener_alarma_atm">
+      <soap12:operation soapAction="http://controladorAtm.org/obtener_alarma_atm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtener_usuario_por_id">
+      <soap12:operation soapAction="http://controladorAtm.org/obtener_usuario_por_id" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="Service1Soap" binding="tns:Service1Soap">
+      <soap:address location="http://wscontrolador/WSControlador/servicio_web_controlador.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1Soap12" binding="tns:Service1Soap12">
+      <soap12:address location="http://wscontrolador/WSControlador/servicio_web_controlador.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

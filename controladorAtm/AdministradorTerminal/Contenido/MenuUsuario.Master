@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MenuUsuario.master.cs" Inherits="AdministradorTerminal.MenuUsuario" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head id="Head1" runat="server">
+    <title>Administrador de Terminales</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../CSS/estiloMenu.css" rel="stylesheet" />
+        
+</head>
+<body>
+
+    <form id="form1" runat="server">
+    <asp:Panel ID="Panel1" runat = "server" style="border: 2px solid #000">
+        <asp:Table runat = "server" ID="TablaOPcion">
+            <asp:TableRow>
+                <asp:TableCell>
+                    <asp:Image ID = "imagenPrincipal" runat = "server" 
+                    ImageUrl = "~/Imagenes/sis_principal.png" ImageAlign="Middle" 
+                    Width="30%"/>
+                </asp:TableCell>
+                <asp:TableCell HorizontalAlign="Right" VerticalAlign="Bottom">
+                    <asp:ImageButton ID = "btnCerrarSesion" runat = "server" ImageUrl ="~/Imagenes/cerrarSession.gif" OnClick = "cerrar_sesion"/>
+                </asp:TableCell>
+            </asp:TableRow>
+        </asp:Table>
+    </asp:Panel>
+    
+    <asp:Panel ID="Panel2" runat = "server">
+        <asp:ContentPlaceHolder ID = "tituloPagina" runat="server">
+        </asp:ContentPlaceHolder>    
+    </asp:Panel>
+    <asp:Panel ID = "panelMenu" runat = "server" >
+    <%--<asp:Menu ID = "menuPrincipal" runat = "server" ></asp:Menu>--%>
+        <asp:Table ID="Table1" runat = "server" Width = "100%">
+            <asp:TableRow ID="TableRow1" runat = "server">
+                <asp:TableCell ID="TableCell1" runat = "server">
+                    <asp:Label ID = "usuarioSesion" Text = "Usuario Conectado:" runat = "server" Font-Bold = "true"
+                    ForeColor = "#0033CC"></asp:Label>
+                </asp:TableCell>
+                <asp:TableCell ID="tlable" runat = "server">
+                    <asp:Label ID = "lblNick" runat = "server"></asp:Label>
+                </asp:TableCell>
+            </asp:TableRow>
+            <asp:TableRow ID="TableRow2" runat = "server">
+                <asp:TableCell ID="TableCell2" runat = "server" Width = "250px" ColumnSpan = "2">
+                    <asp:Menu ID="menuPrincipal" MaximumDynamicDisplayLevels ="20" Runat="server" Height="40px"
+                        Orientation="Vertical" BackColor="#b1c3d9" ForeColor="#336699" Font-Names="Arial"
+                        Font-Size="12px" DynamicHorizontalOffset="3" Font-Bold = "True"
+                        BorderStyle="Solid" BorderColor="#336699" BorderWidth="2px" >
+                    <DynamicMenuStyle BackColor="#B1C3D9" BorderWidth="2px" BorderColor="#336699" Width="200px" />
+                    <DynamicMenuItemStyle HorizontalPadding="20px" VerticalPadding="4px" />
+                    <DynamicHoverStyle ForeColor="White" Font-Bold="True" BackColor="#336699"/>
+                    <StaticMenuStyle BackColor="#B1C3D9" BorderWidth="2px" BorderColor="#336699"/>
+                    <StaticMenuItemStyle HorizontalPadding="20px" VerticalPadding="2px" Width="200px"/>
+                    <StaticHoverStyle ForeColor="White" Font-Bold="True" BackColor="#336699"/>
+                    </asp:Menu> 
+            </asp:TableCell>
+            
+            <asp:TableCell ID="TableCell3" runat = "server" Width = "90%" HorizontalAlign="Center">
+                <asp:ContentPlaceHolder ID="contenidoPagina" runat="server">
+                </asp:ContentPlaceHolder>    
+            </asp:TableCell>
+            </asp:TableRow>
+        </asp:Table>
+    </asp:Panel>
+    <%--<asp:Panel runat = "server">
+        <asp:Label ID = "lblPiePagina" runat ="server" Text = "Derechos reservados, copyright © epn"></asp:Label>    
+    </asp:Panel>    --%>
+    </form>
+
+</body>
+</html>
