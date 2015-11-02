@@ -44,3 +44,13 @@ C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\controladorAtm\obj\Debug\con
 C:\Users\Darío\Documents\GitHub\lucho\controladorAtm\controladorAtm\bin\Debug\ControlerAtm.dll
 C:\Users\Darío\Documents\GitHub\lucho\controladorAtm\controladorAtm\bin\Debug\ControlerAtm.pdb
 C:\Users\Darío\Documents\GitHub\lucho\controladorAtm\controladorAtm\obj\Debug\controladorAtm.PantallaIncial.resources
+C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\obj\Debug\controladorAtm.exe
+C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\obj\Debug\controladorAtm.pdb
+C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\bin\Debug\controladorAtm.exe
+C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\bin\Debug\controladorAtm.pdb
+C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\bin\Debug\ControlerAtm.dll
+C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\bin\Debug\ControlerAtm.pdb
+C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\obj\Debug\controladorAtm.PantallaIncial.resources
+C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\obj\Debug\controladorAtm.Properties.Resources.resources
+C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\obj\Debug\controladorAtm.csproj.GenerateResource.Cache

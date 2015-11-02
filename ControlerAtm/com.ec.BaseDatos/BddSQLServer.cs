@@ -25,7 +25,7 @@ namespace ControlerAtm.com.ec.BaseDatos
         }
 
         public void set_archivo_path_guradar(string path) {
-            logs.set_path_guardar(path);
+            logs.set_path_guardar(path + "\\LOG_BDD");
         }
 
         #region Miembros de BaseDatosDao
@@ -1471,5 +1471,60 @@ namespace ControlerAtm.com.ec.BaseDatos
 
         #endregion
 
+
+        #region Miembros de BaseDatosDao
+
+
+        public List<BeanMenuPerfil> obtener_perfil_menu(int codigoPerfil)
+        {
+            SqlCommand cmd;
+            
+            cmd = new SqlCommand("obtener_menu_opciones_sp", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@id_perfil", codigoPerfil);
+            List<BeanMenuPerfil> lista = new List<BeanMenuPerfil>();
+            try
+            {
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable tb = new DataTable("lsMenu");
+                da.Fill(tb);
+                for (int i = 0; i < tb.Rows.Count; i++)
+                {
+                    BeanMenuPerfil perfil = new BeanMenuPerfil();
+                    perfil.nombreMenu = tb.Rows[i][0].ToString();
+                    perfil.urlMenuOpciones = tb.Rows[i][1].ToString();
+                    perfil.menuPadre = tb.Rows[i][2].ToString();
+                    perfil.idMenuOPciones = int.Parse(tb.Rows[i][3].ToString());
+                    if (tb.Rows[i][4].ToString().Equals("0"))
+                    {
+                        perfil.isMenuActivo = false;
+                    }
+                    else
+                    {
+                        perfil.isMenuActivo = true;
+                    }
+                    //perfil.isMenuActivo = bool.Parse(tb.Rows[i][4].ToString());
+                    lista.Add(perfil);
+                }
+                return lista;
+            }
+            catch (IndexOutOfRangeException ex)
+            {
+                logs.escritura_archivo_string(ex.Message);
+                throw new ExpObtenerRegistro(MensajeSistema.reg_no_existe);
+            }
+            catch (ArgumentNullException ex)
+            {
+                logs.escritura_archivo_string(ex.Message);
+                throw new ExpObtenerRegistro(MensajeSistema.reg_no_existe);
+            }
+            catch (Exception ex)
+            {
+                logs.escritura_archivo_string(ex.Message);
+                throw new Exception(MensajeSistema.error_Conexion);
+            }
+        }
+
+        #endregion
     }
 }

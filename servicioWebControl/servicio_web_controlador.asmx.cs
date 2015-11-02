@@ -134,6 +134,11 @@ namespace servicioWebControl
             return controlUsr.buscar_usuario_by_id(usr);
         }
 
+        [WebMethod]
+        public List<BeanMenuPerfil> obtener_menu_usuario_perfil(PerfilObj perfil)
+        {
+            return controlUsr.control_obtener_menu_perfil(perfil);
+        }
 
     }
 }

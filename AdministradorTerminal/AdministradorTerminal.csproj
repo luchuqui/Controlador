@@ -260,6 +260,9 @@
     <None Include="Web References\WSControlador\AvanceObj.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
+    <None Include="Web References\WSControlador\BeanMenuPerfil.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
     <None Include="Web References\WSControlador\MenuObj.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
