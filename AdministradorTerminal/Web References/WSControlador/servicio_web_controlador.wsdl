@@ -213,6 +213,22 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="guardar_actualizar_perfil_">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="perfil" type="tns:PerfilObj" />
+            <s:element minOccurs="0" maxOccurs="1" name="menu" type="tns:MenuObj" />
+            <s:element minOccurs="1" maxOccurs="1" name="insertar" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="guardar_actualizar_perfil_Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="guardar_actualizar_perfil_Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
       <s:element name="obtener_menu_codigo">
         <s:complexType>
           <s:sequence>
@@ -462,6 +478,12 @@
   <wsdl:message name="guardar_actualizar_PerfilSoapOut">
     <wsdl:part name="parameters" element="tns:guardar_actualizar_PerfilResponse" />
   </wsdl:message>
+  <wsdl:message name="guardar_actualizar_perfil_SoapIn">
+    <wsdl:part name="parameters" element="tns:guardar_actualizar_perfil_" />
+  </wsdl:message>
+  <wsdl:message name="guardar_actualizar_perfil_SoapOut">
+    <wsdl:part name="parameters" element="tns:guardar_actualizar_perfil_Response" />
+  </wsdl:message>
   <wsdl:message name="obtener_menu_codigoSoapIn">
     <wsdl:part name="parameters" element="tns:obtener_menu_codigo" />
   </wsdl:message>
@@ -556,6 +578,10 @@
     <wsdl:operation name="guardar_actualizar_Perfil">
       <wsdl:input message="tns:guardar_actualizar_PerfilSoapIn" />
       <wsdl:output message="tns:guardar_actualizar_PerfilSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="guardar_actualizar_perfil_">
+      <wsdl:input message="tns:guardar_actualizar_perfil_SoapIn" />
+      <wsdl:output message="tns:guardar_actualizar_perfil_SoapOut" />
     </wsdl:operation>
     <wsdl:operation name="obtener_menu_codigo">
       <wsdl:input message="tns:obtener_menu_codigoSoapIn" />
@@ -679,6 +705,15 @@
     </wsdl:operation>
     <wsdl:operation name="guardar_actualizar_Perfil">
       <soap:operation soapAction="http://controladorAtm.org/guardar_actualizar_Perfil" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="guardar_actualizar_perfil_">
+      <soap:operation soapAction="http://controladorAtm.org/guardar_actualizar_perfil_" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -853,6 +888,15 @@
     </wsdl:operation>
     <wsdl:operation name="guardar_actualizar_Perfil">
       <soap12:operation soapAction="http://controladorAtm.org/guardar_actualizar_Perfil" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="guardar_actualizar_perfil_">
+      <soap12:operation soapAction="http://controladorAtm.org/guardar_actualizar_perfil_" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

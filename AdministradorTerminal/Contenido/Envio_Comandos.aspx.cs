@@ -43,7 +43,10 @@ namespace AdministradorTerminal.Contenido
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            cargar_terminales_asignados();
+            if (!IsPostBack)
+            {
+                cargar_terminales_asignados();
+            }
         }
     }
 }

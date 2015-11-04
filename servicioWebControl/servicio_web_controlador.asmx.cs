@@ -87,6 +87,12 @@ namespace servicioWebControl
         }
 
         [WebMethod]
+        public string guardar_actualizar_perfil_(PerfilObj perfil, MenuObj menu, bool insertar)
+        {
+            return controlUsr.control_guardar_actualizar_perfil_menu(perfil, menu, insertar);
+        }
+
+        [WebMethod]
         public List<MenuObj> obtener_menu_codigo(int codigo)
         {
             return controlUsr.control_obtener_menu(codigo);

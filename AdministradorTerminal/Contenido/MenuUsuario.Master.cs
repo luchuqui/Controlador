@@ -13,7 +13,7 @@ namespace AdministradorTerminal
 {
     public partial class MenuUsuario : System.Web.UI.MasterPage
     {
-        private UsuarioObj usesion;
+        //private UsuarioObj usesion;
         public MenuObj [] menusItems;
         public int conmenu = 0;
         protected void Page_Load(object sender, EventArgs e)

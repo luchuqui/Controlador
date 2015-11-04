@@ -320,7 +320,7 @@ namespace ControlerAtm.LogicaNegocio
             {
                 if (actualizar)
                 {
-                    conBdd.borrar_perfil_usuario(perfil.id);
+                    //conBdd.borrar_perfil_usuario(perfil.id);
                     conBdd.actualizar_perfil(perfil, menus);
                     mensaje = "Actualizacion de datos usuario correcta";
                     
@@ -352,6 +352,47 @@ namespace ControlerAtm.LogicaNegocio
             }
             return mensaje;
         }
+
+        public string control_guardar_actualizar_perfil_menu(PerfilObj perfil, MenuObj menu, bool insertar)
+        {
+            conBdd.abrir_conexion_base();
+            string mensaje = string.Empty;
+            try
+            {
+                if (insertar)
+                {
+                    conBdd.insertar_menu_perfil(menu, perfil);
+                    mensaje = "Ingreso de datos usuario correcta";
+
+                }
+                else // quita el elemento
+                {
+                    conBdd.borrar_perfil_usuario(perfil,menu);
+                    mensaje = "Eliminacion Menu correcto";
+                }
+            }
+            catch (ExInsertarRegistro ex)
+            {
+                logSistema.escritura_archivo_string(ex.Message);
+                mensaje = ex.Message;
+            }
+            catch (ExActualizarRegistro ex)
+            {
+                logSistema.escritura_archivo_string(ex.Message);
+                mensaje = ex.Message;
+            }
+            catch (Exception ex)
+            {
+                logSistema.escritura_archivo_string(ex.Message);
+                mensaje = ex.Message;
+            }
+            finally
+            {
+                conBdd.cerrar_conexion_base();
+            }
+            return mensaje;
+        }
+
 
         public List<MenuObj> control_obtener_menu(bool estadoMenu)
         {

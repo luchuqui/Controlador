@@ -20,6 +20,7 @@ namespace AdministradorTerminal.Contenido
     {
 
         private static PerfilObj[] perfiles;
+        private static int contMenuItem;
         
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -27,7 +28,7 @@ namespace AdministradorTerminal.Contenido
             
             if (!this.IsPostBack)
             {
-                //cargar_datos();
+                cargar_datos();
                 caragar_menu_items();
                 //Tablemenu = (Table)Session["MenuOp"];
             }
@@ -47,75 +48,83 @@ namespace AdministradorTerminal.Contenido
 
         protected void RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
-            int indice = permisoUsuario.EditIndex = e.RowIndex;
-        }
-
-        protected void RowCancelingEdit(object sender, GridViewCancelEditEventArgs e) { 
-        //no se hace nada
-            int indice = permisoUsuario.EditIndex = e.RowIndex;
-            int otro = permisoUsuario.Rows[indice].Cells.Count;
-            permisoUsuario.Rows[indice].Cells[0].Enabled = false;
+            int indice = e.RowIndex;
+            CheckBox cb = (CheckBox)permisoUsuario.Rows[indice].Cells[3].Controls[0];
+            PerfilObj perfil = new PerfilObj();
+            perfil.id = int.Parse(cboxPerfiles.SelectedValue);
+            MenuObj menu =  new MenuObj();
+            menu.id_menu = int.Parse(((TextBox)(permisoUsuario.Rows[indice].Cells[1].Controls[0])).Text);
+            string mensaje = Globales.servicio.guardar_actualizar_perfil_(perfil, menu,cb.Checked);
+            CuadroMensaje ms = new CuadroMensaje(sender, this.GetType());
+            ms.mostrar_mensaje_alerta(mensaje);
+            caragar_menu_items();
+            permisoUsuario.EditIndex = -1;
+            /*permisoUsuario.Rows[indice].Cells[0].Enabled = false;
             permisoUsuario.Rows[indice].Cells[1].Enabled = false;
             permisoUsuario.Rows[indice].Cells[2].Enabled = false;
-            permisoUsuario.Rows[indice].Cells[3].Enabled = false;
+            permisoUsuario.Rows[indice].Cells[3].Enabled = false;*/
+        }
+
+        protected void RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
+        { 
+        //no se hace nada
+            //int indice = permisoUsuario.EditIndex = e.RowIndex;
+            //int otro = permisoUsuario.Rows[indice].Cells.Count;
+            permisoUsuario.EditIndex = -1;
+            caragar_menu_items();
+            //e.Cancel = true;
+            /*permisoUsuario.Rows[indice].Cells[0].Enabled = false;
+            permisoUsuario.Rows[indice].Cells[1].Enabled = false;
+            permisoUsuario.Rows[indice].Cells[2].Enabled = false;
+            permisoUsuario.Rows[indice].Cells[3].Enabled = false;*/
         }
 
         protected void RowEditing(object sender, GridViewEditEventArgs e)
         {
 
-            int indice = permisoUsuario.EditIndex = e.NewEditIndex;
             caragar_menu_items();
+            int indice = e.NewEditIndex;
+                permisoUsuario.EditIndex = e.NewEditIndex;
             permisoUsuario.Rows[indice].Cells[0].Enabled = false;
             permisoUsuario.Rows[indice].Cells[1].Enabled = false;
             permisoUsuario.Rows[indice].Cells[2].Enabled = false;
-            permisoUsuario.Rows[indice].Cells[3].Enabled = false;
+            permisoUsuario.Rows[indice].Cells[3].Enabled = true;
+            
+        }
 
+        private void helper_GroupHeader(string groupName, object[] values, GridViewRow row)
+        {
+            if (groupName == "menuPadre")
+            {
+                row.Cells[0].Font.Bold = true;
+                row.ForeColor = Color.White;
+                row.Cells[0].HorizontalAlign = HorizontalAlign.Left;
+                row.BackColor = System.Drawing.ColorTranslator.FromHtml("#A4A4A4");
+                row.Cells[0].Text = string.Format("{0}", values[0].ToString());
+            }
         }
 
         private void caragar_menu_items() {
             PerfilObj perfil = new PerfilObj();
-            perfil.id = 1;
+            if (perfiles.Length > 0)
+            {
+                perfil.id = int.Parse( cboxPerfiles.SelectedValue);
+            }
+            else
+            {
+                perfil.id = 0;
+            }
             BeanMenuPerfil [] lsList = Globales.servicio.obtener_menu_usuario_perfil(perfil);
+            contMenuItem = lsList.Length;
             permisoUsuario.DataSource = lsList;
             permisoUsuario.DataBind();
-            
-            //if (Tablemenu == null)
-            //{
-            //    Tablemenu = new Table();
-            //}
 
-            //if (IsPostBack) {
-            //    return;
-            //}
-            //foreach (MenuObj menu in menusPadres)
-            //{
-            //    TableRow fila = new TableRow();
-            //    TableCell columnaPadre = new TableCell();
-            //    columnaPadre.ColumnSpan = 3;
-            //    fila.BackColor = Color.Gray;
-            //    fila.ForeColor = Color.White;
-            //    columnaPadre.Text = menu.nombre;
-            //    fila.Cells.Add(columnaPadre);
-            //    Tablemenu.Rows.Add(fila);
-            //    menusHijos = Globales.servicio.obtener_menu_codigo(menu.id_menu);
-            //    foreach (MenuObj menuHijo in menusHijos)
-            //    {
-            //        TableRow filaHijo = new TableRow();
-            //        TableCell columnaEspacio = new TableCell();
-            //        TableCell columnaNombre = new TableCell();
-            //        TableCell columnaCheck = new TableCell();
-            //        columnaNombre.Text = menuHijo.nombre;
-            //        columnaEspacio.Text = menuHijo.id_menu.ToString();
-            //        columnaEspacio.ForeColor = Color.White;
-            //        columnaCheck.Controls.Add(new CheckBox());
-            //        filaHijo.Cells.Add(columnaEspacio);
-            //        filaHijo.Cells.Add(columnaNombre);
-            //        filaHijo.Cells.Add(columnaCheck);
-            //        Tablemenu.Rows.Add(filaHijo);
-            //    }
-            //}
-            //Session["MenuOp"] = Tablemenu;
-            
+            GridViewHelper helper = new GridViewHelper(this.permisoUsuario);
+            helper.RegisterGroup("menuPadre", true, true);
+            helper.GroupHeader += new GroupEvent(helper_GroupHeader);
+            helper.ApplyGroupSort();
+            permisoUsuario.DataBind();
+
         }
 
         private void cargar_datos() {
@@ -125,55 +134,38 @@ namespace AdministradorTerminal.Contenido
             {
                 ListItem ls = new ListItem(perfil.nombre, perfil.id.ToString());
                 cboxPerfiles.Items.Add(ls);
-            } 
+            }
+            try
+            {
+                txbxDescripcion.Text = perfiles[0].descripcion;
+                txbxNombrePerfil.Text = perfiles[0].nombre;
+            }
+            catch (Exception e) {
+                string ms = e.Message;
+            }
         }
 
         public void Seleccion_perfil(object sender, EventArgs e)
         {
-            //try
-            //{
-            //    if (cboxPerfiles.Items.Count > 0)
-            //    {
-            //        Tablemenu = (Table)Session["MenuOp"];
-            //        foreach (PerfilObj perfil in perfiles)
-            //        {
-            //            if (cboxPerfiles.SelectedValue.Equals(perfil.id.ToString()))
-            //            {
-            //                txbxDescripcion.Text = perfil.descripcion;
-            //                txbxNombrePerfil.Text = perfil.nombre;
-            //                UsuarioObj usuario = new UsuarioObj();
-            //                usuario.id_perfil = perfil.id;
-            //                MenuObj[] menus = Globales.servicio.obtenerMenuUsuario(usuario);
-            //                for (int i = 0; i < Tablemenu.Rows.Count; i++)
-            //                {
-            //                    if (Tablemenu.Rows[i].Cells.Count > 2)
-            //                    {
-            //                        CheckBox c = (CheckBox)Tablemenu.Rows[i].Cells[2].Controls[0];
-            //                        c.CheckedChanged += new EventHandler(this.eventocambio);
-            //                        c.ID = "c_" + i;
-            //                        int idMenu = int.Parse(Tablemenu.Rows[i].Cells[0].Text);
-            //                        foreach (MenuObj menu in menus)
-            //                        {
-            //                            if (idMenu == menu.id_menu)
-            //                            {
-            //                                c.Checked = true;
-            //                                Tablemenu.Rows[i].Cells[2].Controls.Clear();
-            //                                Tablemenu.Rows[i].Cells[2].Controls.Add(c);
-            //                                break;
-            //                            }
-            //                        }
-            //                    }
-
-            //                }
-            //                break;
-            //            }
-            //        }
-            //        Session["MenuOp"] = Tablemenu;
-            //    }
-            //}
-            //catch (IndexOutOfRangeException x) {
-            //    string error = x.Message;
-            //}
+            try
+            {
+                if (cboxPerfiles.Items.Count > 0)
+                {foreach (PerfilObj perfil in perfiles)
+                    {
+                        if (cboxPerfiles.SelectedValue.Equals(perfil.id.ToString()))
+                        {
+                            txbxDescripcion.Text = perfil.descripcion;
+                            txbxNombrePerfil.Text = perfil.nombre;
+                            caragar_menu_items();
+                            break;
+                        }
+                    }
+                }
+            }
+            catch (IndexOutOfRangeException x)
+            {
+                string error = x.Message;
+            }
         }
 
         private void eventocambio(Object sender, EventArgs e) {

@@ -19,6 +19,7 @@ namespace AdministradorTerminal
         public void mostrar_mensaje_alerta(string mensaje) {
             mensaje = mensaje.Replace('\n', ' ');
             mensaje = "alert('" + mensaje + "')";
+            //ScriptManager.RegisterStartupScript((sender as Control), tipo, "alert", mensaje, true);
             ScriptManager.RegisterClientScriptBlock((sender as Control), tipo, "alert", mensaje, true);
         }
     }

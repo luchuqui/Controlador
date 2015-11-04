@@ -41,8 +41,8 @@
             style="text-align : center; margin : 0 auto;"  >
         <tr align ="center">
             <td class="style1">
-                <asp:Image ID="imagenLogin" runat="server" Height="150px" ImageAlign="Middle" 
-                    ImageUrl="~/Imagenes/inicio_sesion.png" Width="200px" />
+                <asp:Image ID="imagenLogin" runat="server" Height="160px" ImageAlign="Middle" 
+                    ImageUrl="~/Imagenes/acceso_sistema.jpg" Width="180px" />
             </td>
             <td>
                 <asp:Login ID="LoginUsuario" runat="server" FailureText="">

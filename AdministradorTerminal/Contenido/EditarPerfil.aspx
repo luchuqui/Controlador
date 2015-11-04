@@ -59,7 +59,7 @@
      </div>
     <asp:Panel ID = "panelmenu" runat = "server" >
        <asp:GridView ID="permisoUsuario" runat="server" BackColor="White" 
-            BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" 
+            BorderColor="#CCCCCC" BorderStyle="Double" BorderWidth="1px" CellPadding="3" 
             AutoGenerateColumns="False" Width = "80%"
             OnRowEditing="RowEditing" OnRowCancelingEdit="RowCancelingEdit"
             OnRowUpdating="RowUpdating">
@@ -70,15 +70,23 @@
                <asp:TemplateField AccessibleHeaderText="menuPadre" HeaderText="Menu Padre" 
                    Visible="False">
                    <ItemStyle HorizontalAlign="Left" />
+                   <ItemTemplate>
+                 <asp:Label ID="Label1" runat="server" Text='<%# Bind("menuPadre") %>'></asp:Label>
+                 </ItemTemplate>
+                  <EditItemTemplate>
+                <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("menuPadre") %>'></asp:TextBox>
+                </EditItemTemplate>
+                <HeaderStyle HorizontalAlign="Left" />
+                <ItemStyle HorizontalAlign="Left" />
                </asp:TemplateField>
-               <asp:BoundField HeaderText="Menu Padre" DataField="menuPadre">
-               </asp:BoundField>
+               <%--<asp:BoundField HeaderText="Menu Padre" DataField="menuPadre">
+               </asp:BoundField>--%>
                <asp:BoundField DataField="idMenuOPciones" HeaderText="# Perfil" />
                <asp:BoundField DataField="nombreMenu" HeaderText="Nombre Menu">
                    <HeaderStyle HorizontalAlign="Left" />
                </asp:BoundField>
                <asp:CheckBoxField HeaderText="Seleccionado" DataField="isMenuActivo"/>
-               <asp:CommandField HeaderText="Edicion" ShowEditButton="True" />
+               <asp:CommandField ShowEditButton="true" ShowCancelButton = "true"/>
            </Columns>
            <PagerStyle BackColor="White" ForeColor="#4E4545" HorizontalAlign="Left" />
            <SelectedRowStyle BackColor="#4E4545" Font-Bold="True" ForeColor="White" />
@@ -86,20 +94,6 @@
        
        </asp:GridView>
        </asp:Panel>
-      
-       <asp:Panel ID = "panelBoton" runat = "server">
-      <asp:table ID="Tabledatos" runat = "server">
-      <asp:TableRow ID = "fOpciones" style = "border">
-                <asp:TableCell ID = "cGuardar" style = "text-align : right">
-                <asp:Button ID = "btnGuardar" runat = "server" Text = "Guardar" Width = "100px" OnClick="btn_guardar_datos" ValidationGroup="panelDatosPerfil"/>
-                </asp:TableCell>
-                <asp:TableCell ID = "cLimpiar" style = "text-align : left">
-                <asp:Button ID = "btnLimpiar" runat = "server" Text = "Limpiar" Width = "100px" OnClick="btn_limpiar_datos"/>
-                </asp:TableCell>
-       </asp:TableRow> 
- </asp:table>
- 
- </asp:Panel>
  </ContentTemplate>
 </asp:UpdatePanel>
 <asp:UpdateProgress ID = "barraProgreso" runat ="server" >

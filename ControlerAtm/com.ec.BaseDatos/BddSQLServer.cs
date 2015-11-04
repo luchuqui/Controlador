@@ -814,9 +814,9 @@ namespace ControlerAtm.com.ec.BaseDatos
         #region Miembros de BaseDatosDao
 
 
-        public int borrar_perfil_usuario(int id_perfil)
+        public int borrar_perfil_usuario(PerfilObj perfil,MenuObj menu)
         {
-            SqlCommand cmd = new SqlCommand("delete MENU_PERFIL where id_perfil = "+id_perfil, conn);
+            SqlCommand cmd = new SqlCommand("delete MENU_PERFIL where id_perfil = "+perfil.id +" and id_menu = "+ menu.id_menu, conn);
             try
             {
                 return cmd.ExecuteNonQuery();

@@ -29,7 +29,7 @@ namespace ControlerAtm.com.ec.Interfaces
         void actualizar_perfil(PerfilObj obj,List<MenuObj> menus);
         void insertar_perfil(PerfilObj obj, List<MenuObj> menus);
         int obtener_clave_tabla(string nombreTabla,string nombreColumna);
-        int borrar_perfil_usuario(int id_perfil);
+        int borrar_perfil_usuario(PerfilObj perfil, MenuObj menu);
         List<MenuObj> obtener_menu_estado(bool estado);
         List<MenuObj> obtener_menu_padre();
         List<MenuObj> obtener_menu_hijo(int id_menu_padre);

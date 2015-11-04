@@ -49,6 +49,8 @@ namespace AdministradorTerminal.WSControlador {
         
         private System.Threading.SendOrPostCallback guardar_actualizar_PerfilOperationCompleted;
         
+        private System.Threading.SendOrPostCallback guardar_actualizar_perfil_OperationCompleted;
+        
         private System.Threading.SendOrPostCallback obtener_menu_codigoOperationCompleted;
         
         private System.Threading.SendOrPostCallback obtener_modelo_terminalOperationCompleted;
@@ -134,6 +136,9 @@ namespace AdministradorTerminal.WSControlador {
         
         /// <remarks/>
         public event guardar_actualizar_PerfilCompletedEventHandler guardar_actualizar_PerfilCompleted;
+        
+        /// <remarks/>
+        public event guardar_actualizar_perfil_CompletedEventHandler guardar_actualizar_perfil_Completed;
         
         /// <remarks/>
         public event obtener_menu_codigoCompletedEventHandler obtener_menu_codigoCompleted;
@@ -465,6 +470,39 @@ namespace AdministradorTerminal.WSControlador {
             if ((this.guardar_actualizar_PerfilCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.guardar_actualizar_PerfilCompleted(this, new guardar_actualizar_PerfilCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://controladorAtm.org/guardar_actualizar_perfil_", RequestNamespace="http://controladorAtm.org/", ResponseNamespace="http://controladorAtm.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string guardar_actualizar_perfil_(PerfilObj perfil, MenuObj menu, bool insertar) {
+            object[] results = this.Invoke("guardar_actualizar_perfil_", new object[] {
+                        perfil,
+                        menu,
+                        insertar});
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void guardar_actualizar_perfil_Async(PerfilObj perfil, MenuObj menu, bool insertar) {
+            this.guardar_actualizar_perfil_Async(perfil, menu, insertar, null);
+        }
+        
+        /// <remarks/>
+        public void guardar_actualizar_perfil_Async(PerfilObj perfil, MenuObj menu, bool insertar, object userState) {
+            if ((this.guardar_actualizar_perfil_OperationCompleted == null)) {
+                this.guardar_actualizar_perfil_OperationCompleted = new System.Threading.SendOrPostCallback(this.Onguardar_actualizar_perfil_OperationCompleted);
+            }
+            this.InvokeAsync("guardar_actualizar_perfil_", new object[] {
+                        perfil,
+                        menu,
+                        insertar}, this.guardar_actualizar_perfil_OperationCompleted, userState);
+        }
+        
+        private void Onguardar_actualizar_perfil_OperationCompleted(object arg) {
+            if ((this.guardar_actualizar_perfil_Completed != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.guardar_actualizar_perfil_Completed(this, new guardar_actualizar_perfil_CompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -1661,6 +1699,32 @@ namespace AdministradorTerminal.WSControlador {
         private object[] results;
         
         internal guardar_actualizar_PerfilCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "2.0.50727.8662")]
+    public delegate void guardar_actualizar_perfil_CompletedEventHandler(object sender, guardar_actualizar_perfil_CompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "2.0.50727.8662")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class guardar_actualizar_perfil_CompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal guardar_actualizar_perfil_CompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
                 base(exception, cancelled, userState) {
             this.results = results;
         }
