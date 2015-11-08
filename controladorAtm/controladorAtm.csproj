@@ -100,7 +100,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="ProtocoloTerminal\ComandoNdcTerminal.cs" />
-    <Compile Include="ProtocoloTerminal\TramaTerminalComando.cs" />
+    <Compile Include="ProtocoloTerminal\IProcesarTrama.cs" />
+    <Compile Include="ProtocoloTerminal\ITramaTerminalComando.cs" />
+    <Compile Include="ProtocoloTerminal\ProcesamientoTrama.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Error.png" />

@@ -44,6 +44,46 @@ namespace ControlerAtm.com.ec.objetos
             get;
         }
 
-    }
+        [DataMember]
+        public string id_mensaje
+        {
+            set;
+            get;
+        }
 
+        [DataMember]
+        public string id_tipo_dispositivo
+        {
+            set;
+            get;
+        }
+
+        [DataMember]
+        public string estado_dispositivo
+        {
+            set;
+            get;
+        }
+
+        [DataMember]
+        public string error_severidad
+        {
+            set;
+            get;
+        }
+
+        [DataMember]
+        public string estado_diagnostico
+        {
+            set;
+            get;
+        }
+
+        [DataMember]
+        public string estado_suministro
+        {
+            set;
+            get;
+        }
+    }
 }

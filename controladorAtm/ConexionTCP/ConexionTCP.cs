@@ -23,7 +23,7 @@ namespace controladorAtm
         public event datoIngresoServicio datoResp; /*Variable para pasar la informacion entre clases en este caso datos salida*/
         private RichTextBox visor; /*Objeto para mostrar la informacion en la pantalla del cliente*/
         private ConfiguracionServicio configurarServicio; /*Configuracion del servicio para los cajeros*/
-        private TramaTerminalComando comadoToATM; /*Trama de mensajeria hacia el terminal, se declara la interfaz porque puede manejar mas de un tipo de protocolo*/
+        private ITramaTerminalComando comadoToATM; /*Trama de mensajeria hacia el terminal, se declara la interfaz porque puede manejar mas de un tipo de protocolo*/
         private bool sincronico; /*Bandera para indicar, si el flujo de datos es sincronico o asincronico*/
         private bool enviarDato; /*Bandera para validar si se puede enviar datos hacia el terminal*/
 

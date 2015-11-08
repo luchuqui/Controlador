@@ -9,7 +9,7 @@ namespace controladorAtm
      * Especifica todos los campos que posee la trama para enviar
      * el comando hacia el cajero
      */
-    public class ComandoNdcTerminal : TramaTerminalComando
+    public class ComandoNdcTerminal : ITramaTerminalComando
     {
         private string cabecera;
         private string claseMensaje;
