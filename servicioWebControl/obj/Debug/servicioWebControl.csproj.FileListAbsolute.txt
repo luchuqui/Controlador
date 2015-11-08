@@ -33,7 +33,7 @@ C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\servicioWebControl\bin\Contr
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\servicioWebControl\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\servicioWebControl\obj\Debug\servicioWebControl.dll
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\servicioWebControl\obj\Debug\servicioWebControl.pdb
-<<<<<<< HEAD
+
 C:\Users\Darío\Documents\GitHub\Controlador\servicioWebControl\bin\servicioWebControl.dll
 C:\Users\Darío\Documents\GitHub\Controlador\servicioWebControl\bin\servicioWebControl.pdb
 C:\Users\Darío\Documents\GitHub\Controlador\servicioWebControl\bin\ControlerAtm.dll
@@ -41,7 +41,7 @@ C:\Users\Darío\Documents\GitHub\Controlador\servicioWebControl\bin\ControlerAtm
 C:\Users\Darío\Documents\GitHub\Controlador\servicioWebControl\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Darío\Documents\GitHub\Controlador\servicioWebControl\obj\Debug\servicioWebControl.dll
 C:\Users\Darío\Documents\GitHub\Controlador\servicioWebControl\obj\Debug\servicioWebControl.pdb
-=======
+
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\servicioWebControl\bin\servicioWebControl.dll
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\servicioWebControl\bin\servicioWebControl.pdb
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\servicioWebControl\bin\ControlerAtm.dll
@@ -49,4 +49,4 @@ C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\servicioWebContr
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\servicioWebControl\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\servicioWebControl\obj\Debug\servicioWebControl.dll
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\servicioWebControl\obj\Debug\servicioWebControl.pdb
->>>>>>> origin/master
+
