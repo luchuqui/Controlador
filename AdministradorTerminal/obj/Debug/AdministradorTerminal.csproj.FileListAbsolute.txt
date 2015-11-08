@@ -31,6 +31,15 @@ C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\AdministradorTerminal\bin\Co
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\AdministradorTerminal\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\AdministradorTerminal\obj\Debug\AdministradorTerminal.dll
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\AdministradorTerminal\obj\Debug\AdministradorTerminal.pdb
+<<<<<<< HEAD
+C:\Users\Darío\Documents\GitHub\Controlador\AdministradorTerminal\bin\AdministradorTerminal.dll
+C:\Users\Darío\Documents\GitHub\Controlador\AdministradorTerminal\bin\AdministradorTerminal.pdb
+C:\Users\Darío\Documents\GitHub\Controlador\AdministradorTerminal\bin\ControlerAtm.dll
+C:\Users\Darío\Documents\GitHub\Controlador\AdministradorTerminal\bin\ControlerAtm.pdb
+C:\Users\Darío\Documents\GitHub\Controlador\AdministradorTerminal\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Darío\Documents\GitHub\Controlador\AdministradorTerminal\obj\Debug\AdministradorTerminal.dll
+C:\Users\Darío\Documents\GitHub\Controlador\AdministradorTerminal\obj\Debug\AdministradorTerminal.pdb
+=======
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\AdministradorTerminal\bin\AdministradorTerminal.dll
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\AdministradorTerminal\bin\AdministradorTerminal.pdb
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\AdministradorTerminal\bin\ControlerAtm.dll
@@ -38,3 +47,4 @@ C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\AdministradorTer
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\AdministradorTerminal\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\AdministradorTerminal\obj\Debug\AdministradorTerminal.dll
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\AdministradorTerminal\obj\Debug\AdministradorTerminal.pdb
+>>>>>>> origin/master

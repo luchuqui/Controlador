@@ -23,8 +23,16 @@ C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\ControlerAtm\bin\Debug\Contr
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\ControlerAtm\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\ControlerAtm\obj\Debug\ControlerAtm.dll
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\ControlerAtm\obj\Debug\ControlerAtm.pdb
+<<<<<<< HEAD
+C:\Users\Darío\Documents\GitHub\Controlador\ControlerAtm\bin\Debug\ControlerAtm.dll
+C:\Users\Darío\Documents\GitHub\Controlador\ControlerAtm\bin\Debug\ControlerAtm.pdb
+C:\Users\Darío\Documents\GitHub\Controlador\ControlerAtm\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Darío\Documents\GitHub\Controlador\ControlerAtm\obj\Debug\ControlerAtm.dll
+C:\Users\Darío\Documents\GitHub\Controlador\ControlerAtm\obj\Debug\ControlerAtm.pdb
+=======
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\bin\Debug\ControlerAtm.dll
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\bin\Debug\ControlerAtm.pdb
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\obj\Debug\ControlerAtm.dll
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\obj\Debug\ControlerAtm.pdb
+>>>>>>> origin/master
