@@ -60,9 +60,31 @@ namespace AdministradorTerminal.Contenido
             }
             else if (seleccionado.Equals("Ip"))
             {
-                lsatm = Globales.servicio.buscar_terminal (this.txbxIngreso.Text, false);
+                lsatm = Globales.servicio.buscar_terminal(this.txbxIngreso.Text, false);
             }
             CuadroMensaje mensajeNotificacion = new CuadroMensaje(sender, this.GetType());
+            cargar_datos_tabla(lsatm, mensajeNotificacion);
+        }
+
+        public void buscar_datos() {
+            string seleccionado = this.rbGroup.SelectedItem.Text;
+            AtmObj[] lsatm = { };
+            if (seleccionado.Equals("Codigo"))
+            {
+                if (string.IsNullOrEmpty(this.txbxIngreso.Text))
+                {
+                    this.txbxIngreso.Text = " :0";
+                }
+                else {
+                    this.txbxIngreso.Text += ":0";
+                }
+                lsatm = Globales.servicio.buscar_terminal(this.txbxIngreso.Text, true);
+            }
+            else if (seleccionado.Equals("Ip"))
+            {
+                lsatm = Globales.servicio.buscar_terminal(this.txbxIngreso.Text, false);
+            }
+            CuadroMensaje mensajeNotificacion = new CuadroMensaje(new object(), this.GetType());
             cargar_datos_tabla(lsatm, mensajeNotificacion);
         }
 
@@ -116,6 +138,7 @@ namespace AdministradorTerminal.Contenido
                 tb_data.Rows.Add(fila);
                 i++;
             }
+            //buscar_datos();
              Session["terminalesSistema"] = terminales;
         }
 
