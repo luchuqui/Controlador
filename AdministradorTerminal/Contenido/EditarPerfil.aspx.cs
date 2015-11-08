@@ -12,16 +12,13 @@ using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 using AdministradorTerminal.WSControlador;
 using System.Drawing;
+using System.Collections.Generic;
 
 namespace AdministradorTerminal.Contenido
 {
     public partial class EditarPerfil : System.Web.UI.Page
     {
 
-
-        private static MenuObj[] menusPadres;
-        private MenuObj[] menusSeleccionado;
-        private MenuObj[] menusHijos;
         private static PerfilObj[] perfiles;
         
         protected void Page_Load(object sender, EventArgs e)
@@ -30,8 +27,9 @@ namespace AdministradorTerminal.Contenido
             
             if (!this.IsPostBack)
             {
-                cargar_datos();
-                Tablemenu = (Table)Session["MenuOp"];
+                //cargar_datos();
+                caragar_menu_items();
+                //Tablemenu = (Table)Session["MenuOp"];
             }
             /*if ( !IsPostBack ||Tablemenu == null)
             {
@@ -47,44 +45,76 @@ namespace AdministradorTerminal.Contenido
             }*/
         }
 
-        private void caragar_menu_items() {
-            
-            if (Tablemenu == null)
-            {
-                Tablemenu = new Table();
-            }
+        protected void RowUpdating(object sender, GridViewUpdateEventArgs e)
+        {
+            int indice = permisoUsuario.EditIndex = e.RowIndex;
+        }
 
-            if (IsPostBack) {
-                return;
-            }
-            foreach (MenuObj menu in menusPadres)
-            {
-                TableRow fila = new TableRow();
-                TableCell columnaPadre = new TableCell();
-                columnaPadre.ColumnSpan = 3;
-                fila.BackColor = Color.Gray;
-                fila.ForeColor = Color.White;
-                columnaPadre.Text = menu.nombre;
-                fila.Cells.Add(columnaPadre);
-                Tablemenu.Rows.Add(fila);
-                menusHijos = Globales.servicio.obtener_menu_codigo(menu.id_menu);
-                foreach (MenuObj menuHijo in menusHijos)
-                {
-                    TableRow filaHijo = new TableRow();
-                    TableCell columnaEspacio = new TableCell();
-                    TableCell columnaNombre = new TableCell();
-                    TableCell columnaCheck = new TableCell();
-                    columnaNombre.Text = menuHijo.nombre;
-                    columnaEspacio.Text = menuHijo.id_menu.ToString();
-                    columnaEspacio.ForeColor = Color.White;
-                    columnaCheck.Controls.Add(new CheckBox());
-                    filaHijo.Cells.Add(columnaEspacio);
-                    filaHijo.Cells.Add(columnaNombre);
-                    filaHijo.Cells.Add(columnaCheck);
-                    Tablemenu.Rows.Add(filaHijo);
-                }
-            }
-            Session["MenuOp"] = Tablemenu;
+        protected void RowCancelingEdit(object sender, GridViewCancelEditEventArgs e) { 
+        //no se hace nada
+            int indice = permisoUsuario.EditIndex = e.RowIndex;
+            int otro = permisoUsuario.Rows[indice].Cells.Count;
+            permisoUsuario.Rows[indice].Cells[0].Enabled = false;
+            permisoUsuario.Rows[indice].Cells[1].Enabled = false;
+            permisoUsuario.Rows[indice].Cells[2].Enabled = false;
+            permisoUsuario.Rows[indice].Cells[3].Enabled = false;
+        }
+
+        protected void RowEditing(object sender, GridViewEditEventArgs e)
+        {
+
+            int indice = permisoUsuario.EditIndex = e.NewEditIndex;
+            caragar_menu_items();
+            permisoUsuario.Rows[indice].Cells[0].Enabled = false;
+            permisoUsuario.Rows[indice].Cells[1].Enabled = false;
+            permisoUsuario.Rows[indice].Cells[2].Enabled = false;
+            permisoUsuario.Rows[indice].Cells[3].Enabled = false;
+
+        }
+
+        private void caragar_menu_items() {
+            PerfilObj perfil = new PerfilObj();
+            perfil.id = 1;
+            BeanMenuPerfil [] lsList = Globales.servicio.obtener_menu_usuario_perfil(perfil);
+            permisoUsuario.DataSource = lsList;
+            permisoUsuario.DataBind();
+            
+            //if (Tablemenu == null)
+            //{
+            //    Tablemenu = new Table();
+            //}
+
+            //if (IsPostBack) {
+            //    return;
+            //}
+            //foreach (MenuObj menu in menusPadres)
+            //{
+            //    TableRow fila = new TableRow();
+            //    TableCell columnaPadre = new TableCell();
+            //    columnaPadre.ColumnSpan = 3;
+            //    fila.BackColor = Color.Gray;
+            //    fila.ForeColor = Color.White;
+            //    columnaPadre.Text = menu.nombre;
+            //    fila.Cells.Add(columnaPadre);
+            //    Tablemenu.Rows.Add(fila);
+            //    menusHijos = Globales.servicio.obtener_menu_codigo(menu.id_menu);
+            //    foreach (MenuObj menuHijo in menusHijos)
+            //    {
+            //        TableRow filaHijo = new TableRow();
+            //        TableCell columnaEspacio = new TableCell();
+            //        TableCell columnaNombre = new TableCell();
+            //        TableCell columnaCheck = new TableCell();
+            //        columnaNombre.Text = menuHijo.nombre;
+            //        columnaEspacio.Text = menuHijo.id_menu.ToString();
+            //        columnaEspacio.ForeColor = Color.White;
+            //        columnaCheck.Controls.Add(new CheckBox());
+            //        filaHijo.Cells.Add(columnaEspacio);
+            //        filaHijo.Cells.Add(columnaNombre);
+            //        filaHijo.Cells.Add(columnaCheck);
+            //        Tablemenu.Rows.Add(filaHijo);
+            //    }
+            //}
+            //Session["MenuOp"] = Tablemenu;
             
         }
 
@@ -100,50 +130,50 @@ namespace AdministradorTerminal.Contenido
 
         public void Seleccion_perfil(object sender, EventArgs e)
         {
-            try
-            {
-                if (cboxPerfiles.Items.Count > 0)
-                {
-                    Tablemenu = (Table)Session["MenuOp"];
-                    foreach (PerfilObj perfil in perfiles)
-                    {
-                        if (cboxPerfiles.SelectedValue.Equals(perfil.id.ToString()))
-                        {
-                            txbxDescripcion.Text = perfil.descripcion;
-                            txbxNombrePerfil.Text = perfil.nombre;
-                            UsuarioObj usuario = new UsuarioObj();
-                            usuario.id_perfil = perfil.id;
-                            MenuObj[] menus = Globales.servicio.obtenerMenuUsuario(usuario);
-                            for (int i = 0; i < Tablemenu.Rows.Count; i++)
-                            {
-                                if (Tablemenu.Rows[i].Cells.Count > 2)
-                                {
-                                    CheckBox c = (CheckBox)Tablemenu.Rows[i].Cells[2].Controls[0];
-                                    c.CheckedChanged += new EventHandler(this.eventocambio);
-                                    c.ID = "c_" + i;
-                                    int idMenu = int.Parse(Tablemenu.Rows[i].Cells[0].Text);
-                                    foreach (MenuObj menu in menus)
-                                    {
-                                        if (idMenu == menu.id_menu)
-                                        {
-                                            c.Checked = true;
-                                            Tablemenu.Rows[i].Cells[2].Controls.Clear();
-                                            Tablemenu.Rows[i].Cells[2].Controls.Add(c);
-                                            break;
-                                        }
-                                    }
-                                }
+            //try
+            //{
+            //    if (cboxPerfiles.Items.Count > 0)
+            //    {
+            //        Tablemenu = (Table)Session["MenuOp"];
+            //        foreach (PerfilObj perfil in perfiles)
+            //        {
+            //            if (cboxPerfiles.SelectedValue.Equals(perfil.id.ToString()))
+            //            {
+            //                txbxDescripcion.Text = perfil.descripcion;
+            //                txbxNombrePerfil.Text = perfil.nombre;
+            //                UsuarioObj usuario = new UsuarioObj();
+            //                usuario.id_perfil = perfil.id;
+            //                MenuObj[] menus = Globales.servicio.obtenerMenuUsuario(usuario);
+            //                for (int i = 0; i < Tablemenu.Rows.Count; i++)
+            //                {
+            //                    if (Tablemenu.Rows[i].Cells.Count > 2)
+            //                    {
+            //                        CheckBox c = (CheckBox)Tablemenu.Rows[i].Cells[2].Controls[0];
+            //                        c.CheckedChanged += new EventHandler(this.eventocambio);
+            //                        c.ID = "c_" + i;
+            //                        int idMenu = int.Parse(Tablemenu.Rows[i].Cells[0].Text);
+            //                        foreach (MenuObj menu in menus)
+            //                        {
+            //                            if (idMenu == menu.id_menu)
+            //                            {
+            //                                c.Checked = true;
+            //                                Tablemenu.Rows[i].Cells[2].Controls.Clear();
+            //                                Tablemenu.Rows[i].Cells[2].Controls.Add(c);
+            //                                break;
+            //                            }
+            //                        }
+            //                    }
 
-                            }
-                            break;
-                        }
-                    }
-                    Session["MenuOp"] = Tablemenu;
-                }
-            }
-            catch (IndexOutOfRangeException x) {
-                string error = x.Message;
-            }
+            //                }
+            //                break;
+            //            }
+            //        }
+            //        Session["MenuOp"] = Tablemenu;
+            //    }
+            //}
+            //catch (IndexOutOfRangeException x) {
+            //    string error = x.Message;
+            //}
         }
 
         private void eventocambio(Object sender, EventArgs e) {
@@ -154,42 +184,42 @@ namespace AdministradorTerminal.Contenido
 
         public void btn_guardar_datos(Object sender, EventArgs e)
         {
-            Tablemenu = (Table)Session["MenuOp"];
-            CuadroMensaje mensajeNotificacion = new CuadroMensaje(sender, this.GetType());
-            menusSeleccionado = new MenuObj[Tablemenu.Rows.Count - menusPadres.Length];
-            string mensaje = "";
-            int indice = 0;
-            bool guardar = false;
-            PerfilObj perfil = new PerfilObj();
-            perfil.nombre = txbxNombrePerfil.Text;
-            perfil.descripcion = txbxDescripcion.Text;
-            for (int i = 0; i < Tablemenu.Rows.Count; i++)
-            {
-                string s = string.Empty;
-                if (Tablemenu.Rows[i].Cells.Count > 2)
-                {
-                    CheckBox c = (CheckBox)Tablemenu.Rows[i].Cells[2].Controls[0];
-                    if (c.Checked)
-                    {
-                        MenuObj m = new MenuObj();
-                        m.id_menu = int.Parse(Tablemenu.Rows[i].Cells[0].Text);
-                        menusSeleccionado[indice] = m;
-                        guardar = true;
-                        indice++;
-                    }
-                }
-            }
-            if (guardar)
-            {
-                perfil.id = int.Parse( cboxPerfiles.SelectedValue);
-                mensaje = Globales.servicio.guardar_actualizar_Perfil(perfil, menusSeleccionado, true);
-                mensajeNotificacion.mostrar_mensaje_alerta(mensaje);
+            //Tablemenu = (Table)Session["MenuOp"];
+            //CuadroMensaje mensajeNotificacion = new CuadroMensaje(sender, this.GetType());
+            //menusSeleccionado = new MenuObj[Tablemenu.Rows.Count - menusPadres.Length];
+            //string mensaje = "";
+            //int indice = 0;
+            //bool guardar = false;
+            //PerfilObj perfil = new PerfilObj();
+            //perfil.nombre = txbxNombrePerfil.Text;
+            //perfil.descripcion = txbxDescripcion.Text;
+            //for (int i = 0; i < Tablemenu.Rows.Count; i++)
+            //{
+            //    string s = string.Empty;
+            //    if (Tablemenu.Rows[i].Cells.Count > 2)
+            //    {
+            //        CheckBox c = (CheckBox)Tablemenu.Rows[i].Cells[2].Controls[0];
+            //        if (c.Checked)
+            //        {
+            //            MenuObj m = new MenuObj();
+            //            m.id_menu = int.Parse(Tablemenu.Rows[i].Cells[0].Text);
+            //            menusSeleccionado[indice] = m;
+            //            guardar = true;
+            //            indice++;
+            //        }
+            //    }
+            //}
+            //if (guardar)
+            //{
+            //    perfil.id = int.Parse( cboxPerfiles.SelectedValue);
+            //    mensaje = Globales.servicio.guardar_actualizar_Perfil(perfil, menusSeleccionado, true);
+            //    mensajeNotificacion.mostrar_mensaje_alerta(mensaje);
                 
-            }
-            else
-            {
-                mensajeNotificacion.mostrar_mensaje_alerta("Seleccione al menos un menu");
-            }
+            //}
+            //else
+            //{
+            //    mensajeNotificacion.mostrar_mensaje_alerta("Seleccione al menos un menu");
+            //}
 
         }
 

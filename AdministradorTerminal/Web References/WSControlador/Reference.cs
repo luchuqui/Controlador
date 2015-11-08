@@ -65,6 +65,8 @@ namespace AdministradorTerminal.WSControlador {
         
         private System.Threading.SendOrPostCallback obtener_usuario_por_idOperationCompleted;
         
+        private System.Threading.SendOrPostCallback obtener_menu_usuario_perfilOperationCompleted;
+        
         private bool useDefaultCredentialsSetExplicitly;
         
         /// <remarks/>
@@ -156,6 +158,9 @@ namespace AdministradorTerminal.WSControlador {
         
         /// <remarks/>
         public event obtener_usuario_por_idCompletedEventHandler obtener_usuario_por_idCompleted;
+        
+        /// <remarks/>
+        public event obtener_menu_usuario_perfilCompletedEventHandler obtener_menu_usuario_perfilCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://controladorAtm.org/login_usuario", RequestNamespace="http://controladorAtm.org/", ResponseNamespace="http://controladorAtm.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -702,6 +707,35 @@ namespace AdministradorTerminal.WSControlador {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://controladorAtm.org/obtener_menu_usuario_perfil", RequestNamespace="http://controladorAtm.org/", ResponseNamespace="http://controladorAtm.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public BeanMenuPerfil[] obtener_menu_usuario_perfil(PerfilObj perfil) {
+            object[] results = this.Invoke("obtener_menu_usuario_perfil", new object[] {
+                        perfil});
+            return ((BeanMenuPerfil[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void obtener_menu_usuario_perfilAsync(PerfilObj perfil) {
+            this.obtener_menu_usuario_perfilAsync(perfil, null);
+        }
+        
+        /// <remarks/>
+        public void obtener_menu_usuario_perfilAsync(PerfilObj perfil, object userState) {
+            if ((this.obtener_menu_usuario_perfilOperationCompleted == null)) {
+                this.obtener_menu_usuario_perfilOperationCompleted = new System.Threading.SendOrPostCallback(this.Onobtener_menu_usuario_perfilOperationCompleted);
+            }
+            this.InvokeAsync("obtener_menu_usuario_perfil", new object[] {
+                        perfil}, this.obtener_menu_usuario_perfilOperationCompleted, userState);
+        }
+        
+        private void Onobtener_menu_usuario_perfilOperationCompleted(object arg) {
+            if ((this.obtener_menu_usuario_perfilCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.obtener_menu_usuario_perfilCompleted(this, new obtener_menu_usuario_perfilCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         public new void CancelAsync(object userState) {
             base.CancelAsync(userState);
         }
@@ -857,6 +891,75 @@ namespace AdministradorTerminal.WSControlador {
             }
             set {
                 this.cambio_contraseniaField = value;
+            }
+        }
+    }
+    
+    /// <comentarios/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "2.0.50727.8662")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://controladorAtm.org/")]
+    public partial class BeanMenuPerfil {
+        
+        private string nombreMenuField;
+        
+        private string urlMenuOpcionesField;
+        
+        private string menuPadreField;
+        
+        private int idMenuOPcionesField;
+        
+        private bool isMenuActivoField;
+        
+        /// <comentarios/>
+        public string nombreMenu {
+            get {
+                return this.nombreMenuField;
+            }
+            set {
+                this.nombreMenuField = value;
+            }
+        }
+        
+        /// <comentarios/>
+        public string urlMenuOpciones {
+            get {
+                return this.urlMenuOpcionesField;
+            }
+            set {
+                this.urlMenuOpcionesField = value;
+            }
+        }
+        
+        /// <comentarios/>
+        public string menuPadre {
+            get {
+                return this.menuPadreField;
+            }
+            set {
+                this.menuPadreField = value;
+            }
+        }
+        
+        /// <comentarios/>
+        public int idMenuOPciones {
+            get {
+                return this.idMenuOPcionesField;
+            }
+            set {
+                this.idMenuOPcionesField = value;
+            }
+        }
+        
+        /// <comentarios/>
+        public bool isMenuActivo {
+            get {
+                return this.isMenuActivoField;
+            }
+            set {
+                this.isMenuActivoField = value;
             }
         }
     }
@@ -1775,6 +1878,32 @@ namespace AdministradorTerminal.WSControlador {
             get {
                 this.RaiseExceptionIfNecessary();
                 return ((UsuarioObj)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "2.0.50727.8662")]
+    public delegate void obtener_menu_usuario_perfilCompletedEventHandler(object sender, obtener_menu_usuario_perfilCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "2.0.50727.8662")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class obtener_menu_usuario_perfilCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal obtener_menu_usuario_perfilCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public BeanMenuPerfil[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((BeanMenuPerfil[])(this.results[0]));
             }
         }
     }

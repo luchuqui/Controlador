@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile ="~/Contenido/MenuUsuario.Master"     CodeBehind="EditarPerfil.aspx.cs" Inherits="AdministradorTerminal.Contenido.EditarPerfil" %>
+<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile ="~/Contenido/MenuUsuario.Master"     CodeBehind="EditarPerfil.aspx.cs" Inherits="AdministradorTerminal.Contenido.EditarPerfil" %>
 
 
 <asp:Content ID = "titlo" ContentPlaceHolderID = "tituloPagina" runat =  "server">
@@ -37,7 +37,7 @@
             </asp:TableCell>
         </asp:TableRow>
                 <asp:TableRow ID = "fDescripcion" style = "border">
-                <asp:TableCell ID = "cDescripcionlbl" Text = "Descripción :" style = "text-align : left"></asp:TableCell>
+                <asp:TableCell ID = "cDescripcionlbl" Text = "Descripci�n :" style = "text-align : left"></asp:TableCell>
                 <asp:TableCell ID = "cDescripcionxbx">
                 <asp:TextBox ID = "txbxDescripcion" runat = "server" Width = "90%"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="txbxDescripcionValidador" runat="server" 
@@ -54,11 +54,39 @@
             </asp:TableRow>
    </asp:Table>         
      </asp:Panel>
+     <div>
+     <br />
+     </div>
     <asp:Panel ID = "panelmenu" runat = "server" >
-       <asp:Table ID = "Tablemenu" runat = "server" Width = "70%" BorderStyle = "Dotted" BorderWidth ="1px">
-       </asp:Table>
-       </asp:Panel>
+       <asp:GridView ID="permisoUsuario" runat="server" BackColor="White" 
+            BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" 
+            AutoGenerateColumns="False" Width = "80%"
+            OnRowEditing="RowEditing" OnRowCancelingEdit="RowCancelingEdit"
+            OnRowUpdating="RowUpdating">
        
+           <FooterStyle BackColor="White" ForeColor="#000000" />
+           <RowStyle ForeColor="#000000" />
+           <Columns>
+               <asp:TemplateField AccessibleHeaderText="menuPadre" HeaderText="Menu Padre" 
+                   Visible="False">
+                   <ItemStyle HorizontalAlign="Left" />
+               </asp:TemplateField>
+               <asp:BoundField HeaderText="Menu Padre" DataField="menuPadre">
+               </asp:BoundField>
+               <asp:BoundField DataField="idMenuOPciones" HeaderText="# Perfil" />
+               <asp:BoundField DataField="nombreMenu" HeaderText="Nombre Menu">
+                   <HeaderStyle HorizontalAlign="Left" />
+               </asp:BoundField>
+               <asp:CheckBoxField HeaderText="Seleccionado" DataField="isMenuActivo"/>
+               <asp:CommandField HeaderText="Edicion" ShowEditButton="True" />
+           </Columns>
+           <PagerStyle BackColor="White" ForeColor="#4E4545" HorizontalAlign="Left" />
+           <SelectedRowStyle BackColor="#4E4545" Font-Bold="True" ForeColor="White" />
+           <HeaderStyle BackColor="#4E4545" Font-Bold="True" ForeColor="White" />
+       
+       </asp:GridView>
+       </asp:Panel>
+      
        <asp:Panel ID = "panelBoton" runat = "server">
       <asp:table ID="Tabledatos" runat = "server">
       <asp:TableRow ID = "fOpciones" style = "border">

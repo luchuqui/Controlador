@@ -203,13 +203,13 @@ namespace AdministradorTerminal.Contenido {
         protected global::System.Web.UI.WebControls.Panel panelmenu;
         
         /// <summary>
-        /// Control Tablemenu.
+        /// Control permisoUsuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table Tablemenu;
+        protected global::System.Web.UI.WebControls.GridView permisoUsuario;
         
         /// <summary>
         /// Control panelBoton.

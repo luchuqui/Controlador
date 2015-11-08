@@ -45,5 +45,6 @@ namespace ControlerAtm.com.ec.Interfaces
         string insertar_avance_terminal(AvanceObj evento);
         List<AlarmasObj> obtener_alarma(AlarmasObj alarma);
         UsuarioObj obtener_usuario_id(UsuarioObj usr);
+        List<BeanMenuPerfil> obtener_perfil_menu(int codigoPerfil);
     }
 }

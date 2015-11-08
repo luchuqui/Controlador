@@ -29,7 +29,7 @@ namespace ControlerAtm.LogicaNegocio
             conBdd.set_archivo_path_guradar(pathGuardar);
             logSistema = new LecturaEscrituraArchivo();
             logSistema.set_path_guardar(pathGuardar);
-            logSistema.archivo_guardar("LOG_SISTEMA");
+            logSistema.archivo_guardar("\\LOG_SISTEMA");
             string configCorreo = conBdd.obtenerParametro(1).valor;
             string configSMS = conBdd.obtenerParametro(6).valor;
             numeroIntentos = int.Parse(conBdd.obtenerParametro(2).valor);
@@ -670,6 +670,26 @@ namespace ControlerAtm.LogicaNegocio
             }
             return alarmas;
         }
+
+        public List<BeanMenuPerfil> control_obtener_menu_perfil(PerfilObj perfil)
+        {
+            conBdd.abrir_conexion_base();
+            List<BeanMenuPerfil> menusPerfiles = new List<BeanMenuPerfil>();
+            try
+            {
+                menusPerfiles = conBdd.obtener_perfil_menu(perfil.id);
+            }
+            catch (Exception e)
+            {
+                logSistema.escritura_archivo_string(e.Message);
+            }
+            finally
+            {
+                conBdd.cerrar_conexion_base();
+            }
+            return menusPerfiles;
+        }
+
 
         public UsuarioObj buscar_usuario_by_id(UsuarioObj user) {
             conBdd.abrir_conexion_base();
