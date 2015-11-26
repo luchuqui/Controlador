@@ -46,5 +46,7 @@ namespace ControlerAtm.com.ec.Interfaces
         List<AlarmasObj> obtener_alarma(AlarmasObj alarma);
         UsuarioObj obtener_usuario_id(UsuarioObj usr);
         List<BeanMenuPerfil> obtener_perfil_menu(int codigoPerfil);
+        List<MonitoreoDispositivos> obtener_alarmaByUsuario(UsuarioObj usuario);
+        void insertar_actualizar_monitoreo_dispositivos(MonitoreoDispositivos monitoreo);
     }
 }

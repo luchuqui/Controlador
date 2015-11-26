@@ -90,8 +90,8 @@ namespace controladorAtm
                     if (atmIng != null)
                     {
                         //conBdd.abrir_conexion_base();
-                        atmIng.conexion = true;
-                        conBdd.actualizar_terminal(atmIng);
+                        //atmIng.conexion = true;
+                        //conBdd.actualizar_terminal(atmIng);
                         //conBdd.cerrar_conexion_base();
                         mensaje_error_sistema("Ip " + cliente.Client.RemoteEndPoint.ToString().Split(':')[0] + " remota - aceptada ", Color.Green);
                         ConexionTCP clien = new ConexionTCP(cliente, parametrosconfig, this.visor,atmIng,conBdd);

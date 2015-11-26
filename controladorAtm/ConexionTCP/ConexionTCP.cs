@@ -10,6 +10,7 @@ using System.IO;
 using ControlerAtm.com.ec.BaseDatos;
 using ControlerAtm.com.ec.objetos;
 using ControlerAtm.com.ec.Excepciones;
+using controladorAtm.ProtocoloTerminal;
 
 namespace controladorAtm
 {
@@ -26,11 +27,13 @@ namespace controladorAtm
         private ITramaTerminalComando comadoToATM; /*Trama de mensajeria hacia el terminal, se declara la interfaz porque puede manejar mas de un tipo de protocolo*/
         private bool sincronico; /*Bandera para indicar, si el flujo de datos es sincronico o asincronico*/
         private bool enviarDato; /*Bandera para validar si se puede enviar datos hacia el terminal*/
-
+        private ProcesamientoTrama parseoAlrma;
         private AtmObj terminal; /*Terminal ATM, parametros de valores de acceso*/
         private bool clienteConectado = true; /*Bandera para verificar si el terminal sigue conectado*/
         private BddSQLServer conBdd; /*Manejador de conexion a la base de datos*/
         private System.Timers.Timer verificacionConexion;
+        private int segSondeo = 60;
+        private MonitoreoDispositivos mt;
         /*Constructor para enviar los datos del servicio sin considerar el objeto richText Box */
         public ConexionTCP(TcpClient clie, ConfiguracionServicio serviceConf,AtmObj terminales,BddSQLServer conexion)
 
@@ -57,23 +60,42 @@ namespace controladorAtm
                 conBdd = conexion;
                 verificacionConexion = new System.Timers.Timer();
                 verificacionConexion.Elapsed += new System.Timers.ElapsedEventHandler(verificarConexion);
-                verificacionConexion.Interval = 300000;
+                verificacionConexion.Interval = segSondeo*1000;
                 verificacionConexion.Enabled = true;
                 verificacionConexion.Start();
+                parseoAlrma = new ProcesamientoTrama(terminal);
+                terminal.conexion = true;
+                terminal.modoSupervisor = false;
+                conBdd.actualizar_terminal(terminal);
+                mt = new MonitoreoDispositivos();
+                mt.id_atm = terminal.id_atm;
+                mt.estado_gaveta1 = "0";
+                mt.estado_gaveta2 = "0";
+                mt.estado_gaveta3 = "0";
+                mt.estado_gaveta4 = "0";
+                mt.estado_gaveta5 = "0";
+                mt.estado_impresora = "0";
+                mt.estado_impresora_jrnl = "0";
+                mt.estado_dispensador = "0";
+                mt.estado_encriptora = "0";
+                mt.estado_lectora = 0;
+                conBdd.insertar_actualizar_monitoreo_dispositivos(mt);// Como incia conexion se rocede a encerar
             }
             catch (Exception ex) {
                 error.escritura_archivo_string(ex.Message);
                 mensaje_error_sistema(ex.Message,Color.Red);
+                terminal.conexion = false;
+                conBdd.actualizar_terminal(terminal);
             }
         }
 
         /*Constructor para enviar los datos del servicio considerando el objeto richText Box */
 
-        public ConexionTCP(TcpClient clie, ConfiguracionServicio serviceConf, RichTextBox visor,AtmObj terminal,BddSQLServer conexion)
+        public ConexionTCP(TcpClient clie, ConfiguracionServicio serviceConf, RichTextBox visor,AtmObj terminalObj,BddSQLServer conexion)
         {
             try
             {
-                this.terminal = terminal;
+                this.terminal = terminalObj;
                 cliente = clie;
                 stream = new NetworkStream(cliente.Client);
                 sincronico = true;
@@ -90,14 +112,34 @@ namespace controladorAtm
                 conBdd = conexion;
                 verificacionConexion = new System.Timers.Timer();
                 verificacionConexion.Elapsed += new System.Timers.ElapsedEventHandler(verificarConexion);
-                verificacionConexion.Interval = 1000;
+                verificacionConexion.Interval = segSondeo*1000;
                 verificacionConexion.Enabled = true;
                 verificacionConexion.Start();
+                parseoAlrma = new ProcesamientoTrama(this.terminal);
+                this.terminal.conexion = true;
+                this.terminal.modoSupervisor = false;
+                conBdd.actualizar_terminal(this.terminal);// actualiza el estado a conectado
+                mt = new MonitoreoDispositivos();
+                mt.id_atm = terminal.id_atm;
+                mt.estado_gaveta1 = "0";
+                mt.estado_gaveta2 = "0";
+                mt.estado_gaveta3 = "0";
+                mt.estado_gaveta4 = "0";
+                mt.estado_gaveta5 = "0";
+                mt.estado_impresora = "0";
+                mt.estado_impresora_jrnl = "0";
+                mt.estado_dispensador = "0";
+                mt.estado_encriptora = "0";
+                mt.estado_lectora = 0;
+                conBdd.insertar_actualizar_monitoreo_dispositivos(mt);// Como incia conexion se rocede a encerar
             }
             catch (Exception ex)
             {
                 error.escritura_archivo_string(ex.Message);
                 mensaje_error_sistema(ex.Message,Color.Red);
+                this.terminal.conexion = false;
+                this.terminal.modoSupervisor = false;
+                conBdd.actualizar_terminal(this.terminal);
             }
         }
 
@@ -107,7 +149,7 @@ namespace controladorAtm
                 sincronico = true;
                 //conBdd.abrir_conexion_base();
                 AlarmasObj mensajeEnvioRecep = new AlarmasObj();
-                mensajeEnvioRecep.id_atm = terminal.id_atm;
+                /*mensajeEnvioRecep.id_atm = terminal.id_atm;*/
                 this.comadoToATM.setPonerEnServicio();
                 string datoEnvio = this.comadoToATM.getTramaComandoTerminal();
                 string datoRespuesta = "";
@@ -122,32 +164,36 @@ namespace controladorAtm
                         clienteConectado = true;
                         datoEnvio = comadoToATM.getTramaComandoTerminal();
                         envio_string(datoEnvio);
-                        
-                        mensajeEnvioRecep.fecha_registro = System.DateTime.Now;
-                        mensajeEnvioRecep.envio_recepcion = 0; //cero envio, uno recibo
+                        mensajeEnvioRecep = parseoAlrma.parseaTramaIngreso(datoEnvio.Substring(2, datoEnvio.Length - 2));
+                        mensajeEnvioRecep.envio_recepcion = 0;//cero envio, uno recibo
                         
                         terminalArchivo.escritura_archivo_string(">>>[" + datoEnvio.Length + "] : " + datoEnvio);
                         enviarDato = false;
                         datoIn(datoEnvio.Substring(2,datoEnvio.Length-2));
-                        mensajeEnvioRecep.mensaje = datoEnvio.Substring(2, datoEnvio.Length - 2);
                         conBdd.insertar_alarmas(mensajeEnvioRecep);
                         datoEnvio = "";
                     }
                     datoRespuesta = recepcion_de_datos();
-                    if (!string.IsNullOrEmpty(datoRespuesta) && datoRespuesta.Length > 2)
+            if (!string.IsNullOrEmpty(datoRespuesta) && datoRespuesta.Length > 2)
                     {
                         terminalArchivo.escritura_archivo_string("<<<[" + datoRespuesta.Length + "] : " + datoRespuesta);
                         datoResp(datoRespuesta.Substring(2, datoRespuesta.Length - 2));
-                        mensajeEnvioRecep.mensaje = datoRespuesta.Substring(2, datoRespuesta.Length - 2);
-                        mensajeEnvioRecep.fecha_registro = System.DateTime.Now;
+                        mensajeEnvioRecep = parseoAlrma.parseaTramaIngreso(datoRespuesta.Substring(2, datoRespuesta.Length - 2));
                         mensajeEnvioRecep.envio_recepcion = 1; //cero envio, uno recibo
                         conBdd.insertar_alarmas(mensajeEnvioRecep);
+                        if (mensajeEnvioRecep.id_tipo_dispositivo.Equals("F")) { 
+                            mt = parseoAlrma.parseaTramaAlarmaDispositivo(mensajeEnvioRecep);
+                            conBdd.insertar_actualizar_monitoreo_dispositivos(mt);
+                        }
+                        else if (mensajeEnvioRecep.id_tipo_dispositivo.Equals("P")) {
+                            /*con estado 2 indica si entro o no a modo supervisor*/
+                            if (mensajeEnvioRecep.estado_dispositivo.Equals("2")) {
+                                terminal.modoSupervisor = bool.Parse(mensajeEnvioRecep.error_severidad);
+                                conBdd.actualizar_terminal(terminal);
+                            }
+                        }
                         datoRespuesta = "";
                     }
-                    /*else {
-                        comadoNDC.setSolicitarInformacionConfiguracion();
-                        envio_string(comadoNDC.getTramaComandoTerminal() + "");// Envio para verifficar si esta conectado el terminal
-                    }*/
                 }
             }catch (SocketException ex)
             {
@@ -156,11 +202,15 @@ namespace controladorAtm
                 mensaje_error_sistema(ex.StackTrace,Color.Red);
                 sincronico = false;
                 clienteConectado = false;
+                terminal.conexion = false;
+                conBdd.actualizar_terminal(terminal);
             }catch (ErrorConexionTerminal ex)
             {
                 mensaje_error_sistema(ex.Message, Color.Green);
                 sincronico = false;
                 clienteConectado = false;
+                terminal.conexion = false;
+                conBdd.actualizar_terminal(terminal);
             }
             catch (Exception ex)
             {   
@@ -168,7 +218,9 @@ namespace controladorAtm
                mensaje_error_sistema(ex.Message, Color.Red);
                mensaje_error_sistema(ex.StackTrace,Color.Red);
                sincronico = false;
-                clienteConectado = false;
+               clienteConectado = false;
+               terminal.conexion = false;
+               conBdd.actualizar_terminal(terminal);
             }finally
             {
                 cerrar_conexion();

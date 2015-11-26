@@ -146,5 +146,11 @@ namespace servicioWebControl
             return controlUsr.control_obtener_menu_perfil(perfil);
         }
 
+        [WebMethod]
+        public List<MonitoreoDispositivos> obtener_monitoreo_dipositivos(UsuarioObj usuario)
+        {
+            return controlUsr.control_monitoreo_dispositivos(usuario);
+        }
+
     }
 }

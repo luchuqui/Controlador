@@ -7,22 +7,8 @@ using System.Runtime.Serialization;
 namespace ControlerAtm.com.ec.objetos
 {
     [DataContract]
-    public class AlarmasObj
+    public class MonitoreoDispositivos
     {
-        [DataMember]
-        public int id_alarma
-        {
-            set;
-            get;
-        }
-
-        [DataMember]
-        public string mensaje
-        {
-            set;
-            get;
-        }
-
         [DataMember]
         public int id_atm
         {
@@ -31,70 +17,87 @@ namespace ControlerAtm.com.ec.objetos
         }
 
         [DataMember]
-        public DateTime fecha_registro
+        public int estado_lectora
         {
             set;
             get;
         }
 
+
         [DataMember]
-        public int envio_recepcion
+        public string codigo_atm
         {
             set;
             get;
         }
-
         [DataMember]
-        public string id_mensaje
+        public bool estado_conexio
         {
             set;
             get;
         }
-
         [DataMember]
-        public string id_tipo_dispositivo
+        public bool modo_supervisor
         {
             set;
             get;
         }
-
         [DataMember]
-        public string estado_dispositivo
+        public bool llave_terminal
         {
             set;
             get;
         }
-
         [DataMember]
-        public string error_severidad
+        public string estado_gaveta1
         {
             set;
             get;
         }
-
         [DataMember]
-        public string estado_diagnostico
+        public string estado_gaveta2
         {
             set;
             get;
         }
-
         [DataMember]
-        public string estado_suministro
+        public string estado_gaveta3
         {
             set;
             get;
         }
-
         [DataMember]
-        public string tipo_mensaje
+        public string estado_gaveta4
         {
             set;
             get;
         }
-
         [DataMember]
-        public string tipo_comando
+        public string estado_gaveta5
+        {
+            set;
+            get;
+        }
+        [DataMember]
+        public string estado_impresora
+        {
+            set;
+            get;
+        }
+        [DataMember]
+        public string estado_impresora_jrnl
+        {
+            set;
+            get;
+        }
+        [DataMember]
+        public string estado_dispensador
+        {
+            set;
+            get;
+        }
+        [DataMember]
+        public string estado_encriptora
         {
             set;
             get;

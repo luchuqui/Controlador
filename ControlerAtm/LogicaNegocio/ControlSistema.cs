@@ -791,5 +791,31 @@ namespace ControlerAtm.LogicaNegocio
 
         }
 
+        public List<MonitoreoDispositivos> control_monitoreo_dispositivos(UsuarioObj usuario)
+        {
+            conBdd.abrir_conexion_base();
+            List<MonitoreoDispositivos> t = null;
+            try
+            {
+                t = conBdd.obtener_alarmaByUsuario(usuario);
+            }
+            catch (ExpObtenerRegistro ex)
+            {
+                t = new List<MonitoreoDispositivos>();
+                logSistema.escritura_archivo_string(ex.Message);
+
+            }
+            catch (Exception ex)
+            {
+                t = new List<MonitoreoDispositivos>();
+                logSistema.escritura_archivo_string(ex.Message);
+            }
+            finally
+            {
+                conBdd.cerrar_conexion_base();
+            }
+            return t;
+        }
+
     }
 }

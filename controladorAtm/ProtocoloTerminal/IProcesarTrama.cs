@@ -9,5 +9,6 @@ namespace controladorAtm.ProtocoloTerminal
     interface IProcesarTrama
     {
         AlarmasObj parseaTramaIngreso(string tramaIng);
+        MonitoreoDispositivos parseaTramaAlarmaDispositivo(AlarmasObj alarma);
     }
 }
