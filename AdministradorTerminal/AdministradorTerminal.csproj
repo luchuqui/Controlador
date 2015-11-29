@@ -245,6 +245,8 @@
     <Content Include="Imagenes\connect_no.png" />
     <Content Include="Imagenes\editclear.png" />
     <Content Include="Imagenes\estado_amarillo.png" />
+    <Content Include="Imagenes\estado_azul.png" />
+    <Content Include="Imagenes\estado_azul_elec.png" />
     <Content Include="Imagenes\estado_marron.png" />
     <Content Include="Imagenes\estado_rojo.png" />
     <Content Include="Imagenes\estado_verde.png" />

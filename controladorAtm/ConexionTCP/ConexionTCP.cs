@@ -32,7 +32,7 @@ namespace controladorAtm
         private bool clienteConectado = true; /*Bandera para verificar si el terminal sigue conectado*/
         private BddSQLServer conBdd; /*Manejador de conexion a la base de datos*/
         private System.Timers.Timer verificacionConexion;
-        private int segSondeo = 60;
+        private int segSondeo = 30;
         private MonitoreoDispositivos mt;
         /*Constructor para enviar los datos del servicio sin considerar el objeto richText Box */
         public ConexionTCP(TcpClient clie, ConfiguracionServicio serviceConf,AtmObj terminales,BddSQLServer conexion)
@@ -147,19 +147,14 @@ namespace controladorAtm
             try
             {
                 sincronico = true;
-                //conBdd.abrir_conexion_base();
                 AlarmasObj mensajeEnvioRecep = new AlarmasObj();
-                /*mensajeEnvioRecep.id_atm = terminal.id_atm;*/
                 this.comadoToATM.setPonerEnServicio();
                 string datoEnvio = this.comadoToATM.getTramaComandoTerminal();
                 string datoRespuesta = "";
-                //envio_string(datoEnvio);
                 datoIn("CONEXION NUEVA TERMINAL :" + terminal.codigo);
                 enviarDato = true;
                 while (sincronico)
                 {
-                    //verificarConexion();
-                    
                     if (enviarDato) {
                         clienteConectado = true;
                         datoEnvio = comadoToATM.getTramaComandoTerminal();
@@ -181,15 +176,21 @@ namespace controladorAtm
                         mensajeEnvioRecep = parseoAlrma.parseaTramaIngreso(datoRespuesta.Substring(2, datoRespuesta.Length - 2));
                         mensajeEnvioRecep.envio_recepcion = 1; //cero envio, uno recibo
                         conBdd.insertar_alarmas(mensajeEnvioRecep);
-                        if (mensajeEnvioRecep.id_tipo_dispositivo.Equals("F")) { 
-                            mt = parseoAlrma.parseaTramaAlarmaDispositivo(mensajeEnvioRecep);
-                            conBdd.insertar_actualizar_monitoreo_dispositivos(mt);
-                        }
-                        else if (mensajeEnvioRecep.id_tipo_dispositivo.Equals("P")) {
-                            /*con estado 2 indica si entro o no a modo supervisor*/
-                            if (mensajeEnvioRecep.estado_dispositivo.Equals("2")) {
-                                terminal.modoSupervisor = bool.Parse(mensajeEnvioRecep.error_severidad);
-                                conBdd.actualizar_terminal(terminal);
+                        if (mensajeEnvioRecep.id_tipo_dispositivo != null)
+                        {
+                            if (mensajeEnvioRecep.id_tipo_dispositivo.Equals("F"))
+                            {
+                                mt = parseoAlrma.parseaTramaAlarmaDispositivo(mensajeEnvioRecep);
+                                conBdd.insertar_actualizar_monitoreo_dispositivos(mt);
+                            }
+                            else if (mensajeEnvioRecep.id_tipo_dispositivo.Equals("P"))
+                            {
+                                /*con estado 2 indica si entro o no a modo supervisor*/
+                                if (mensajeEnvioRecep.estado_dispositivo.Equals("2"))
+                                {
+                                    terminal.modoSupervisor = mensajeEnvioRecep.error_severidad == "1";
+                                    conBdd.actualizar_terminal(terminal);
+                                }
                             }
                         }
                         datoRespuesta = "";

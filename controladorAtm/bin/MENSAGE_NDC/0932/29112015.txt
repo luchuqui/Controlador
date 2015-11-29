@@ -1,0 +1,20 @@
+13:02:46 No se puede encontrar una parte de la ruta de acceso 'C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\bin\MENSAGE_NDC\0932\29112015.txt'.
+13:02:46 12
+13:02:46 000
+13:02:46 
+13:02:46 R09
+13:07:00 Índice fuera de los límites de la matriz.
+13:07:00 12
+13:07:00 000
+13:07:00 
+13:07:00 R04
+13:07:17 Índice fuera de los límites de la matriz.
+13:07:17 12
+13:07:17 000
+13:07:17 
+13:07:17 R04
+13:07:32 Índice fuera de los límites de la matriz.
+13:07:32 12
+13:07:32 000
+13:07:32 
+13:07:32 R09

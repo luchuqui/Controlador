@@ -22,7 +22,7 @@ namespace controladorAtm.ProtocoloTerminal
             AlarmasObj alarma = new AlarmasObj();
             alarma.mensaje = tramaIng;
             alarma.id_atm = terminal.id_atm;
-            string[] campos = tramaIng.Split((char)28);
+            string[] campos = tramaIng.Split((char)28);// es el FS  caracter 28
             alarma.tipo_mensaje = campos[0];
             alarma.fecha_registro = System.DateTime.Now;
             try
@@ -36,13 +36,13 @@ namespace controladorAtm.ProtocoloTerminal
                         alarma.id_tipo_dispositivo = campos[3].Substring(0, 1);
                         if (alarma.id_tipo_dispositivo.Equals("P"))
                         {
-                            alarma.estado_dispositivo = campos[3].Substring(1, 2);// estado de nivel P
-                            alarma.error_severidad = campos[3].Substring(2,campos[3].Length); // datos adicionales
+                            alarma.estado_dispositivo = campos[3].Substring(1, 1);// estado de nivel P
+                            alarma.error_severidad = campos[3].Substring(2,campos[3].Length-2); // datos adicionales
                             // si es 2 llega el 0 modo supervisor exit, 1 modo supervisor ingreso
                             
                         }
                         else {
-                            alarma.estado_dispositivo = campos[3].Substring(1, campos[3].Length);
+                            alarma.estado_dispositivo = campos[3].Substring(1, campos[3].Length-1);
                             alarma.error_severidad = campos[4];
                             alarma.estado_diagnostico = campos[5];
                             alarma.estado_suministro = campos[6];
@@ -63,7 +63,7 @@ namespace controladorAtm.ProtocoloTerminal
                         try
                         {
                             alarma.id_tipo_dispositivo = campos[4].Substring(0, 1);
-                            alarma.estado_dispositivo = campos[5].Substring(1, campos[5].Length);
+                            alarma.estado_dispositivo = campos[5].Substring(1, campos[5].Length-1);
                             alarma.error_severidad = campos[6];
                             alarma.estado_diagnostico = campos[7];
                             if (campos[8].Length > 8)
@@ -112,8 +112,8 @@ namespace controladorAtm.ProtocoloTerminal
             int ini = 0,fin = 1;
             /* En este for se saca el estado de cada uno de los dispositivos referenciados en el
              * manual en el capitulo 9 */
-            for (int i = 0; i < alarma.estado_suministro.Length; i++) {
-                disp[i] = int.Parse( alarma.estado_suministro.Substring(ini,fin));
+            for (int i = 0; i < alarma.estado_suministro.Length-1; i++) {
+                disp[i] = int.Parse( alarma.estado_suministro[i].ToString());
                 ini = fin;
                 fin++;
             }

@@ -33,6 +33,7 @@ namespace AdministradorTerminal.Contenido
             terminal.id_modelo = int.Parse(cboxModelo.SelectedValue);
             terminal.ip = txbxDirIP.Text;
             terminal.ubicacion = txbxDescripcion.Text;
+            terminal.modoSupervisor = false;
             string [] mensaje = Globales.servicio.guardar_actualizar_terminal(terminal,false).Split('\n');
             lblmensaje.Text = mensaje[0];
             //Response.Write("<script language=javascript> alert('"+mensaje[0]+"'); </script>");

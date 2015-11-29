@@ -150,12 +150,12 @@ namespace AdministradorTerminal.Contenido
                     estadoConexion.ToolTip = "Terminal Conectado";
                     if (terminal.modo_supervisor)
                     {
-                        supervisor.ImageUrl = "~/Imagenes/estado_marron.png";
+                        supervisor.ImageUrl = "~/Imagenes/estado_azul_elec.png";
                         supervisor.ToolTip = "Modo supervisor";
                     }
                     else
                     {
-                        supervisor.ImageUrl = "~/Imagenes/estado_verde.png";
+                        supervisor.ImageUrl = "~/Imagenes/estado_azul.png";
                         supervisor.ToolTip = "Modo normal";
                     }
                     if (terminal.llave_terminal)
@@ -245,11 +245,11 @@ namespace AdministradorTerminal.Contenido
             }
             else if (datos[0].Equals("3"))
             {
-                img.ImageUrl = "~/Imagenes/connect_amarillo.png";
+                img.ImageUrl = "~/Imagenes/estado_amarillo.png";
             }
             else if (datos[0].Equals("4"))
             {
-                img.ImageUrl = "~/Imagenes/connect_rojo.png";
+                img.ImageUrl = "~/Imagenes/estado_rojo.png";
             }
 
             return img;
