@@ -106,6 +106,34 @@ namespace controladorAtm
             objWrite.Close();
         }
 
+        public void escritura_archivo_strSplit(string [] mensaje)
+        {
+
+            String tmpath;
+            tmpath = pathGuardar + @"\" + cambiar_fecha(System.DateTime.Now.Date.ToString()) + ".txt";
+            try
+            {
+                objWrite = new StreamWriter(tmpath, true);
+                foreach(string msg in mensaje){
+                    objWrite.WriteLine(System.DateTime.Now.TimeOfDay.ToString().Substring(0, 8) + " " + msg.Trim() + "\r");
+                }
+                objWrite.Close();
+            }
+            catch (IOException ex)
+            {
+                try
+                {
+                    System.IO.Directory.CreateDirectory(pathGuardar);
+                    escritura_archivo_string(ex.Message);
+                }
+                catch (UnauthorizedAccessException exPath)
+                {
+                    //string tmp = exPath.Message;
+                    throw new Exception(exPath.Message);
+                }
+            }
+        }
+
         public void escritura_archivo_string(string mensaje)
         {
 

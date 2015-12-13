@@ -1,0 +1,33 @@
+19:13:48 Procedure or function 'actualizar_terminal_sp' expects parameter '@modo_supervisor', which was not supplied.
+19:17:21 Procedure or function 'insertar_actualizar_estado_sp' expects parameter '@hw_estado_gabeta1', which was not supplied.
+19:17:21 en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en ControlerAtm.com.ec.BaseDatos.BddSQLServer.insertar_alarmas(AlarmasObj alarmas) en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\com.ec.BaseDatos\BddSQLServer.cs:línea 325
+   en controladorAtm.ConexionTCP.cliente_servicio() en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 150
+19:24:56 Procedure or function 'insertar_actualizar_estado_sp' expects parameter '@hw_estado_gabeta1', which was not supplied.
+19:24:56 en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en ControlerAtm.com.ec.BaseDatos.BddSQLServer.insertar_alarmas(AlarmasObj alarmas) en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\com.ec.BaseDatos\BddSQLServer.cs:línea 336
+   en controladorAtm.ConexionTCP.cliente_servicio() en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 150
+19:45:40 en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   en System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   en ControlerAtm.com.ec.BaseDatos.BddSQLServer.insertar_alarmas(AlarmasObj alarmas) en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\com.ec.BaseDatos\BddSQLServer.cs:línea 335
+   en controladorAtm.ConexionTCP.cliente_servicio() en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 168

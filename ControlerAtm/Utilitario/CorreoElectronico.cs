@@ -24,7 +24,7 @@ namespace ControlerAtm.Utilitario
             smtp = new SmtpClient();
             errorMail = new LecturaEscrituraArchivo();
             errorMail.set_path_guardar(pathGuardar);
-            errorMail.archivo_guardar("LOG_CORREO");
+            errorMail.archivo_guardar("\\LOG_CORREO");
         }
 
         #region Miembros de NotificacionDao

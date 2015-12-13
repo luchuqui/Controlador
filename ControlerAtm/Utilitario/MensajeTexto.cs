@@ -37,14 +37,14 @@ namespace ControlerAtm.Utilitario
             puertoSerial.ReadTimeout = tiempoEspera;
             puertoSerial.WriteTimeout = tiempoEspera;
             puertoSerial.DataReceived += new SerialDataReceivedEventHandler(recepcion_Respueta);
-            errorSMS.archivo_guardar("LOG_SMS");
+            errorSMS.archivo_guardar("\\LOG_SMS");
             
         }
 
         public MensajeTexto(string numeroPuerto,int velocidad,int dataBit,int timeOut)
         {
             errorSMS = new LecturaEscrituraArchivo();
-            errorSMS.archivo_guardar("LOG_SMS");
+            errorSMS.archivo_guardar("\\LOG_SMS");
             puetoCom = numeroPuerto;//puerto Compor defecto
             velocidadTx = velocidad;//9600 bps
             bitDatos = dataBit;//8 bit

@@ -34,17 +34,27 @@ namespace controladorAtm
             
             InitializeComponent();
             conBdd = new BddSQLServer(servicio.conexion,aux.get_path_abrir());
-            conBdd.abrir_conexion_base();
-            cargar_terminales();
-            CheckForIllegalCrossThreadCalls = false;
-            this.imagenProceso.Image = Properties.Resources.Error;
-            ConfiguracionServicio miConfiguracion = new ConfiguracionServicio();
-            miConfiguracion.ip = servicio.ip;
-            miConfiguracion.puerto = servicio.puerto;
-            miConfiguracion.conexion = servicio.conexion;
-            miConfiguracion.pathLogServicio = aux.get_path_abrir();
-            serv = new ServidorEscucha(miConfiguracion, txbx_visor_evento,terminales,dataGridMonitorDispositivos,conBdd);
-            hiloPrincipal = new Thread((ThreadStart)serv.aceptar_conexion);
+            try
+            {
+                conBdd.abrir_conexion_base();
+                cargar_terminales();
+                CheckForIllegalCrossThreadCalls = false;
+                this.imagenProceso.Image = Properties.Resources.Error;
+                ConfiguracionServicio miConfiguracion = new ConfiguracionServicio();
+                miConfiguracion.ip = servicio.ip;
+                miConfiguracion.puerto = servicio.puerto;
+                miConfiguracion.conexion = servicio.conexion;
+                miConfiguracion.pathLogServicio = aux.get_path_abrir();
+                serv = new ServidorEscucha(miConfiguracion, txbx_visor_evento, terminales, dataGridMonitorDispositivos, conBdd);
+                hiloPrincipal = new Thread((ThreadStart)serv.aceptar_conexion);
+            }
+            catch (Exception e) {
+                txbx_visor_evento.SelectionColor = Color.Red;
+                txbx_visor_evento.AppendText(e.Message);
+                txbx_visor_evento.AppendText("\nRevise su configuración");
+                btn_iniciar.Enabled = false;
+                btn_parar.Enabled = false;
+            }
         }
 
         public void cargar_terminales() {

@@ -17,6 +17,7 @@
     <asp:Panel ID="Panel1" runat = "server" Width = "70%" >
         <table id = "tb_terminales" runat = "server" style = "z-index: 1; text-align :center" border = "2" width = "100%">
         </table>
+        
     </asp:Panel>
     <div> <br /></div>
     <asp:Panel ID="Panel3" runat = "server" Width = "70%">
@@ -52,7 +53,7 @@
             <table style = "text-align : center" width = "100%">
                 <tr align = "center" >
                     <td>
-                        <asp:Image ID="Image1" ImageUrl ="../Imagenes/procesar.gif" runat = "server" ImageAlign="AbsMiddle"/>
+                        <asp:Image ID="Image1" ImageUrl ="../Imagenes/procesar.gif" runat = "server" ImageAlign="AbsMiddle" Width= "10%"/>
                     </td>
                 </tr>
                 <tr>

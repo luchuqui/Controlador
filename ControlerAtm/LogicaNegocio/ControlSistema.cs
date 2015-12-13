@@ -242,9 +242,32 @@ namespace ControlerAtm.LogicaNegocio
                         usuario.contrasenia = seguridad.encriptar_informacion(conNueva);
                         actualizar = true;
                         usuario.numero_intentos = 0;
-                        notificacion("Usuario : " + usuario.nombre + " " + usuario.apellido+", Contraseña Reseteada : " + conNueva
+                        int [] isnotificado = notificacion("Usuario : " + usuario.nombre + " " + usuario.apellido+", Contraseña Reseteada : " + conNueva
                             , MensajeSistema.contrasenia_generada, usuario);
-                        mensaje = "Contraseña de usuario generada correctamente, se ha enviado una notificación";
+                        mensaje = "Contraseña de usuario generada correctamente, se ha enviado una notificación vía";
+                        if (isnotificado[0] > 1) {
+                            mensaje += ", No Configurado Correo";
+                        }
+                        else if (isnotificado[0] == 0)
+                        {
+                            mensaje += ", Correo [OK]";
+                        }
+                        else {
+                            mensaje += ", Correo [FALLIDO]";
+                        }
+                        if (isnotificado[1] > 1)
+                        {
+                            mensaje += ", No Configurado Correo";
+                        }
+                        else if (isnotificado[1] == 0)
+                        {
+                            mensaje += ", SMS [OK]";
+                        }
+                        else
+                        {
+                            mensaje += ", SMS [FALLIDO]";
+                        }
+
                     }else{
                         mensaje = MensajeSistema.contrasenia_no_generada;
                     }
@@ -294,22 +317,25 @@ namespace ControlerAtm.LogicaNegocio
             return mensaje;
         }
 
-        public void notificacion(string mensaje,string titulo,UsuarioObj u) {
+        public int[] notificacion(string mensaje,string titulo,UsuarioObj u) {
             string[] tipoNotificacion = conBdd.obtenerParametro(3).valor.Split(':');
             bool correo = (tipoNotificacion[0] == "1");
             bool celular = (tipoNotificacion[1] == "1");
-            if (correo) {
+            int[] isEnvio = { 2, 2 };
+            if (correo)
+            {
                 string[] destinatario = { u.correo };
                 email.asignar_destinatarios(destinatario);
-                email.enviar_notificacion(mensaje, titulo);
-            } 
+                isEnvio[0] = email.enviar_notificacion(mensaje, titulo);
+            }
             if (celular) {
                 string[] numero = { u.telefono };
                 smsSend.asignar_destinatarios(numero);
                 smsSend.abrir_conexion();
-                smsSend.enviar_notificacion(mensaje, "");
+                isEnvio[1] = smsSend.enviar_notificacion(mensaje, "");
                 smsSend.cerrar_conexion();
             }
+            return isEnvio;
         }
 
         public string control_guardar_actualizar_perfil(PerfilObj perfil,List<MenuObj> menus, bool actualizar)
@@ -763,6 +789,32 @@ namespace ControlerAtm.LogicaNegocio
             }
             return u;
 
+        }
+
+        public List<MonitoreoDispositivos> control_monitoreo_dispositivos(UsuarioObj usuario)
+        {
+            conBdd.abrir_conexion_base();
+            List<MonitoreoDispositivos> t = null;
+            try
+            {
+                t = conBdd.obtener_alarmaByUsuario(usuario);
+            }
+            catch (ExpObtenerRegistro ex)
+            {
+                t = new List<MonitoreoDispositivos>();
+                logSistema.escritura_archivo_string(ex.Message);
+
+            }
+            catch (Exception ex)
+            {
+                t = new List<MonitoreoDispositivos>();
+                logSistema.escritura_archivo_string(ex.Message);
+            }
+            finally
+            {
+                conBdd.cerrar_conexion_base();
+            }
+            return t;
         }
 
     }

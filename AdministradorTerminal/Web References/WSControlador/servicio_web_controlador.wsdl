@@ -81,6 +81,7 @@
           <s:element minOccurs="0" maxOccurs="1" name="estado" type="s:string" />
           <s:element minOccurs="1" maxOccurs="1" name="id_modelo" type="s:int" />
           <s:element minOccurs="1" maxOccurs="1" name="conexion" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="modoSupervisor" type="s:boolean" />
         </s:sequence>
       </s:complexType>
       <s:element name="obtenerTerminalPorUsuario">
@@ -360,6 +361,14 @@
           <s:element minOccurs="1" maxOccurs="1" name="id_atm" type="s:int" />
           <s:element minOccurs="1" maxOccurs="1" name="fecha_registro" type="s:dateTime" />
           <s:element minOccurs="1" maxOccurs="1" name="envio_recepcion" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="id_mensaje" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="id_tipo_dispositivo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="estado_dispositivo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="error_severidad" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="estado_diagnostico" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="estado_suministro" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipo_mensaje" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipo_comando" type="s:string" />
         </s:sequence>
       </s:complexType>
       <s:element name="obtener_alarma_atmResponse">
@@ -414,6 +423,43 @@
           <s:element minOccurs="0" maxOccurs="1" name="menuPadre" type="s:string" />
           <s:element minOccurs="1" maxOccurs="1" name="idMenuOPciones" type="s:int" />
           <s:element minOccurs="1" maxOccurs="1" name="isMenuActivo" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="obtener_monitoreo_dipositivos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="tns:UsuarioObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtener_monitoreo_dipositivosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtener_monitoreo_dipositivosResult" type="tns:ArrayOfMonitoreoDispositivos" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfMonitoreoDispositivos">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="MonitoreoDispositivos" nillable="true" type="tns:MonitoreoDispositivos" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MonitoreoDispositivos">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id_atm" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="codigo_atm" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="estado_conexion" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="modo_supervisor" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="llave_terminal" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="estado_gaveta1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="estado_gaveta2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="estado_gaveta3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="estado_gaveta4" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="estado_gaveta5" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="estado_impresora" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="estado_impresora_jrnl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="estado_dispensador" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="estado_encriptora" type="s:string" />
         </s:sequence>
       </s:complexType>
     </s:schema>
@@ -538,6 +584,12 @@
   <wsdl:message name="obtener_menu_usuario_perfilSoapOut">
     <wsdl:part name="parameters" element="tns:obtener_menu_usuario_perfilResponse" />
   </wsdl:message>
+  <wsdl:message name="obtener_monitoreo_dipositivosSoapIn">
+    <wsdl:part name="parameters" element="tns:obtener_monitoreo_dipositivos" />
+  </wsdl:message>
+  <wsdl:message name="obtener_monitoreo_dipositivosSoapOut">
+    <wsdl:part name="parameters" element="tns:obtener_monitoreo_dipositivosResponse" />
+  </wsdl:message>
   <wsdl:portType name="Service1Soap">
     <wsdl:operation name="login_usuario">
       <wsdl:input message="tns:login_usuarioSoapIn" />
@@ -618,6 +670,10 @@
     <wsdl:operation name="obtener_menu_usuario_perfil">
       <wsdl:input message="tns:obtener_menu_usuario_perfilSoapIn" />
       <wsdl:output message="tns:obtener_menu_usuario_perfilSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtener_monitoreo_dipositivos">
+      <wsdl:input message="tns:obtener_monitoreo_dipositivosSoapIn" />
+      <wsdl:output message="tns:obtener_monitoreo_dipositivosSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="Service1Soap" type="tns:Service1Soap">
@@ -802,6 +858,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="obtener_monitoreo_dipositivos">
+      <soap:operation soapAction="http://controladorAtm.org/obtener_monitoreo_dipositivos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="Service1Soap12" type="tns:Service1Soap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
@@ -978,6 +1043,15 @@
     </wsdl:operation>
     <wsdl:operation name="obtener_menu_usuario_perfil">
       <soap12:operation soapAction="http://controladorAtm.org/obtener_menu_usuario_perfil" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtener_monitoreo_dipositivos">
+      <soap12:operation soapAction="http://controladorAtm.org/obtener_monitoreo_dipositivos" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

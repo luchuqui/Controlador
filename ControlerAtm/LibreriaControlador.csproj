@@ -62,6 +62,7 @@
     <Compile Include="com.ec.objetos\BeanMenuPerfil.cs" />
     <Compile Include="com.ec.objetos\MenuObj.cs" />
     <Compile Include="com.ec.objetos\ModeloObj.cs" />
+    <Compile Include="com.ec.objetos\MonitoreoDispositivos.cs" />
     <Compile Include="com.ec.objetos\ParametroObj.cs" />
     <Compile Include="com.ec.objetos\PerfilObj.cs" />
     <Compile Include="com.ec.objetos\SucesoObj.cs" />

@@ -12,7 +12,7 @@ namespace AdministradorTerminal.Contenido
 {
     public partial class MonitoreoTerminal : System.Web.UI.Page
     {
-        private AtmObj[] terminalesUsuario;
+        private MonitoreoDispositivos[] terminalesUsuario;
         //private int filaSeleccionada;
 
         protected void Page_Load(object sender, EventArgs e)
@@ -27,6 +27,7 @@ namespace AdministradorTerminal.Contenido
             HtmlTableCell celdaTer = new HtmlTableCell();
             HtmlTableCell celdaGab = new HtmlTableCell();
             HtmlTableCell celdaLec = new HtmlTableCell();
+            HtmlTableCell celdaImp = new HtmlTableCell();
             HtmlTableCell celdaMod = new HtmlTableCell();
             HtmlTableCell celdaEst = new HtmlTableCell();
             HtmlTableCell celdaLlave = new HtmlTableCell();
@@ -35,10 +36,10 @@ namespace AdministradorTerminal.Contenido
             celdaTer.InnerText = "Terminal";
             celdaEst.InnerText = "Conexión";
             celdaGab.InnerText = "Gavetas";
-            celdaGab.ColSpan = 5;
+            celdaGab.ColSpan = 6;
             celdaLlave.InnerText = "Llave";
             celdaLec.InnerText = "Lectora";
-            
+            celdaImp.InnerText = "Impresora";
             celdaMod.InnerText = "Modo";
             celdaProceso.InnerText = "Eventos";
             
@@ -47,6 +48,7 @@ namespace AdministradorTerminal.Contenido
             fila.Cells.Add(celdaEst);
             fila.Cells.Add(celdaGab);
             fila.Cells.Add(celdaLec);
+            fila.Cells.Add(celdaImp);
             fila.Cells.Add(celdaMod);
             fila.Cells.Add(celdaLlave);
             fila.Cells.Add(celdaProceso);
@@ -77,7 +79,7 @@ namespace AdministradorTerminal.Contenido
             UsuarioObj usrSesion = (UsuarioObj)Session["usuario"];
             if (usrSesion != null)
             {
-                terminalesUsuario = Globales.servicio.obtenerTerminalPorUsuario(usrSesion);
+                terminalesUsuario = Globales.servicio.obtener_monitoreo_dipositivos(usrSesion);
                 if (terminalesUsuario != null)
                 {
                     cargar_datos_tabla(terminalesUsuario);
@@ -114,10 +116,10 @@ namespace AdministradorTerminal.Contenido
 
         }
 
-        private void cargar_datos_tabla(AtmObj[] terminales)
+        private void cargar_datos_tabla(MonitoreoDispositivos[] terminales)
         {
             int i = 1;
-            foreach (AtmObj terminal in terminales)
+            foreach (MonitoreoDispositivos terminal in terminales)
             {
                 HtmlTableRow fila = new HtmlTableRow();
                 HtmlTableCell celdaNum = new HtmlTableCell();
@@ -127,68 +129,75 @@ namespace AdministradorTerminal.Contenido
                 HtmlTableCell celdaGab3 = new HtmlTableCell();
                 HtmlTableCell celdaGab4 = new HtmlTableCell();
                 HtmlTableCell celdaGab5 = new HtmlTableCell();
+                HtmlTableCell celdaRecha = new HtmlTableCell();
                 HtmlTableCell celdaLec = new HtmlTableCell();
                 HtmlTableCell celdaMod = new HtmlTableCell();
+                HtmlTableCell celdaImp = new HtmlTableCell();
                 HtmlTableCell celdaEst = new HtmlTableCell();
                 HtmlTableCell celdaProceso = new HtmlTableCell();
                 HtmlTableCell celdaLlave = new HtmlTableCell();
                 celdaNum.InnerText = i + "";
-                celdaTer.InnerText = terminal.codigo;
-                Image estado = new Image();
-                estado.ImageUrl = "~/Imagenes/connect_no.png";
-                Image desc = new Image();
-                desc.ImageUrl = "~/Imagenes/editclear.png";
-                Image desc1 = new Image();
-                desc1.ImageUrl = "~/Imagenes/editclear.png";
-                Image desc2 = new Image();
-                desc2.ImageUrl = "~/Imagenes/editclear.png";
-                Image desc3 = new Image();
-                desc3.ImageUrl = "~/Imagenes/editclear.png";
-                Image desc4 = new Image();
-                desc4.ImageUrl = "~/Imagenes/editclear.png";
-                Image desc5 = new Image();
-                desc5.ImageUrl = "~/Imagenes/editclear.png";
-                Image desc6 = new Image();
-                desc6.ImageUrl = "~/Imagenes/editclear.png";
-                Image desc7 = new Image();
-                desc7.ImageUrl = "~/Imagenes/editclear.png";
+                celdaTer.InnerText = terminal.codigo_atm;
+                Image estadoConexion = new Image();
+                estadoConexion.Width = 40;
+                Image supervisor = new Image();
+                Image llave = new Image();
+                supervisor.Width = 40;
+                llave.Width = 40;
+                if (terminal.estado_conexion)
+                {
+                    estadoConexion.ImageUrl = "~/Imagenes/connect_creating.png";
+                    estadoConexion.ToolTip = "Terminal Conectado";
+                    if (terminal.modo_supervisor)
+                    {
+                        supervisor.ImageUrl = "~/Imagenes/estado_marron.png";
+                        supervisor.ToolTip = "Modo supervisor";
+                    }
+                    else
+                    {
+                        supervisor.ImageUrl = "~/Imagenes/estado_verde.png";
+                        supervisor.ToolTip = "Modo normal";
+                    }
+                    if (terminal.llave_terminal)
+                    {
+                        llave.ImageUrl = "~/Imagenes/estado_rojo.png";
+                        llave.ToolTip = "Revisar la llave maestra y terminal";
+                    }
+                    else
+                    {
+                        llave.ImageUrl = "~/Imagenes/estado_verde.png";
+                        llave.ToolTip = "Configurcion correcta de llaves";
+                    }
 
-                estado.Width = 40;
-                desc.Width = 30;
-                desc1.Width = 30;
-                desc2.Width = 30;
-                desc3.Width = 30;
-                desc4.Width = 30;
-                desc5.Width = 30;
-                desc6.Width = 30;
-                desc7.Width = 30;
-                //celdaEst.InnerText = "desconectado";
-                estado.ToolTip = "Estado de conexion del terminal";
-                celdaEst.Controls.Add(estado);
+                }
+                else{
+                    estadoConexion.ImageUrl = "~/Imagenes/connect_no.png";
+                    estadoConexion.ToolTip = "Terminal desconectado";
+                    supervisor.ImageUrl = "~/Imagenes/connect_no.png";
+                    supervisor.ToolTip = "No determinado";
+                    llave.ImageUrl = "~/Imagenes/connect_no.png";
+                    llave.ToolTip = "No determinado";
+                }
+                Image gaveta1 = obtener_imagen(terminal.estado_gaveta1, "Gaveta 1");
+                Image gaveta2 = obtener_imagen(terminal.estado_gaveta2, "Gaveta 2");
+                Image gaveta3 = obtener_imagen(terminal.estado_gaveta3, "Gaveta 3");
+                Image gaveta4 = obtener_imagen(terminal.estado_gaveta4, "Gaveta 4");
+                Image gaveta5 = obtener_imagen(terminal.estado_gaveta5, "Gaveta 5");
+                Image gavetaR = obtener_imagen(terminal.estado_gaveta5, "Gaveta Rechazo");
+                Image lectora = obtener_imagen(terminal.estado_gaveta5, "Lectora");
+                Image impresora = obtener_imagen(terminal.estado_impresora, "Impresora");
                 
-                desc.ToolTip = "Estado de la gaveta Uno";
-                celdaGab1.Controls.Add(desc);
-                
-                desc1.ToolTip = "Estado de la gaveta Dos";
-                celdaGab2.Controls.Add(desc1);
-                
-                desc2.ToolTip = "Estado de la gaveta Tres";
-                celdaGab3.Controls.Add(desc2);
-                
-                desc3.ToolTip = "Estado de la gaveta Cuatro";
-                celdaGab4.Controls.Add(desc3);
-                
-                desc4.ToolTip = "Estado de la gaveta Cinco";
-                celdaGab5.Controls.Add(desc4);
-                
-                desc5.ToolTip = "Estado de Lectora de Tarjeta";
-                celdaLec.Controls.Add(desc5);
-                
-                desc6.ToolTip = "Modo de operacion del atm";
-                celdaMod.Controls.Add(desc6);
-
-                desc7.ToolTip = "Estado de llave de encriptacion tipo B";
-                celdaLlave.Controls.Add(desc7);
+                celdaEst.Controls.Add(estadoConexion);
+                celdaGab1.Controls.Add(gaveta1);
+                celdaGab2.Controls.Add(gaveta2);
+                celdaGab3.Controls.Add(gaveta3);
+                celdaGab4.Controls.Add(gaveta4);
+                celdaGab5.Controls.Add(gaveta5);
+                celdaRecha.Controls.Add(gavetaR);
+                celdaLec.Controls.Add(lectora);
+                celdaImp.Controls.Add(impresora);
+                celdaMod.Controls.Add(supervisor);
+                celdaLlave.Controls.Add(llave);
 
                 Button btnEl = new Button();
                 btnEl.Text = "Sucesos";
@@ -205,7 +214,9 @@ namespace AdministradorTerminal.Contenido
                 fila.Cells.Add(celdaGab3);
                 fila.Cells.Add(celdaGab4);
                 fila.Cells.Add(celdaGab5);
+                fila.Cells.Add(celdaRecha);
                 fila.Cells.Add(celdaLec);
+                fila.Cells.Add(celdaImp);
                 fila.Cells.Add(celdaMod);
                 fila.Cells.Add(celdaLlave);
                 fila.Cells.Add(celdaProceso);
@@ -214,6 +225,35 @@ namespace AdministradorTerminal.Contenido
             }
             Session["terminalSistemaUsr"] = terminales;
         }
-        
+
+        private Image obtener_imagen(string valor, string dispostivo) {
+            string[] datos = valor.Split(':');
+            Image img = new Image();
+            img.ToolTip = dispostivo + " " + datos[1];
+            img.Width = 40;
+            if (datos[0].Equals("0"))
+            {
+                img.ImageUrl = "~/Imagenes/editclear.png";
+            }
+            else if (datos[0].Equals("1"))
+            {
+                img.ImageUrl = "~/Imagenes/estado_verde.png";
+            }
+            else if (datos[0].Equals("2"))
+            {
+                img.ImageUrl = "~/Imagenes/estado_marron.png";
+            }
+            else if (datos[0].Equals("3"))
+            {
+                img.ImageUrl = "~/Imagenes/connect_amarillo.png";
+            }
+            else if (datos[0].Equals("4"))
+            {
+                img.ImageUrl = "~/Imagenes/connect_rojo.png";
+            }
+
+            return img;
+
+        }
     }
 }

@@ -244,6 +244,12 @@
     <Content Include="Imagenes\connect_established.png" />
     <Content Include="Imagenes\connect_no.png" />
     <Content Include="Imagenes\editclear.png" />
+    <Content Include="Imagenes\estado_amarillo.png" />
+    <Content Include="Imagenes\estado_marron.png" />
+    <Content Include="Imagenes\estado_rojo.png" />
+    <Content Include="Imagenes\estado_verde.png" />
+    <Content Include="Imagenes\No-entry.png" />
+    <Content Include="Imagenes\OK.png" />
     <Content Include="Imagenes\procesando.gif" />
     <Content Include="Imagenes\procesar.gif" />
     <Content Include="Scripts\calendar-en.min.js" />
@@ -273,6 +279,9 @@
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\WSControlador\ModeloObj.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSControlador\MonitoreoDispositivos.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\WSControlador\PerfilObj.datasource">

@@ -57,6 +57,12 @@ namespace ControlerAtm.com.ec.objetos
             set;
             get;
         }
+        [DataMember]
+        public bool modoSupervisor
+        {
+            set;
+            get;
+        }
 
     }
 

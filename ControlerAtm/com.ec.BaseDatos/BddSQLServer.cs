@@ -320,6 +320,53 @@ namespace ControlerAtm.com.ec.BaseDatos
             //cmd.Parameters.AddWithValue("@fecha_registro", alarmas.fecha_registro);
             cmd.Parameters.AddWithValue("@id_atm", alarmas.id_atm);
             cmd.Parameters.AddWithValue("@envioRecepcion", alarmas.envio_recepcion);
+            if (alarmas.id_mensaje == null)
+            {
+                cmd.Parameters.AddWithValue("@idMensaje", DBNull.Value);
+            }
+            else {
+                cmd.Parameters.AddWithValue("@idMensaje", alarmas.id_mensaje);
+            }
+            if (alarmas.id_tipo_dispositivo == null) {
+                cmd.Parameters.AddWithValue("@idTipoDispositivo", DBNull.Value);
+            }
+            else
+            {
+                cmd.Parameters.AddWithValue("@idTipoDispositivo", alarmas.id_tipo_dispositivo);
+            }
+            if (alarmas.estado_dispositivo == null) {
+                cmd.Parameters.AddWithValue("@estadoDispositivo", DBNull.Value);
+            } else {
+                cmd.Parameters.AddWithValue("@estadoDispositivo", alarmas.estado_dispositivo);
+            }
+            if (alarmas.error_severidad == null)
+            {
+                cmd.Parameters.AddWithValue("@errorServeridad", DBNull.Value);
+            }
+            else {
+                cmd.Parameters.AddWithValue("@errorServeridad", alarmas.error_severidad);
+            }
+            if (alarmas.estado_diagnostico == null)
+            {
+                cmd.Parameters.AddWithValue("@estadoDiagnostico", DBNull.Value);
+            }
+            else {
+                cmd.Parameters.AddWithValue("@estadoDiagnostico", alarmas.estado_diagnostico);
+            }
+            if (alarmas.estado_suministro == null)
+            {
+                cmd.Parameters.AddWithValue("@estadoSuministro", DBNull.Value);
+            }
+            else {
+                cmd.Parameters.AddWithValue("@estadoSuministro", alarmas.estado_suministro);
+            }
+            if (alarmas.tipo_comando == null)
+            {
+                cmd.Parameters.AddWithValue("@tipoComando", DBNull.Value);
+            }else{
+                cmd.Parameters.AddWithValue("@tipoComando", alarmas.tipo_comando);
+            }
+            
             try
             {
                 cmd.ExecuteNonQuery();
@@ -1039,6 +1086,7 @@ namespace ControlerAtm.com.ec.BaseDatos
             cmd.Parameters.AddWithValue("@estado", terminal.estado);
             cmd.Parameters.AddWithValue("@modelo", terminal.id_modelo);
             cmd.Parameters.AddWithValue("@estado_conexion", terminal.conexion);
+            cmd.Parameters.AddWithValue("@modo_supervisor", terminal.modoSupervisor);
             try
             {
                 int i = cmd.ExecuteNonQuery();
@@ -1048,6 +1096,11 @@ namespace ControlerAtm.com.ec.BaseDatos
                 }
             }
             catch (InvalidOperationException ex)
+            {
+                logs.escritura_archivo_string(ex.Message);
+                throw new ExConexionBase(MensajeSistema.error_Conexion);
+            }
+            catch (Exception ex)
             {
                 logs.escritura_archivo_string(ex.Message);
                 throw new ExConexionBase(MensajeSistema.error_Conexion);
@@ -1096,6 +1149,7 @@ namespace ControlerAtm.com.ec.BaseDatos
                     terminal.estado = tb.Rows[i][4].ToString();
                     terminal.id_modelo = int.Parse(tb.Rows[i][5].ToString());
                     terminal.conexion = bool.Parse(tb.Rows[i][6].ToString());
+                    terminal.modoSupervisor = bool.Parse(tb.Rows[i][7].ToString());
                     terminales.Add(terminal);
                 } return terminales;
             }
@@ -1144,6 +1198,8 @@ namespace ControlerAtm.com.ec.BaseDatos
                     terminal.ubicacion = tb.Rows[i][3].ToString();
                     terminal.estado = tb.Rows[i][4].ToString();
                     terminal.id_modelo = int.Parse(tb.Rows[i][5].ToString());
+                    terminal.conexion = bool.Parse(tb.Rows[i][6].ToString());
+                    terminal.modoSupervisor = bool.Parse(tb.Rows[i][7].ToString());
                     terminales.Add(terminal);
                 } return terminales;
             }
@@ -1191,6 +1247,8 @@ namespace ControlerAtm.com.ec.BaseDatos
                     terminal.ubicacion = tb.Rows[i][3].ToString();
                     terminal.estado = tb.Rows[i][4].ToString();
                     terminal.id_modelo = int.Parse(tb.Rows[i][5].ToString());
+                    terminal.conexion = bool.Parse(tb.Rows[i][6].ToString());
+                    terminal.modoSupervisor = bool.Parse(tb.Rows[i][7].ToString());
                     terminales.Add(terminal);
                 } return terminales;
             }
@@ -1447,6 +1505,13 @@ namespace ControlerAtm.com.ec.BaseDatos
                     alarmatmp.id_atm = int.Parse(tb.Rows[i][2].ToString());
                     alarmatmp.fecha_registro = DateTime.Parse(tb.Rows[i][3].ToString());
                     alarmatmp.envio_recepcion = int.Parse(tb.Rows[i][4].ToString());
+                    alarmatmp.id_mensaje = tb.Rows[i][5].ToString();
+                    alarmatmp.id_tipo_dispositivo = tb.Rows[i][6].ToString();
+                    alarmatmp.estado_dispositivo = tb.Rows[i][7].ToString();
+                    alarmatmp.error_severidad = tb.Rows[i][8].ToString();
+                    alarmatmp.estado_diagnostico = tb.Rows[i][9].ToString();
+                    alarmatmp.estado_suministro = tb.Rows[i][10].ToString();
+                    alarmatmp.tipo_comando = tb.Rows[i][11].ToString();
                     lista.Add(alarmatmp);
                 }
                 return lista;
@@ -1522,6 +1587,111 @@ namespace ControlerAtm.com.ec.BaseDatos
             {
                 logs.escritura_archivo_string(ex.Message);
                 throw new Exception(MensajeSistema.error_Conexion);
+            }
+        }
+
+        #endregion
+
+        #region Miembros de BaseDatosDao
+
+
+        public List<MonitoreoDispositivos> obtener_alarmaByUsuario(UsuarioObj usuario)
+        {
+            SqlCommand cmd = null;
+            cmd = new SqlCommand("obtener_estado_dispositivo_sp", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@codigo_usuario", usuario.id);
+            List<MonitoreoDispositivos> terminales = new List<MonitoreoDispositivos>();
+            try
+            {
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable tb = new DataTable("TerminalObj");
+                da.Fill(tb);
+                for (int i = 0; i < tb.Rows.Count; i++)
+                {
+                    MonitoreoDispositivos terminal = new MonitoreoDispositivos();
+                    terminal.id_atm = Convert.ToInt16(tb.Rows[i][0].ToString());
+                    terminal.codigo_atm = tb.Rows[i][1].ToString();
+                    terminal.estado_conexio = bool.Parse(tb.Rows[i][2].ToString());
+                    terminal.modo_supervisor = bool.Parse(tb.Rows[i][3].ToString());
+                    terminal.llave_terminal = bool.Parse(tb.Rows[i][4].ToString());
+                    
+                    terminal.estado_gaveta1 = tb.Rows[i][5].ToString();
+                    terminal.estado_gaveta2 = tb.Rows[i][6].ToString();
+                    terminal.estado_gaveta3 = tb.Rows[i][7].ToString();
+                    terminal.estado_gaveta4 = tb.Rows[i][8].ToString();
+                    terminal.estado_gaveta5 = tb.Rows[i][9].ToString();
+
+                    terminal.estado_impresora = tb.Rows[i][10].ToString();
+                    terminal.estado_impresora_jrnl = tb.Rows[i][11].ToString();
+                    terminal.estado_dispensador = tb.Rows[i][12].ToString();
+                    terminal.estado_encriptora = tb.Rows[i][13].ToString();
+
+                    terminales.Add(terminal);
+                } return terminales;
+            }
+            catch (IndexOutOfRangeException ex)
+            {
+                logs.escritura_archivo_string(ex.Message);
+                throw new ExpObtenerRegistro(MensajeSistema.reg_no_existe);
+            }
+            catch (ArgumentNullException ex)
+            {
+                logs.escritura_archivo_string(ex.Message);
+                throw new ExpObtenerRegistro(MensajeSistema.reg_no_existe);
+            }
+            catch (Exception ex)
+            {
+                logs.escritura_archivo_string(ex.Message);
+                throw new Exception(MensajeSistema.reg_no_existe);
+            }
+        }
+
+        #endregion
+
+        #region Miembros de BaseDatosDao
+
+
+        public void insertar_actualizar_monitoreo_dispositivos(MonitoreoDispositivos monitoreo)
+        {
+            SqlCommand cmd = new SqlCommand("insertar_actualizar_estado_sp", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@id_atm", monitoreo.id_atm);
+            cmd.Parameters.AddWithValue("@hw_estado_gabeta1", monitoreo.estado_gaveta1);
+            cmd.Parameters.AddWithValue("@hw_estado_gabeta2", monitoreo.estado_gaveta2);
+            cmd.Parameters.AddWithValue("@hw_estado_gabeta3", monitoreo.estado_gaveta3);
+            cmd.Parameters.AddWithValue("@hw_estado_gabeta4", monitoreo.estado_gaveta4);
+            cmd.Parameters.AddWithValue("@hw_estado_gabeta5", monitoreo.estado_gaveta5);
+            cmd.Parameters.AddWithValue("@hw_estado_impresora", monitoreo.estado_impresora);
+            cmd.Parameters.AddWithValue("@hw_estado_impresora_jrnl", monitoreo.estado_impresora_jrnl);
+            cmd.Parameters.AddWithValue("@hw_estado_dispensador", monitoreo.estado_dispensador);
+            cmd.Parameters.AddWithValue("@hw_estado_encryptora", monitoreo.estado_encriptora);
+            cmd.Parameters.AddWithValue("@hw_estado_lectora", monitoreo.estado_lectora);
+            try
+            {
+                if (cmd.ExecuteNonQuery() == 0)
+                {
+                    throw new ExInsertarRegistro(MensajeSistema.ingreso_error);
+                }
+            }
+            catch (ArgumentException ex)
+            {
+                logs.escritura_archivo_string(ex.Message);
+                //logs.cerrar_archivo();
+                throw new ExInsertarRegistro(MensajeSistema.ingreso_error);
+                // CONSULTAR COMO HACER UN ROLL BACK
+            }
+            catch (InvalidOperationException ex)
+            {
+                logs.escritura_archivo_string(ex.Message);
+                //logs.cerrar_archivo();
+                throw new ExConexionBase(MensajeSistema.error_Conexion);
+            }
+            catch (NullReferenceException ex)
+            {
+                logs.escritura_archivo_string(ex.Message);
+                //logs.cerrar_archivo();
+                throw new ExInsertarRegistro(ex.Message);
             }
         }
 
