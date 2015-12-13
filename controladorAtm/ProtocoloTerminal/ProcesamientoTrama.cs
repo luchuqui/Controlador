@@ -137,15 +137,15 @@ namespace controladorAtm.ProtocoloTerminal
             /*Ver estados severidad en pagina 445 NDC tabla 9-13*/
 
             monitoreoS.id_atm = terminal.id_atm;
-            monitoreoS.estado_lectora = conf[3];// En esta posición se encuentra el estado de lectora
-            monitoreoS.estado_dispensador = conf[4].ToString();
-            monitoreoS.estado_impresora = conf[6].ToString();
-            monitoreoS.estado_impresora_jrnl = conf[7].ToString();
+            monitoreoS.estado_lectora = sum[3];// En esta posición se encuentra el estado de lectora
+            monitoreoS.estado_dispensador = sum[4].ToString();
+            monitoreoS.estado_impresora = sum[6].ToString();
+            monitoreoS.estado_impresora_jrnl = sum[7].ToString();
             monitoreoS.estado_encriptora = "0";
-            monitoreoS.estado_gaveta1 = conf[15].ToString();
-            monitoreoS.estado_gaveta2 = conf[16].ToString();
-            monitoreoS.estado_gaveta3 = conf[17].ToString();
-            monitoreoS.estado_gaveta4 = conf[18].ToString();
+            monitoreoS.estado_gaveta1 = sum[15].ToString();
+            monitoreoS.estado_gaveta2 = sum[16].ToString();
+            monitoreoS.estado_gaveta3 = sum[17].ToString();
+            monitoreoS.estado_gaveta4 = sum[18].ToString();
             monitoreoS.estado_gaveta5 = "0";
             monitoreoS.tipo_estado = "S";
             /*Ver estados en pagina 454 NDC tabla 9-16*/
