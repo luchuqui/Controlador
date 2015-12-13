@@ -115,7 +115,7 @@ namespace controladorAtm
             {
                 objWrite = new StreamWriter(tmpath, true);
                 foreach(string msg in mensaje){
-                    objWrite.WriteLine(System.DateTime.Now.TimeOfDay.ToString().Substring(0, 8) + " " + msg.Trim() + "\r");
+                    objWrite.WriteLine(System.DateTime.Now.TimeOfDay.ToString().Substring(0, 8) + " " + msg.Trim());
                 }
                 objWrite.Close();
             }
@@ -142,7 +142,7 @@ namespace controladorAtm
             try
             {
                 objWrite = new StreamWriter(tmpath, true);
-                objWrite.WriteLine(System.DateTime.Now.TimeOfDay.ToString().Substring(0, 8) + " " + mensaje.Trim() + "\r");
+                objWrite.WriteLine(System.DateTime.Now.TimeOfDay.ToString().Substring(0, 8) + " " + mensaje.Trim());
                 objWrite.Close();
             }
             catch (IOException ex)

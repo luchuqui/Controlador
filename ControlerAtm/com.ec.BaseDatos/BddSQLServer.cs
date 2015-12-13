@@ -1598,6 +1598,7 @@ namespace ControlerAtm.com.ec.BaseDatos
         public List<MonitoreoDispositivos> obtener_alarmaByUsuario(UsuarioObj usuario)
         {
             SqlCommand cmd = null;
+            /*Debemos de ver como obtener los datos de estado de dispositivo*/
             cmd = new SqlCommand("obtener_estado_dispositivo_sp", conn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@codigo_usuario", usuario.id);
@@ -1626,7 +1627,7 @@ namespace ControlerAtm.com.ec.BaseDatos
                     terminal.estado_impresora_jrnl = tb.Rows[i][11].ToString();
                     terminal.estado_dispensador = tb.Rows[i][12].ToString();
                     terminal.estado_encriptora = tb.Rows[i][13].ToString();
-
+                    terminal.tipo_estado = tb.Rows[i][14].ToString();
                     terminales.Add(terminal);
                 } return terminales;
             }
@@ -1667,6 +1668,7 @@ namespace ControlerAtm.com.ec.BaseDatos
             cmd.Parameters.AddWithValue("@hw_estado_dispensador", monitoreo.estado_dispensador);
             cmd.Parameters.AddWithValue("@hw_estado_encryptora", monitoreo.estado_encriptora);
             cmd.Parameters.AddWithValue("@hw_estado_lectora", monitoreo.estado_lectora);
+            cmd.Parameters.AddWithValue("@tipo_estado", monitoreo.tipo_estado);
             try
             {
                 if (cmd.ExecuteNonQuery() == 0)

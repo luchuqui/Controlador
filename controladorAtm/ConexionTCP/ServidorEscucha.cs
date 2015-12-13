@@ -36,6 +36,7 @@ namespace controladorAtm
             visor = new RichTextBox();
             terminalesConectadas = new ArrayList();
             atmsAutorizados = new ArrayList();
+            ActualizarEstadoConexionTerminal();
         }
 
         public ServidorEscucha(ConfiguracionServicio servicio, RichTextBox visor, ArrayList atms,DataGridView terminalesView,BddSQLServer conexion)
@@ -46,6 +47,7 @@ namespace controladorAtm
             atmsAutorizados = atms;
             visorTerminales = terminalesView;
             conBdd = conexion;
+            ActualizarEstadoConexionTerminal();
             //conBdd.abrir_conexion_base();
         }
 
@@ -199,6 +201,15 @@ namespace controladorAtm
                 }
             }
             return terminal;
+        }
+
+        public void ActualizarEstadoConexionTerminal()
+        {
+            foreach (AtmObj atm in atmsAutorizados)
+            {
+                atm.conexion = false;
+                conBdd.actualizar_terminal(atm);
+            }
         }
 
         public void detener()

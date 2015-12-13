@@ -1,11 +1,11 @@
 <publishData>
   <publishTarget publishUrl="C:\SITIOSWEBIIS\AdministradorTerminal\">
     <file relUrl="Imagenes/sis_principal.PNG" publishTime="10/08/2015 15:41:00" />
-    <file relUrl="bin/ControlerAtm.pdb" publishTime="11/29/2015 12:45:01" />
+    <file relUrl="bin/ControlerAtm.pdb" publishTime="12/05/2015 09:29:23" />
+    <file relUrl="Contenido/MonitoreoTerminal.aspx" publishTime="11/21/2015 10:06:55" />
     <file relUrl="Imagenes/OK.png" publishTime="08/07/2009 13:06:00" />
     <file relUrl="Contenido/NuevoEdicionATM.aspx" publishTime="11/08/2015 13:00:52" />
     <file relUrl="Imagenes/acceso_sistema.jpg" publishTime="11/08/2015 13:00:53" />
-    <file relUrl="Imagenes/estado_rojo.png" publishTime="11/21/2015 20:34:38" />
     <file relUrl="Scripts/calendar-en.min.js" publishTime="11/01/2015 14:53:25" />
     <file relUrl="Contenido/Terminal_Responsable.aspx" publishTime="11/08/2015 13:00:52" />
     <file relUrl="Scripts/jquery-latest.min.js" publishTime="11/01/2015 14:53:26" />
@@ -14,53 +14,54 @@
     <file relUrl="Imagenes/procesar.gif" publishTime="10/08/2015 15:41:00" />
     <file relUrl="Imagenes/procesando.gif" publishTime="10/08/2015 15:41:00" />
     <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="11/01/2015 14:53:25" />
-    <file relUrl="Contenido/MensajeBienvenida.aspx" publishTime="10/08/2015 15:41:00" />
+    <file relUrl="bin/AdministradorTerminal.pdb" publishTime="12/05/2015 10:03:08" />
     <file relUrl="Imagenes/estado_azul.png" publishTime="11/29/2015 12:44:43" />
     <file relUrl="Contenido/MenuUsuario.Master" publishTime="11/01/2015 14:53:25" />
     <file relUrl="Imagenes/No-entry.png" publishTime="08/07/2009 13:06:00" />
     <file relUrl="Imagenes/cerrarSession.gif" publishTime="10/08/2015 15:41:00" />
     <file relUrl="Scripts/calendar-es.min.js" publishTime="11/01/2015 14:53:25" />
     <file relUrl="Contenido/AgregarTerminal.aspx" publishTime="10/08/2015 15:41:00" />
+    <file relUrl="Contenido/ObservacionEvento.aspx" publishTime="10/08/2015 15:41:00" />
     <file relUrl="Imagenes/Administracion.jpg" publishTime="10/08/2015 15:41:00" />
+    <file relUrl="Imagenes/estado_rosado.png" publishTime="12/05/2015 09:55:07" />
     <file relUrl="Web.config" publishTime="10/10/2015 17:51:50" />
     <file relUrl="Scripts/jquery-1.4.1.js" publishTime="11/01/2015 14:53:25" />
-    <file relUrl="bin/AdministradorTerminal.pdb" publishTime="11/29/2015 12:45:01" />
-    <file relUrl="bin/AdministradorTerminal.dll" publishTime="11/29/2015 12:45:01" />
+    <file relUrl="bin/AdministradorTerminal.dll" publishTime="12/05/2015 10:03:08" />
     <file relUrl="Imagenes/editclear.png" publishTime="10/08/2015 15:41:00" />
     <file relUrl="Imagenes/inicioSesion.jpg" publishTime="10/08/2015 15:41:00" />
     <file relUrl="Contenido/Envio_Comandos.aspx" publishTime="10/08/2015 15:41:00" />
     <file relUrl="Contenido/EditarPerfil.aspx" publishTime="11/08/2015 13:00:52" />
     <file relUrl="Contenido/CambioContrasenia.aspx" publishTime="10/08/2015 15:41:00" />
     <file relUrl="Imagenes/estado_marron.png" publishTime="11/21/2015 20:36:47" />
-    <file relUrl="Imagenes/btn_cerrar_.png" publishTime="11/01/2015 14:53:25" />
     <file relUrl="Contenido/Default.aspx" publishTime="11/08/2015 13:00:52" />
-    <file relUrl="Imagenes/estado_azul_elec.png" publishTime="11/29/2015 12:42:38" />
     <file relUrl="Imagenes/connect_established.png" publishTime="10/08/2015 15:41:00" />
     <file relUrl="Imagenes/estado_verde.png" publishTime="11/21/2015 20:27:12" />
     <file relUrl="CSS/estiloMain.css" publishTime="11/01/2015 14:53:25" />
     <file relUrl="Contenido/ATM.aspx" publishTime="10/08/2015 15:41:00" />
+    <file relUrl="Contenido/MensajeBienvenida.aspx" publishTime="10/08/2015 15:41:00" />
     <file relUrl="Contenido/Usuario.aspx" publishTime="10/08/2015 15:41:00" />
     <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="11/01/2015 14:53:25" />
-    <file relUrl="bin/ControlerAtm.dll" publishTime="11/29/2015 12:45:01" />
+    <file relUrl="Contenido/AgregarPerfil.aspx" publishTime="10/08/2015 15:41:00" />
     <file relUrl="Contenido/AtencionEvento.aspx" publishTime="10/08/2015 15:41:00" />
     <file relUrl="CSS/main.js" publishTime="11/01/2015 14:53:25" />
-    <file relUrl="App_Browsers/chrome.browser" publishTime="10/08/2015 15:41:00" />
+    <file relUrl="Imagenes/estado_azul_elec.png" publishTime="11/29/2015 12:42:38" />
     <file relUrl="Imagenes/estado_amarillo.png" publishTime="11/21/2015 20:28:02" />
     <file relUrl="Contenido/NuevoEdicionUsuario.aspx" publishTime="10/08/2015 15:41:00" />
     <file relUrl="Scripts/jquery.dynDateTime.min.js" publishTime="11/01/2015 14:53:26" />
-    <file relUrl="Contenido/MonitoreoTerminal.aspx" publishTime="11/21/2015 10:06:55" />
+    <file relUrl="App_Browsers/chrome.browser" publishTime="10/08/2015 15:41:00" />
+    <file relUrl="Imagenes/estado_rojo.png" publishTime="11/21/2015 20:34:38" />
     <file relUrl="Imagenes/inicio_sesion.png" publishTime="10/08/2015 15:41:00" />
-    <file relUrl="Contenido/ObservacionEvento.aspx" publishTime="10/08/2015 15:41:00" />
-    <file relUrl="Contenido/AgregarPerfil.aspx" publishTime="10/08/2015 15:41:00" />
+    <file relUrl="Imagenes/btn_cerrar_.png" publishTime="11/01/2015 14:53:25" />
+    <file relUrl="bin/ControlerAtm.dll" publishTime="12/05/2015 09:29:23" />
     <file relUrl="Imagenes/connect_no.png" publishTime="10/08/2015 15:41:00" />
   </publishTarget>
   <publishTarget publishUrl="C:\www\AdministradorTerminal\">
     <file relUrl="Imagenes/sis_principal.PNG" publishTime="10/08/2015 15:41:00" />
     <file relUrl="bin/ControlerAtm.pdb" publishTime="11/29/2015 10:44:22" />
+    <file relUrl="Contenido/MonitoreoTerminal.aspx" publishTime="11/21/2015 10:06:55" />
     <file relUrl="Imagenes/OK.png" publishTime="08/07/2009 13:06:00" />
     <file relUrl="Contenido/NuevoEdicionATM.aspx" publishTime="11/08/2015 13:00:52" />
     <file relUrl="Imagenes/acceso_sistema.jpg" publishTime="11/08/2015 13:00:53" />
-    <file relUrl="Imagenes/estado_rojo.png" publishTime="11/21/2015 20:34:38" />
     <file relUrl="Scripts/calendar-en.min.js" publishTime="11/01/2015 14:53:25" />
     <file relUrl="Contenido/Terminal_Responsable.aspx" publishTime="11/08/2015 13:00:52" />
     <file relUrl="Scripts/jquery-latest.min.js" publishTime="11/01/2015 14:53:26" />
@@ -69,16 +70,16 @@
     <file relUrl="Imagenes/procesar.gif" publishTime="10/08/2015 15:41:00" />
     <file relUrl="Imagenes/procesando.gif" publishTime="10/08/2015 15:41:00" />
     <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="11/01/2015 14:53:25" />
-    <file relUrl="Contenido/MensajeBienvenida.aspx" publishTime="10/08/2015 15:41:00" />
+    <file relUrl="bin/AdministradorTerminal.pdb" publishTime="11/29/2015 10:44:25" />
     <file relUrl="Contenido/MenuUsuario.Master" publishTime="11/01/2015 14:53:25" />
     <file relUrl="Imagenes/No-entry.png" publishTime="08/07/2009 13:06:00" />
     <file relUrl="Imagenes/cerrarSession.gif" publishTime="10/08/2015 15:41:00" />
     <file relUrl="Scripts/calendar-es.min.js" publishTime="11/01/2015 14:53:25" />
     <file relUrl="Contenido/AgregarTerminal.aspx" publishTime="10/08/2015 15:41:00" />
+    <file relUrl="Contenido/ObservacionEvento.aspx" publishTime="10/08/2015 15:41:00" />
     <file relUrl="Imagenes/Administracion.jpg" publishTime="10/08/2015 15:41:00" />
     <file relUrl="Web.config" publishTime="10/10/2015 17:51:50" />
     <file relUrl="Scripts/jquery-1.4.1.js" publishTime="11/01/2015 14:53:25" />
-    <file relUrl="bin/AdministradorTerminal.pdb" publishTime="11/29/2015 10:44:25" />
     <file relUrl="bin/AdministradorTerminal.dll" publishTime="11/29/2015 10:44:25" />
     <file relUrl="Imagenes/editclear.png" publishTime="10/08/2015 15:41:00" />
     <file relUrl="Imagenes/inicioSesion.jpg" publishTime="10/08/2015 15:41:00" />
@@ -86,25 +87,25 @@
     <file relUrl="Contenido/EditarPerfil.aspx" publishTime="11/08/2015 13:00:52" />
     <file relUrl="Contenido/CambioContrasenia.aspx" publishTime="10/08/2015 15:41:00" />
     <file relUrl="Imagenes/estado_marron.png" publishTime="11/21/2015 20:36:47" />
-    <file relUrl="Imagenes/btn_cerrar_.png" publishTime="11/01/2015 14:53:25" />
     <file relUrl="Contenido/Default.aspx" publishTime="11/08/2015 13:00:52" />
     <file relUrl="Imagenes/connect_established.png" publishTime="10/08/2015 15:41:00" />
     <file relUrl="Imagenes/estado_verde.png" publishTime="11/21/2015 20:27:12" />
     <file relUrl="CSS/estiloMain.css" publishTime="11/01/2015 14:53:25" />
     <file relUrl="Contenido/ATM.aspx" publishTime="10/08/2015 15:41:00" />
+    <file relUrl="Contenido/MensajeBienvenida.aspx" publishTime="10/08/2015 15:41:00" />
     <file relUrl="Contenido/Usuario.aspx" publishTime="10/08/2015 15:41:00" />
     <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="11/01/2015 14:53:25" />
-    <file relUrl="bin/ControlerAtm.dll" publishTime="11/29/2015 10:44:22" />
+    <file relUrl="Contenido/AgregarPerfil.aspx" publishTime="10/08/2015 15:41:00" />
     <file relUrl="Contenido/AtencionEvento.aspx" publishTime="10/08/2015 15:41:00" />
     <file relUrl="CSS/main.js" publishTime="11/01/2015 14:53:25" />
     <file relUrl="App_Browsers/chrome.browser" publishTime="10/08/2015 15:41:00" />
     <file relUrl="Imagenes/estado_amarillo.png" publishTime="11/21/2015 20:28:02" />
     <file relUrl="Contenido/NuevoEdicionUsuario.aspx" publishTime="10/08/2015 15:41:00" />
     <file relUrl="Scripts/jquery.dynDateTime.min.js" publishTime="11/01/2015 14:53:26" />
-    <file relUrl="Contenido/MonitoreoTerminal.aspx" publishTime="11/21/2015 10:06:55" />
+    <file relUrl="Imagenes/estado_rojo.png" publishTime="11/21/2015 20:34:38" />
     <file relUrl="Imagenes/inicio_sesion.png" publishTime="10/08/2015 15:41:00" />
-    <file relUrl="Contenido/ObservacionEvento.aspx" publishTime="10/08/2015 15:41:00" />
-    <file relUrl="Contenido/AgregarPerfil.aspx" publishTime="10/08/2015 15:41:00" />
+    <file relUrl="Imagenes/btn_cerrar_.png" publishTime="11/01/2015 14:53:25" />
+    <file relUrl="bin/ControlerAtm.dll" publishTime="11/29/2015 10:44:22" />
     <file relUrl="Imagenes/connect_no.png" publishTime="10/08/2015 15:41:00" />
   </publishTarget>
 </publishData>

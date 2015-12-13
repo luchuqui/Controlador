@@ -121,6 +121,9 @@ namespace AdministradorTerminal.Contenido
             int i = 1;
             foreach (MonitoreoDispositivos terminal in terminales)
             {
+                if (!terminal.tipo_estado.Equals("S")) {
+                    continue;
+                }
                 HtmlTableRow fila = new HtmlTableRow();
                 HtmlTableCell celdaNum = new HtmlTableCell();
                 HtmlTableCell celdaTer = new HtmlTableCell();
@@ -144,10 +147,12 @@ namespace AdministradorTerminal.Contenido
                 Image llave = new Image();
                 supervisor.Width = 40;
                 llave.Width = 40;
-                if (terminal.estado_conexion)
+                if (terminal.estado_conexio)
                 {
+                    
                     estadoConexion.ImageUrl = "~/Imagenes/connect_creating.png";
                     estadoConexion.ToolTip = "Terminal Conectado";
+                    
                     if (terminal.modo_supervisor)
                     {
                         supervisor.ImageUrl = "~/Imagenes/estado_azul_elec.png";
@@ -177,7 +182,15 @@ namespace AdministradorTerminal.Contenido
                     supervisor.ToolTip = "No determinado";
                     llave.ImageUrl = "~/Imagenes/connect_no.png";
                     llave.ToolTip = "No determinado";
+                    terminal.estado_gaveta1 = "10:No determinado";
+                    terminal.estado_gaveta2 = "10:No determinado";
+                    terminal.estado_gaveta3 = "10:No determinado";
+                    terminal.estado_gaveta4 = "10:No determinado";
+                    terminal.estado_gaveta5 = "10:No determinado";
+                    //terminal.estado_lectora = 10; revisar no hay estado determinado de la letora
+                    terminal.estado_impresora = "10:No determinado";
                 }
+                
                 Image gaveta1 = obtener_imagen(terminal.estado_gaveta1, "Gaveta 1");
                 Image gaveta2 = obtener_imagen(terminal.estado_gaveta2, "Gaveta 2");
                 Image gaveta3 = obtener_imagen(terminal.estado_gaveta3, "Gaveta 3");
@@ -202,7 +215,7 @@ namespace AdministradorTerminal.Contenido
                 Button btnEl = new Button();
                 btnEl.Text = "Sucesos";
                 btnEl.ToolTip = "Visualizar eventos del Terminal";
-                //btnEl.Click += new EventHandler(this.eventoBtnSucesos);
+                btnEl.Click += new EventHandler(this.eventoBtnSucesos);
                 celdaProceso.Align = "Center";
                 btnEl.ID = "btnEl_" + i;
                 celdaProceso.Controls.Add(btnEl);
@@ -225,33 +238,43 @@ namespace AdministradorTerminal.Contenido
             }
             Session["terminalSistemaUsr"] = terminales;
         }
+        private void eventoBtnSucesos(object sender, EventArgs e)
+        {
+            string [] nombre = ((Button)sender).ID.Split('_');
+            int posicion = int.Parse(nombre[1]) - 1;
+            MonitoreoDispositivos tm = terminalesUsuario[posicion];
+            this.lbl_codigoTerminal.Text = tm.codigo_atm;
+            this.lbl_fechaEvento.Text = System.DateTime.Now.ToString("yyyy-MM-dd");
+            //Globales.servicio.obtener_alarma_atm();
+        }
+
 
         private Image obtener_imagen(string valor, string dispostivo) {
             string[] datos = valor.Split(':');
             Image img = new Image();
             img.ToolTip = dispostivo + " " + datos[1];
             img.Width = 40;
+            img.ImageUrl = "~/Imagenes/editclear.png";
             if (datos[0].Equals("0"))
             {
-                img.ImageUrl = "~/Imagenes/editclear.png";
-            }
-            else if (datos[0].Equals("1"))
-            {
                 img.ImageUrl = "~/Imagenes/estado_verde.png";
-            }
-            else if (datos[0].Equals("2"))
+            } else if (datos[0].Equals("1"))
             {
                 img.ImageUrl = "~/Imagenes/estado_marron.png";
             }
-            else if (datos[0].Equals("3"))
+            else if (datos[0].Equals("2"))
             {
                 img.ImageUrl = "~/Imagenes/estado_amarillo.png";
             }
+            else if (datos[0].Equals("3"))
+            {
+                img.ImageUrl = "~/Imagenes/estado_rosado.png";
+            }
             else if (datos[0].Equals("4"))
             {
-                img.ImageUrl = "~/Imagenes/estado_rojo.png";
+               img.ImageUrl = "~/Imagenes/estado_rojo.png";
             }
-
+            
             return img;
 
         }

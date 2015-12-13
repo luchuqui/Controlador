@@ -249,6 +249,7 @@
     <Content Include="Imagenes\estado_azul_elec.png" />
     <Content Include="Imagenes\estado_marron.png" />
     <Content Include="Imagenes\estado_rojo.png" />
+    <Content Include="Imagenes\estado_rosado.png" />
     <Content Include="Imagenes\estado_verde.png" />
     <Content Include="Imagenes\No-entry.png" />
     <Content Include="Imagenes\OK.png" />

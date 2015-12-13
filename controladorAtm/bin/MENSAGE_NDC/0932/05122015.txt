@@ -1,0 +1,15 @@
+09:14:00 Índice fuera de los límites de la matriz.
+09:14:00 12
+09:14:00 000
+09:14:00 
+09:14:00 B0000
+11:22:11 Índice fuera de los límites de la matriz.
+11:22:11 12
+11:22:11 000
+11:22:11 
+11:22:11 R04
+11:22:36 Índice fuera de los límites de la matriz.
+11:22:36 12
+11:22:36 000
+11:22:36 
+11:22:36 R09

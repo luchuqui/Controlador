@@ -14,30 +14,34 @@
 
 <asp:UpdatePanel ID = "panelActualizar" runat = "server" UpdateMode = "Conditional">
 <ContentTemplate>
-    <asp:Panel ID="Panel1" runat = "server" Width = "70%" >
+    <asp:Panel ID="Panel1" runat = "server" Width = "100%" >
         <table id = "tb_terminales" runat = "server" style = "z-index: 1; text-align :center" border = "2" width = "100%">
         </table>
         
     </asp:Panel>
     <div> <br /></div>
-    <asp:Panel ID="Panel3" runat = "server" Width = "70%">
+    <asp:Panel ID="Panel3" runat = "server" Width = "70%" HorizontalAlign="Left">
     
         <asp:Table ID = "tablaDatos" runat = "server">
-            <asp:TableRow >
+            <asp:TableRow>
                 <asp:TableCell> 
                     <asp:Label Text = "Codigo Terminal :" Font-Bold = "true" runat = "server" ></asp:Label>
-                </asp:TableCell>
+                
+</asp:TableCell>
                 <asp:TableCell>
                     <asp:Label runat = "server" ID = "lbl_codigoTerminal"></asp:Label>
-                </asp:TableCell>
+                
+</asp:TableCell>
             </asp:TableRow>
             <asp:TableRow >
                 <asp:TableCell> 
                     <asp:Label ID="lbl_fecha" Text = "Fecha :" Font-Bold = "true" runat = "server" ></asp:Label>
-                </asp:TableCell>
+                
+</asp:TableCell>
                 <asp:TableCell>
                     <asp:Label runat = "server" ID = "lbl_fechaEvento"></asp:Label>
-                </asp:TableCell>
+                
+</asp:TableCell>
             </asp:TableRow>
         </asp:Table>
         </asp:Panel>

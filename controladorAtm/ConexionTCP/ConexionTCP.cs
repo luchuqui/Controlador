@@ -22,7 +22,7 @@ namespace controladorAtm
         private archivoRW error; /*Escritura de archivos para almacenar los errores producidos por la aplicacion*/
         public event datoIngresoServicio datoIn; /*Variable para pasar la informacion entre clases en este caso datos entrada*/
         public event datoIngresoServicio datoResp; /*Variable para pasar la informacion entre clases en este caso datos salida*/
-        private RichTextBox visor; /*Objeto para mostrar la informacion en la pantalla del cliente*/
+        //private RichTextBox visor; /*Objeto para mostrar la informacion en la pantalla del cliente*/
         private ConfiguracionServicio configurarServicio; /*Configuracion del servicio para los cajeros*/
         private ITramaTerminalComando comadoToATM; /*Trama de mensajeria hacia el terminal, se declara la interfaz porque puede manejar mas de un tipo de protocolo*/
         private bool sincronico; /*Bandera para indicar, si el flujo de datos es sincronico o asincronico*/
@@ -49,7 +49,7 @@ namespace controladorAtm
 
                 terminalArchivo.archivo_guardar("MENSAGE_TERMINAL", terminal.codigo);//Almacena en la carpeta MENSAGE_TERMINAL y en la sub carpeta codigo terminal
                 error.archivo_guardar("ERROR", terminal.codigo);
-                visor = new RichTextBox();
+                //visor = new RichTextBox();
                 configurarServicio = serviceConf;
                 comadoToATM = new ComandoNdcTerminal();
                 sincronico = true;
@@ -79,11 +79,14 @@ namespace controladorAtm
                 mt.estado_dispensador = "0";
                 mt.estado_encriptora = "0";
                 mt.estado_lectora = 0;
+                mt.tipo_estado = "C";
+                conBdd.insertar_actualizar_monitoreo_dispositivos(mt);// Como incia conexion se rocede a encerar
+                mt.tipo_estado = "S";
                 conBdd.insertar_actualizar_monitoreo_dispositivos(mt);// Como incia conexion se rocede a encerar
             }
             catch (Exception ex) {
                 error.escritura_archivo_string(ex.Message);
-                mensaje_error_sistema(ex.Message,Color.Red);
+                //mensaje_error_sistema(ex.Message,Color.Red);
                 terminal.conexion = false;
                 conBdd.actualizar_terminal(terminal);
             }
@@ -105,7 +108,7 @@ namespace controladorAtm
                 terminalArchivo.archivo_guardar("MENSAGE_TERMINAL", terminal.codigo);
                 error.archivo_guardar("ERROR", terminal.codigo);
                 configurarServicio = serviceConf;
-                this.visor = visor;
+                //this.visor = visor;
                 comadoToATM = new ComandoNdcTerminal();
                 sincronico = true;
                 enviarDato = false;
@@ -131,12 +134,15 @@ namespace controladorAtm
                 mt.estado_dispensador = "0";
                 mt.estado_encriptora = "0";
                 mt.estado_lectora = 0;
+                mt.tipo_estado = "C";
+                conBdd.insertar_actualizar_monitoreo_dispositivos(mt);// Como incia conexion se rocede a encerar
+                mt.tipo_estado = "S";
                 conBdd.insertar_actualizar_monitoreo_dispositivos(mt);// Como incia conexion se rocede a encerar
             }
             catch (Exception ex)
             {
                 error.escritura_archivo_string(ex.Message);
-                mensaje_error_sistema(ex.Message,Color.Red);
+                //mensaje_error_sistema(ex.Message,Color.Red);
                 this.terminal.conexion = false;
                 this.terminal.modoSupervisor = false;
                 conBdd.actualizar_terminal(this.terminal);
@@ -164,7 +170,7 @@ namespace controladorAtm
                         
                         terminalArchivo.escritura_archivo_string(">>>[" + datoEnvio.Length + "] : " + datoEnvio);
                         enviarDato = false;
-                        datoIn(datoEnvio.Substring(2,datoEnvio.Length-2));
+                        datoIn("[" + terminal.codigo + "]:" + datoEnvio.Substring(2, datoEnvio.Length - 2));
                         conBdd.insertar_alarmas(mensajeEnvioRecep);
                         datoEnvio = "";
                     }
@@ -172,7 +178,7 @@ namespace controladorAtm
             if (!string.IsNullOrEmpty(datoRespuesta) && datoRespuesta.Length > 2)
                     {
                         terminalArchivo.escritura_archivo_string("<<<[" + datoRespuesta.Length + "] : " + datoRespuesta);
-                        datoResp(datoRespuesta.Substring(2, datoRespuesta.Length - 2));
+                        datoResp("[" + terminal.codigo + "]:" + datoRespuesta.Substring(2, datoRespuesta.Length - 2));
                         mensajeEnvioRecep = parseoAlrma.parseaTramaIngreso(datoRespuesta.Substring(2, datoRespuesta.Length - 2));
                         mensajeEnvioRecep.envio_recepcion = 1; //cero envio, uno recibo
                         conBdd.insertar_alarmas(mensajeEnvioRecep);
@@ -180,8 +186,11 @@ namespace controladorAtm
                         {
                             if (mensajeEnvioRecep.id_tipo_dispositivo.Equals("F"))
                             {
-                                mt = parseoAlrma.parseaTramaAlarmaDispositivo(mensajeEnvioRecep);
-                                conBdd.insertar_actualizar_monitoreo_dispositivos(mt);
+                                List<MonitoreoDispositivos> mts = parseoAlrma.parseaTramaAlarmaDispositivo(mensajeEnvioRecep);
+                                foreach (MonitoreoDispositivos tmp in mts)
+                                {
+                                    conBdd.insertar_actualizar_monitoreo_dispositivos(tmp);
+                                }
                             }
                             else if (mensajeEnvioRecep.id_tipo_dispositivo.Equals("P"))
                             {
@@ -199,25 +208,26 @@ namespace controladorAtm
             }catch (SocketException ex)
             {
                 error.escritura_archivo_string(ex.StackTrace);
-                mensaje_error_sistema(ex.Message, Color.Red);
-                mensaje_error_sistema(ex.StackTrace,Color.Red);
+                //mensaje_error_sistema(ex.Message, Color.Red);
+                //mensaje_error_sistema(ex.StackTrace,Color.Red);
                 sincronico = false;
                 clienteConectado = false;
                 terminal.conexion = false;
                 conBdd.actualizar_terminal(terminal);
             }catch (ErrorConexionTerminal ex)
             {
-                mensaje_error_sistema(ex.Message, Color.Green);
+                //mensaje_error_sistema(ex.Message, Color.Green);
                 sincronico = false;
                 clienteConectado = false;
                 terminal.conexion = false;
+                error.escritura_archivo_string(ex.Message);
                 conBdd.actualizar_terminal(terminal);
             }
             catch (Exception ex)
             {   
                error.escritura_archivo_string(ex.StackTrace);
-               mensaje_error_sistema(ex.Message, Color.Red);
-               mensaje_error_sistema(ex.StackTrace,Color.Red);
+               //mensaje_error_sistema(ex.Message, Color.Red);
+               //mensaje_error_sistema(ex.StackTrace,Color.Red);
                sincronico = false;
                clienteConectado = false;
                terminal.conexion = false;
@@ -267,12 +277,12 @@ namespace controladorAtm
             catch (ObjectDisposedException ex)
             {
                 error.escritura_archivo_string(ex.StackTrace);
-                mensaje_error_sistema(ex.Message, Color.Red);
+                //mensaje_error_sistema(ex.Message, Color.Red);
             }
             catch (ArgumentNullException ex)
             {
                 error.escritura_archivo_string(ex.StackTrace);
-                mensaje_error_sistema(ex.Message, Color.Red);
+                //mensaje_error_sistema(ex.Message, Color.Red);
             }
             catch (IOException ex) {
                 error.escritura_archivo_string(ex.StackTrace);
@@ -316,14 +326,14 @@ namespace controladorAtm
             }*/
         }
 
-        public void mensaje_error_sistema(string mensaje,Color color)
+        /*public void mensaje_error_sistema(string mensaje,Color color)
         {
             limpiar_lineas_visor();
             visor.SelectionColor = color;
-            visor.AppendText(System.DateTime.Now.ToString("hh:mm:ss") +" " +mensaje + "\r");
-        }
+            visor.AppendText(System.DateTime.Now.ToString("hh:mm:ss") +"[ "+terminal.codigo+"] " +mensaje + "\r");
+        }*/
 
-        public void limpiar_lineas_visor()
+        /*public void limpiar_lineas_visor()
         {
             try
             {
@@ -335,7 +345,7 @@ namespace controladorAtm
             catch (Exception ex) {
                 visor.AppendText(ex.Message);
             }
-        }
+        }*/
 
         public AtmObj get_Terminal_Atm() {
             return terminal;

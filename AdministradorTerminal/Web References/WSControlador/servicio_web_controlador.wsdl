@@ -447,8 +447,9 @@
       <s:complexType name="MonitoreoDispositivos">
         <s:sequence>
           <s:element minOccurs="1" maxOccurs="1" name="id_atm" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="estado_lectora" type="s:int" />
           <s:element minOccurs="0" maxOccurs="1" name="codigo_atm" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="estado_conexion" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="estado_conexio" type="s:boolean" />
           <s:element minOccurs="1" maxOccurs="1" name="modo_supervisor" type="s:boolean" />
           <s:element minOccurs="1" maxOccurs="1" name="llave_terminal" type="s:boolean" />
           <s:element minOccurs="0" maxOccurs="1" name="estado_gaveta1" type="s:string" />
@@ -460,6 +461,7 @@
           <s:element minOccurs="0" maxOccurs="1" name="estado_impresora_jrnl" type="s:string" />
           <s:element minOccurs="0" maxOccurs="1" name="estado_dispensador" type="s:string" />
           <s:element minOccurs="0" maxOccurs="1" name="estado_encriptora" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipo_estado" type="s:string" />
         </s:sequence>
       </s:complexType>
     </s:schema>

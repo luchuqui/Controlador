@@ -102,5 +102,13 @@ namespace ControlerAtm.com.ec.objetos
             set;
             get;
         }
+
+        [DataMember]
+        public string tipo_estado
+        {
+            set;
+            get;
+        }
+
     }
 }

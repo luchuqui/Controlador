@@ -23,7 +23,7 @@ namespace controladorAtm.ProtocoloTerminal
             alarma.mensaje = tramaIng;
             alarma.id_atm = terminal.id_atm;
             string[] campos = tramaIng.Split((char)28);// es el FS  caracter 28
-            alarma.tipo_mensaje = campos[0];
+            alarma.id_mensaje = campos[0];
             alarma.fecha_registro = System.DateTime.Now;
             try
             {
@@ -84,7 +84,7 @@ namespace controladorAtm.ProtocoloTerminal
                         alarma.id_tipo_dispositivo = campos[3];
                         alarma.estado_suministro = campos[5];
                         alarma.estado_diagnostico = campos[6];
-
+                        alarma.estado_dispositivo = campos[7];
                     }
                 }
                 else if (campos[0].Equals("1"))// comando a terminal 
@@ -105,30 +105,53 @@ namespace controladorAtm.ProtocoloTerminal
         #region Miembros de IProcesarTrama
 
 
-        public MonitoreoDispositivos parseaTramaAlarmaDispositivo(AlarmasObj alarma)
+        public List<MonitoreoDispositivos> parseaTramaAlarmaDispositivo(AlarmasObj alarma)
         {
-            MonitoreoDispositivos monitoreo = new MonitoreoDispositivos();
-            int[] disp = new int[alarma.estado_suministro.Length];
-            int ini = 0,fin = 1;
+            List<MonitoreoDispositivos> alarmas = new List<MonitoreoDispositivos>();
+            MonitoreoDispositivos monitoreoC = new MonitoreoDispositivos();
+            MonitoreoDispositivos monitoreoS = new MonitoreoDispositivos();
+            int[] conf = new int[alarma.estado_suministro.Length];
+            int[] sum = new int[alarma.estado_dispositivo.Length];
             /* En este for se saca el estado de cada uno de los dispositivos referenciados en el
              * manual en el capitulo 9 */
             for (int i = 0; i < alarma.estado_suministro.Length-1; i++) {
-                disp[i] = int.Parse( alarma.estado_suministro[i].ToString());
-                ini = fin;
-                fin++;
+                conf[i] = int.Parse( alarma.estado_suministro[i].ToString());
             }
-            monitoreo.id_atm = terminal.id_atm;
-            monitoreo.estado_lectora = disp[3];// En esta posición se encuentra el estado de lectora
-            monitoreo.estado_dispensador = disp[4].ToString();
-            monitoreo.estado_impresora = disp[6].ToString();
-            monitoreo.estado_impresora_jrnl = disp[7].ToString();
-            monitoreo.estado_encriptora = disp[11].ToString();
-            monitoreo.estado_gaveta1 = disp[15].ToString();
-            monitoreo.estado_gaveta2 = disp[16].ToString();
-            monitoreo.estado_gaveta3 = disp[17].ToString();
-            monitoreo.estado_gaveta4 = disp[18].ToString();
-            monitoreo.estado_gaveta5 = "0";
-            return monitoreo;
+            /*Suministros*/
+            for (int i = 0; i < alarma.estado_dispositivo.Length - 1; i++)
+            {
+                sum[i] = int.Parse(alarma.estado_dispositivo[i].ToString());
+            }
+            monitoreoC.id_atm = terminal.id_atm;
+            monitoreoC.estado_lectora = conf[3];// En esta posición se encuentra el estado de lectora
+            monitoreoC.estado_dispensador = conf[4].ToString();
+            monitoreoC.estado_impresora = conf[6].ToString();
+            monitoreoC.estado_impresora_jrnl = conf[7].ToString();
+            monitoreoC.estado_encriptora = conf[11].ToString();
+            monitoreoC.estado_gaveta1 = conf[15].ToString();
+            monitoreoC.estado_gaveta2 = conf[16].ToString();
+            monitoreoC.estado_gaveta3 = conf[17].ToString();
+            monitoreoC.estado_gaveta4 = conf[18].ToString();
+            monitoreoC.estado_gaveta5 = "0";
+            monitoreoC.tipo_estado = "C";
+            /*Ver estados severidad en pagina 445 NDC tabla 9-13*/
+
+            monitoreoS.id_atm = terminal.id_atm;
+            monitoreoS.estado_lectora = conf[3];// En esta posición se encuentra el estado de lectora
+            monitoreoS.estado_dispensador = conf[4].ToString();
+            monitoreoS.estado_impresora = conf[6].ToString();
+            monitoreoS.estado_impresora_jrnl = conf[7].ToString();
+            monitoreoS.estado_encriptora = "0";
+            monitoreoS.estado_gaveta1 = conf[15].ToString();
+            monitoreoS.estado_gaveta2 = conf[16].ToString();
+            monitoreoS.estado_gaveta3 = conf[17].ToString();
+            monitoreoS.estado_gaveta4 = conf[18].ToString();
+            monitoreoS.estado_gaveta5 = "0";
+            monitoreoS.tipo_estado = "S";
+            /*Ver estados en pagina 454 NDC tabla 9-16*/
+            alarmas.Add(monitoreoC);
+            alarmas.Add(monitoreoS);
+            return alarmas;
         }
 
         #endregion

@@ -977,9 +977,11 @@ namespace AdministradorTerminal.WSControlador {
         
         private int id_atmField;
         
+        private int estado_lectoraField;
+        
         private string codigo_atmField;
         
-        private bool estado_conexionField;
+        private bool estado_conexioField;
         
         private bool modo_supervisorField;
         
@@ -1003,6 +1005,8 @@ namespace AdministradorTerminal.WSControlador {
         
         private string estado_encriptoraField;
         
+        private string tipo_estadoField;
+        
         /// <comentarios/>
         public int id_atm {
             get {
@@ -1010,6 +1014,16 @@ namespace AdministradorTerminal.WSControlador {
             }
             set {
                 this.id_atmField = value;
+            }
+        }
+        
+        /// <comentarios/>
+        public int estado_lectora {
+            get {
+                return this.estado_lectoraField;
+            }
+            set {
+                this.estado_lectoraField = value;
             }
         }
         
@@ -1024,12 +1038,12 @@ namespace AdministradorTerminal.WSControlador {
         }
         
         /// <comentarios/>
-        public bool estado_conexion {
+        public bool estado_conexio {
             get {
-                return this.estado_conexionField;
+                return this.estado_conexioField;
             }
             set {
-                this.estado_conexionField = value;
+                this.estado_conexioField = value;
             }
         }
         
@@ -1140,6 +1154,16 @@ namespace AdministradorTerminal.WSControlador {
             }
             set {
                 this.estado_encriptoraField = value;
+            }
+        }
+        
+        /// <comentarios/>
+        public string tipo_estado {
+            get {
+                return this.tipo_estadoField;
+            }
+            set {
+                this.tipo_estadoField = value;
             }
         }
     }
