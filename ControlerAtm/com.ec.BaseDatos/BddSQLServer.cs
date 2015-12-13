@@ -398,16 +398,16 @@ namespace ControlerAtm.com.ec.BaseDatos
             }
             catch (ArgumentException ex)
             {
-                logs.escritura_archivo_string(ex.Message);
+                logs.escritura_archivo_string(ex.Message +" "+ ex.StackTrace);
                 throw new ExInsertarRegistro(MensajeSistema.reg_no_existe);
             }
             catch (InvalidOperationException ex)
             {
-                logs.escritura_archivo_string(ex.Message);
+                logs.escritura_archivo_string(ex.Message +" "+ ex.StackTrace);
                 throw new ExConexionBase(MensajeSistema.error_Conexion);
             }
             catch (SqlException ex) {
-                logs.escritura_archivo_string(ex.Message);
+                logs.escritura_archivo_string(ex.Message + " " + ex.StackTrace);
                 throw new ExInsertarRegistro(ex.Message);
             }
         }

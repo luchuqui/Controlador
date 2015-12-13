@@ -107,7 +107,7 @@ namespace AdministradorTerminal.Contenido
                 HtmlTableCell celdaProceso = new HtmlTableCell();
                 celdaCod.InnerText = atm.codigo;
                 celdaIp.InnerText = atm.ip;
-                celdaUbi.InnerText = atm.ubicacion + " " + atm.ubicacion;
+                celdaUbi.InnerText = atm.ubicacion;
                 string strEstado = "";
                 if (atm.estado.Equals("A"))
                 {
