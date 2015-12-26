@@ -34,16 +34,7 @@ namespace controladorAtm
             trailer = "";
         }
 
-        public ConexionTCP ConexionTCP
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        
 
         #region Miembros de TramaTerminalComando
 

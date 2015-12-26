@@ -9,7 +9,7 @@ namespace controladorAtm
      Se ha creado esta interfaz debido a que el programa 
      * deberia de procesar cualquier tipo de trama sea NDC o 912(DIEBOLD)
      */
-    interface ITramaTerminalComando
+    public interface ITramaTerminalComando
     {
         string getTramaComandoTerminal();
 

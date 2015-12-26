@@ -152,5 +152,18 @@ namespace servicioWebControl
             return controlUsr.control_monitoreo_dispositivos(usuario);
         }
 
+        [WebMethod]
+        public string enviarComandoTerminal(AtmObj terminal,string comando)
+        {
+            string ipMonitoreo = ConfigurationManager.AppSettings["servidorMonitoreo"];
+            string mensaje = string.Empty;
+            if (!string.IsNullOrEmpty(ipMonitoreo)) {
+                mensaje = controlUsr.control_envioComando(terminal, comando, ipMonitoreo);
+            }else{
+                mensaje = "No esta configurado para enviar los comandos, revise su configuracion";
+            }
+            return mensaje;
+        }
+
     }
 }

@@ -8,7 +8,6 @@ using System.Text;
 using System.Windows.Forms;
 using System.Threading;
 using ControlerAtm.com.ec.BaseDatos;
-using controladorAtm.BeanObjetos;
 using ControlerAtm.com.ec.objetos;
 using System.Collections;
 
@@ -69,8 +68,8 @@ namespace controladorAtm
             
             foreach (AtmObj atm in atms)
             {
-                TerminalAtm ter = new TerminalAtm(atm.ip, atm.ubicacion, atm.codigo);
-                ter.id_terminal  = atm.id_atm;
+                //TerminalAtm ter = new TerminalAtm(atm.ip, atm.ubicacion, atm.codigo);
+                //ter.id_terminal  = atm.id_atm;
                 //terminales.Add(ter);
                 terminales.Add(atm);
                 string[] str = { atm.codigo + " - " + atm.ip, down };

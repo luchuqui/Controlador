@@ -8,7 +8,6 @@ using System.Net.Sockets;
 using System.Threading;
 using System.Drawing;
 using System.Collections;
-using controladorAtm.BeanObjetos;
 using ControlerAtm.com.ec.BaseDatos;
 using ControlerAtm.com.ec.objetos;
 

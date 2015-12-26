@@ -60,6 +60,7 @@
     <Compile Include="com.ec.objetos\AtmObj.cs" />
     <Compile Include="com.ec.objetos\AvanceObj.cs" />
     <Compile Include="com.ec.objetos\BeanMenuPerfil.cs" />
+    <Compile Include="com.ec.objetos\ConfiguracionServicio.cs" />
     <Compile Include="com.ec.objetos\MenuObj.cs" />
     <Compile Include="com.ec.objetos\ModeloObj.cs" />
     <Compile Include="com.ec.objetos\MonitoreoDispositivos.cs" />
@@ -69,6 +70,12 @@
     <Compile Include="com.ec.objetos\UsuarioObj.cs" />
     <Compile Include="LogicaNegocio\ControlSistema.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProtocoloTerminal\ComandoNdcTerminal.cs" />
+    <Compile Include="ProtocoloTerminal\IProcesarTrama.cs" />
+    <Compile Include="ProtocoloTerminal\ITramaTerminalComando.cs" />
+    <Compile Include="ProtocoloTerminal\ProcesamientoTrama.cs" />
+    <Compile Include="Utilitario\archivoRW.cs" />
+    <Compile Include="Utilitario\ClienteMonitoreoTCP.cs" />
     <Compile Include="Utilitario\CorreoElectronico.cs" />
     <Compile Include="Utilitario\GeneracionClave.cs" />
     <Compile Include="Utilitario\LecturaEscrituraArchivo.cs" />

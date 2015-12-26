@@ -6,6 +6,7 @@ using ControlerAtm.Utilitario;
 using ControlerAtm.com.ec.BaseDatos;
 using ControlerAtm.com.ec.objetos;
 using ControlerAtm.com.ec.Excepciones;
+using controladorAtm;
 
 namespace ControlerAtm.LogicaNegocio
 {
@@ -815,6 +816,55 @@ namespace ControlerAtm.LogicaNegocio
                 conBdd.cerrar_conexion_base();
             }
             return t;
+        }
+
+        public string control_envioComando(AtmObj terminal,string comando,string hostComunicacion)
+        {
+            conBdd.abrir_conexion_base();
+            List<AtmObj> terminales = new List<AtmObj>();
+            string mensaje = string.Empty;
+            try
+            {
+                string valorBusqueda = terminal.codigo+":"+terminal.id_atm;
+                terminales = conBdd.obtener_terminal(valorBusqueda,true);
+                ClienteMonitoreoTCP conn = new ClienteMonitoreoTCP(hostComunicacion);
+                ComandoNdcTerminal  commandoNDC = new ComandoNdcTerminal();
+                if(comando.Equals("1")){
+                    commandoNDC.setPonerEnServicio();
+                }
+                else if (comando.Equals("2"))
+                {
+                    commandoNDC.setPonerFueraServicio();
+                }
+                else if (comando.Equals("4"))
+                {
+                    commandoNDC.setEnviarSolicitudContadores();
+                }
+                else if (comando.Equals("8"))
+                {
+                    commandoNDC.setEnviarInformacionFechaHora();
+                }
+
+                foreach(AtmObj ter in terminales){
+                    mensaje += conn.envioRecepcionString(commandoNDC.getTramaComandoTerminal())+"\n";
+                }
+                mensaje = "envio de mensaje exitoso!";
+            }
+            catch (ExpObtenerRegistro ex)
+            {
+                mensaje = ex.Message;
+                logSistema.escritura_archivo_string(ex.Message);
+
+            }catch (Exception ex)
+            {
+                mensaje = ex.Message;
+                logSistema.escritura_archivo_string(ex.Message);
+            }
+            finally
+            {
+                conBdd.cerrar_conexion_base();
+            }
+            return mensaje;
         }
 
     }

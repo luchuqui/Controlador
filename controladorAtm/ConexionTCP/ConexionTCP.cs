@@ -5,7 +5,6 @@ using System.Text;
 using System.Net.Sockets;
 using System.Windows.Forms;
 using System.Drawing;
-using controladorAtm.BeanObjetos;
 using System.IO;
 using ControlerAtm.com.ec.BaseDatos;
 using ControlerAtm.com.ec.objetos;

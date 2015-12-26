@@ -483,16 +483,7 @@ namespace controladorAtm
             return datos;
         }
 
-        public ConexionTCP ConexionTCP
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        
 
     }
 }

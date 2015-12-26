@@ -63,9 +63,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="archivoRW.cs" />
-    <Compile Include="BeanObjetos\ConfiguracionServicio.cs" />
-    <Compile Include="BeanObjetos\TerminalAtm.cs" />
     <Compile Include="ConexionTCP\ConexionTCP.cs" />
     <Compile Include="ConexionTCP\ServidorEscucha.cs" />
     <Compile Include="Properties\Errores\ErrorConexionTerminal.cs" />
@@ -99,10 +96,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="ProtocoloTerminal\ComandoNdcTerminal.cs" />
-    <Compile Include="ProtocoloTerminal\IProcesarTrama.cs" />
-    <Compile Include="ProtocoloTerminal\ITramaTerminalComando.cs" />
-    <Compile Include="ProtocoloTerminal\ProcesamientoTrama.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Error.png" />
