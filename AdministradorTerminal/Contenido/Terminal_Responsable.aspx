@@ -79,8 +79,15 @@
             <asp:Button ID="BtnLimpiar" Text = "Limpiar" runat = "server" OnClick = "limpiar_datos" Width ="20%"/>
                 </asp:TableCell>
             </asp:TableRow>
+<asp:TableRow>
+                <asp:TableCell>
+                    <asp:Label ID = "labelUpdt" runat = "server" ForeColor="#3333FF">
+                    </asp:Label>
+                </asp:TableCell>
+            </asp:TableRow>
 
-        </asp:Table> 
+
+</asp:Table> 
     </asp:Panel>
 </asp:Content>
 
