@@ -51,7 +51,8 @@ namespace AdministradorTerminal.Contenido
             }
             string respuesta = Globales.servicio.guardar_actualizar_responsable_terminal(terminales,u);
             CuadroMensaje mensajeNotificacion = new CuadroMensaje(sender, this.GetType());
-            mensajeNotificacion.mostrar_mensaje_alerta(respuesta);
+            labelUpdt.Text = respuesta;
+            //mensajeNotificacion.mostrar_mensaje_alerta(respuesta);
         }
 
         public void limpiar_datos(object sender,EventArgs e) {
