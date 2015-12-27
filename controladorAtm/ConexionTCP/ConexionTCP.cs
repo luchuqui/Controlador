@@ -294,6 +294,39 @@ namespace controladorAtm
             }
         }
 
+        public string envioRecepcionString(string mensajeEnvio)
+        {
+            byte[] msg = new byte[mensajeEnvio.Length];
+            msg = System.Text.Encoding.UTF8.GetBytes(mensajeEnvio);
+            string datos = string.Empty;
+            try
+            {
+                //NetworkStream streamcmd = cliente.GetStream();
+                if (stream.CanWrite)
+                {
+                    stream.Write(msg, 0, msg.Length);
+                    /*Proceso de respuesta*/
+                    
+                    byte[] bytes = new byte[1024];// bufer para realizar la recepcion de flujo
+                    int i = 0;
+                    if (stream.CanRead)
+                    {
+                        i = stream.Read(bytes, 0, bytes.Length);
+                    }
+
+                    datos = System.Text.Encoding.UTF8.GetString(bytes, 0, i);
+                }
+                else {
+                    datos = "terminal ocupado, espere un momento y vuelva a intertarlo";
+                }
+                
+            }
+            catch (Exception e) {
+                datos = "Error de conexion, intente mas tarde " + e.Message;
+            }
+            return datos;
+        }
+
         public void cerrar_conexion()
         {
             try

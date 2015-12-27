@@ -29,10 +29,10 @@
            <asp:TableRow >
           <asp:TableCell ID="cRadios" runat = "server" ColumnSpan="2"  HorizontalAlign="Left" BorderStyle="Solid" >
                     <asp:RadioButtonList runat = "server" RepeatDirection="Vertical" ID = "rbGroup" CellSpacing="4" >
-                    <asp:ListItem Text = "ATM en servicio" Selected = "true" ></asp:ListItem>
-                    <asp:ListItem Text = "ATM fuera de servicio"></asp:ListItem>
-                    <asp:ListItem Text = "Contadores" Selected = "true" ></asp:ListItem>
-                    <asp:ListItem Text = "Sincronización"></asp:ListItem>
+                    <asp:ListItem Text = "ATM en servicio" Selected = "true" Value ="1" ></asp:ListItem>
+                    <asp:ListItem Text = "ATM fuera de servicio" Value = "2"></asp:ListItem>
+                    <asp:ListItem Text = "Contadores" Value = "4"></asp:ListItem>
+                    <asp:ListItem Text = "Sincronización" Value = "8"></asp:ListItem>
                     </asp:RadioButtonList>
           </asp:TableCell>
         </asp:TableRow>
@@ -40,7 +40,7 @@
        <asp:Table ID="Table2" runat = "server" Width="360px">
         <asp:TableRow >
           <asp:TableCell ID="TableCell3" runat = "server" ColumnSpan="4" HorizontalAlign="Center">
-                 <asp:Button ID="Enviar" Text= "Enviar" runat="server" Width ="100px"/> 
+                 <asp:Button ID="Enviar" Text= "Enviar" runat="server" Width ="100px" OnClick = "envioComando"/> 
           </asp:TableCell>
         </asp:TableRow>
        </asp:Table>        
@@ -59,11 +59,7 @@
                 </asp:Label>
                   </asp:TableCell>
                   </asp:TableRow>
-                  <asp:TableRow>
-          <asp:TableCell ID="TableCell7" runat = "server" ColumnSpan="4" HorizontalAlign="Center">
-                 <asp:Button ID="btnConfir" Text= "Confirmación" runat="server" Width ="100px"/>
-          </asp:TableCell>
-        </asp:TableRow>
+                 
        </asp:Table>        
 
 

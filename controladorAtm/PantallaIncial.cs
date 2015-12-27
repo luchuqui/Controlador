@@ -44,6 +44,7 @@ namespace controladorAtm
                 miConfiguracion.puerto = servicio.puerto;
                 miConfiguracion.conexion = servicio.conexion;
                 miConfiguracion.pathLogServicio = aux.get_path_abrir();
+                miConfiguracion.dll = servicio.dll;
                 serv = new ServidorEscucha(miConfiguracion, txbx_visor_evento, terminales, dataGridMonitorDispositivos, conBdd);
                 hiloPrincipal = new Thread((ThreadStart)serv.aceptar_conexion);
             }

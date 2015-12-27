@@ -462,6 +462,7 @@
           <s:element minOccurs="0" maxOccurs="1" name="estado_dispensador" type="s:string" />
           <s:element minOccurs="0" maxOccurs="1" name="estado_encriptora" type="s:string" />
           <s:element minOccurs="0" maxOccurs="1" name="tipo_estado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ipTerminal" type="s:string" />
         </s:sequence>
       </s:complexType>
       <s:element name="enviarComandoTerminal">

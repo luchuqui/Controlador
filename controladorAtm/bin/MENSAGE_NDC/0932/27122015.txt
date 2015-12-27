@@ -1,0 +1,5 @@
+09:50:48 Índice fuera de los límites de la matriz.
+09:50:48 12
+09:50:48 000
+09:50:48 
+09:50:48 R09
