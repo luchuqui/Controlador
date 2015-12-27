@@ -180,6 +180,7 @@ namespace controladorAtm
                         datoResp("[" + terminal.codigo + "]:" + datoRespuesta.Substring(2, datoRespuesta.Length - 2));
                         mensajeEnvioRecep = parseoAlrma.parseaTramaIngreso(datoRespuesta.Substring(2, datoRespuesta.Length - 2));
                         mensajeEnvioRecep.envio_recepcion = 1; //cero envio, uno recibo
+                
                         conBdd.insertar_alarmas(mensajeEnvioRecep);
                         if (mensajeEnvioRecep.id_tipo_dispositivo != null)
                         {

@@ -132,7 +132,13 @@ namespace controladorAtm
 
         private void btn_iniciar_Click(object sender, EventArgs e)
         {
-            iniciar_servicio();
+            try
+            {
+                iniciar_servicio();
+            }
+            catch (Exception ex) {
+                this.txbx_visor_evento.AppendText(ex.Message+"\n");
+            }
         }
 
         private void btn_parar_Click(object sender, EventArgs e)
