@@ -77,7 +77,7 @@ namespace controladorAtm
                 mt.estado_impresora_jrnl = "0";
                 mt.estado_dispensador = "0";
                 mt.estado_encriptora = "0";
-                mt.estado_lectora = 0;
+                mt.estado_lectora = "0";
                 mt.tipo_estado = "C";
                 conBdd.insertar_actualizar_monitoreo_dispositivos(mt);// Como incia conexion se rocede a encerar
                 mt.tipo_estado = "S";
@@ -132,7 +132,7 @@ namespace controladorAtm
                 mt.estado_impresora_jrnl = "0";
                 mt.estado_dispensador = "0";
                 mt.estado_encriptora = "0";
-                mt.estado_lectora = 0;
+                mt.estado_lectora = "0";
                 mt.tipo_estado = "C";
                 conBdd.insertar_actualizar_monitoreo_dispositivos(mt);// Como incia conexion se rocede a encerar
                 mt.tipo_estado = "S";

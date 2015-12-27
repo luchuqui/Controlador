@@ -1629,6 +1629,7 @@ namespace ControlerAtm.com.ec.BaseDatos
                     terminal.estado_encriptora = tb.Rows[i][13].ToString();
                     terminal.tipo_estado = tb.Rows[i][14].ToString();
                     terminal.ipTerminal = tb.Rows[i][15].ToString();
+                    terminal.estado_lectora = tb.Rows[i][16].ToString();
                     terminales.Add(terminal);
                 } return terminales;
             }
