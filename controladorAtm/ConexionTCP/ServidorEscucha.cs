@@ -29,6 +29,7 @@ namespace controladorAtm
         private string down = "SIN CONEXION";
         private string up = "CONECTADO";
         private BddSQLServer conBdd;
+        private string ipMonitoreo;
 
         public ServidorEscucha(ConfiguracionServicio servicio) {
             parametrosconfig = servicio;
@@ -36,6 +37,7 @@ namespace controladorAtm
             terminalesConectadas = new ArrayList();
             atmsAutorizados = new ArrayList();
             ActualizarEstadoConexionTerminal();
+            ipMonitoreo = parametrosconfig.dll;
         }
 
         public ServidorEscucha(ConfiguracionServicio servicio, RichTextBox visor, ArrayList atms,DataGridView terminalesView,BddSQLServer conexion)
@@ -47,6 +49,7 @@ namespace controladorAtm
             visorTerminales = terminalesView;
             conBdd = conexion;
             ActualizarEstadoConexionTerminal();
+            ipMonitoreo = parametrosconfig.dll;
             //conBdd.abrir_conexion_base();
         }
 
@@ -87,7 +90,6 @@ namespace controladorAtm
                     cliente = servidor.AcceptTcpClient();
                     mensaje_error_sistema("Conexion ip "+cliente.Client.RemoteEndPoint.ToString().Split(':')[0] +" remota",Color.Blue);
                     AtmObj atmIng = verificarIpAutorizada(cliente.Client.RemoteEndPoint.ToString().Split(':')[0]);
-                    
                     if (atmIng != null)
                     {
                         //conBdd.abrir_conexion_base();
@@ -113,8 +115,17 @@ namespace controladorAtm
                         }
                     }
                     else {
+                        
+                        string ipSolicitud = cliente.Client.RemoteEndPoint.ToString().Split(':')[0];
+                        if (ipMonitoreo.Equals(ipSolicitud))
+                        {
+                            envioComandoTerminal(cliente);
+                            
+                        }
+                        else {
+                            mensaje_error_sistema("No autorizada para conectarse ...", Color.Red);
+                        }
                         cliente.Close();
-                        mensaje_error_sistema("No autorizada para conectarse ...", Color.Red);
                     }
                 }
             }
@@ -200,6 +211,62 @@ namespace controladorAtm
                 }
             }
             return terminal;
+        }
+
+        /*Este metodo se va a encarga de realizar el envio y recepcion de datos*/
+        public void envioComandoTerminal(TcpClient clienteCmd)
+        {
+            string ipSolicitud = clienteCmd.Client.RemoteEndPoint.ToString().Split(':')[0];
+            string mensajeCmd = string.Empty;
+            /*1.- debo de receptar lo solicitado*/
+            NetworkStream ncomand = new NetworkStream(clienteCmd.Client);
+                    try
+                    {
+                    string datosCmd = string.Empty;
+                    byte[] bytes = new byte[1024];// bufer para realizar la recepcion de flujo
+                    int i;
+                    i = ncomand.Read(bytes, 0, bytes.Length);
+                    datosCmd = System.Text.Encoding.UTF8.GetString(bytes, 0, i);/*Datos recibidos para el comando*/
+                    string[] procesoCmd = datosCmd.Split(':');
+                    mensaje_error_sistema("Envio comando ip Terminal :"+procesoCmd[0], Color.Green);    
+                    foreach (ConexionTCP connAtm in terminalesConectadas)
+                    {
+                        if (connAtm.get_Terminal_Atm().ip.Equals(procesoCmd[0]))
+                        {
+                            connAtm.envio_string(procesoCmd[1]);
+                            //mensajeCmd=connAtm.envioRecepcionString(procesoCmd[1]);
+                            mensajeCmd = "220009";
+                            break;
+                        }
+                    }
+                    /*Envia la respuesta al cliente que solicito*/
+                    if (mensajeCmd.EndsWith("220009"))
+                    {
+                        mensajeCmd = "Envio comando exitoso";
+                    }
+                    else if (string.IsNullOrEmpty(mensajeCmd)) {
+                        mensajeCmd = "Respuesta no registrada";
+                    }
+                    byte[] msg = new byte[mensajeCmd.Length];
+                    msg = System.Text.Encoding.UTF8.GetBytes(mensajeCmd);
+                    ncomand.Write(msg, 0, msg.Length);
+                }
+            catch (Exception e)
+            {
+                mensaje_error_sistema(e.Message, Color.Green);    
+            }
+            finally {
+                try
+                {
+                    ncomand.Close();
+                    //clienteCmd.Close();
+                }
+                catch (Exception e) {
+                    mensaje_error_sistema(e.Message, Color.Green);    
+                }
+            }
+
+                
         }
 
         public void ActualizarEstadoConexionTerminal()

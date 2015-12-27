@@ -24,14 +24,14 @@ namespace AdministradorTerminal.Contenido
             AtmObj[] atms = Globales.servicio.obtenerTerminalPorUsuario(usesion);
             if (atms.Length > 0)
             {
-                ATMs_Registrados.Items.Add(new ListItem("Seleccione un Terminal", "001"));
+                ATMs_Registrados.Items.Add(new ListItem("Seleccione un Terminal", "999901"));
             }
             else {
-                ATMs_Registrados.Items.Add(new ListItem("Asigne un Terminal", "001"));
+                ATMs_Registrados.Items.Add(new ListItem("Asigne un Terminal", "999901"));
             }
             foreach (AtmObj atm in atms)
             {
-                ATMs_Registrados.Items.Add(new ListItem(atm.codigo, atm.id_atm.ToString()));
+                ATMs_Registrados.Items.Add(new ListItem(atm.codigo +" - "+atm.ubicacion, atm.ip));
             }
         }
 
@@ -39,6 +39,21 @@ namespace AdministradorTerminal.Contenido
         public void seleccionar_terminal(Object sender, EventArgs e) 
         
         {
+        }
+
+        public void envioComando(Object sender, EventArgs e)
+        {
+            if (ATMs_Registrados.SelectedItem.Value.Equals("999901")) {
+                this.lblMenEnv.Text = "Seleccione un terminal";
+                return;
+            }
+            string ipAtm = ATMs_Registrados.SelectedValue;
+            string cmd = this.rbGroup.SelectedValue;
+            AtmObj ter = new AtmObj();
+            ter.ip = ipAtm;
+            ter.id_atm = 1;
+            this.lblMenEnv.Text = rbGroup.SelectedItem.Text;
+            this.lblMensConf.Text = Globales.servicio.enviarComandoTerminal(ter,cmd);
         }
 
         protected void Page_Load(object sender, EventArgs e)

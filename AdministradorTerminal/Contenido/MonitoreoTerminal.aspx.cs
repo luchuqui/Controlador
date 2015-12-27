@@ -121,7 +121,7 @@ namespace AdministradorTerminal.Contenido
             int i = 1;
             foreach (MonitoreoDispositivos terminal in terminales)
             {
-                if (!terminal.tipo_estado.Equals("S")) {
+                if (!terminal.tipo_estado.Equals("C")) {
                     continue;
                 }
                 HtmlTableRow fila = new HtmlTableRow();
@@ -151,7 +151,7 @@ namespace AdministradorTerminal.Contenido
                 {
                     
                     estadoConexion.ImageUrl = "~/Imagenes/connect_creating.png";
-                    estadoConexion.ToolTip = "Terminal Conectado";
+                    estadoConexion.ToolTip = "Terminal Conectado, IP "+terminal.ipTerminal;
                     
                     if (terminal.modo_supervisor)
                     {
@@ -177,7 +177,7 @@ namespace AdministradorTerminal.Contenido
                 }
                 else{
                     estadoConexion.ImageUrl = "~/Imagenes/connect_no.png";
-                    estadoConexion.ToolTip = "Terminal desconectado";
+                    estadoConexion.ToolTip = "Terminal desconectado, IP "+terminal.ipTerminal;
                     supervisor.ImageUrl = "~/Imagenes/connect_no.png";
                     supervisor.ToolTip = "No determinado";
                     llave.ImageUrl = "~/Imagenes/connect_no.png";
