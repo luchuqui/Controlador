@@ -30,6 +30,7 @@ namespace controladorAtm.ProtocoloTerminal
                 /*PARA MENSAJES NO SOLICITADOS DE ALARMAS*/
                 if (campos[0].Equals("12")) 
                 {
+                    alarma.tipo_alarma = "A";
                     try
                     {
                         //obtenemos el tipo de dispositivo
@@ -60,6 +61,7 @@ namespace controladorAtm.ProtocoloTerminal
                       CODIGO F SOLICITUD DE CONTADORES LEER SI SE VALID*/
                     if (campos[3].Equals("8"))
                     {
+                        alarma.tipo_alarma = "A";
                         try
                         {
                             alarma.id_tipo_dispositivo = campos[4].Substring(0, 1);

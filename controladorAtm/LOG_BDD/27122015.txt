@@ -1,0 +1,5 @@
+13:20:38 Error en el nivel de transporte al enviar la solicitud al servidor. (provider: Proveedor de TCP, error: 0 - Se ha anulado una conexión establecida por el software en su equipo host..)
+13:20:38 ExecuteNonQuery requiere una conexión abierta y disponible. El estado actual de la conexión es cerrada.
+14:03:34 ExecuteNonQuery requiere una conexión abierta y disponible. El estado actual de la conexión es cerrada.
+14:03:34 ExecuteNonQuery requiere una conexión abierta y disponible. El estado actual de la conexión es cerrada.
+14:03:34 ExecuteNonQuery requiere una conexión abierta y disponible. El estado actual de la conexión es cerrada.

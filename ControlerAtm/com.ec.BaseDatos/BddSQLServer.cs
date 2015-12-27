@@ -366,6 +366,14 @@ namespace ControlerAtm.com.ec.BaseDatos
             }else{
                 cmd.Parameters.AddWithValue("@tipoComando", alarmas.tipo_comando);
             }
+            if (alarmas.tipo_alarma == null)
+            {
+                cmd.Parameters.AddWithValue("@tipoAlarma", DBNull.Value);
+            }
+            else
+            {
+                cmd.Parameters.AddWithValue("@tipoAlarma", alarmas.tipo_alarma);
+            }
             
             try
             {
