@@ -825,8 +825,8 @@ namespace ControlerAtm.LogicaNegocio
             string mensaje = string.Empty;
             try
             {
-                string valorBusqueda = terminal.codigo+":"+terminal.id_atm;
-                terminales = conBdd.obtener_terminal(valorBusqueda,true);
+                string valorBusqueda = terminal.ip+":"+terminal.id_atm;
+                terminales = conBdd.obtener_terminal(valorBusqueda,false);
                 ClienteMonitoreoTCP conn = new ClienteMonitoreoTCP(hostComunicacion);
                 ComandoNdcTerminal  commandoNDC = new ComandoNdcTerminal();
                 if(comando.Equals("1")){
@@ -846,9 +846,22 @@ namespace ControlerAtm.LogicaNegocio
                 }
 
                 foreach(AtmObj ter in terminales){
-                    mensaje += conn.envioRecepcionString(commandoNDC.getTramaComandoTerminal())+"\n";
+                    try
+                    {
+                        if (ter.conexion)
+                        {
+                            mensaje += "[" + ter.codigo + "]" + conn.envioRecepcionString(ter.ip + ":" + commandoNDC.getTramaComandoTerminal()) + "\n";
+                        }
+                        else {
+                            mensaje += "[" + ter.codigo + "] Terminal desconectado \n";
+                        }
+                    }
+                    catch (Exception e) {
+                        mensaje = e.Message + "\t"+ e.StackTrace;
+                        logSistema.escritura_archivo_string(e.Message);
+                    }
                 }
-                mensaje = "envio de mensaje exitoso!";
+                //mensaje = "envio de mensaje exitoso!";
             }
             catch (ExpObtenerRegistro ex)
             {
@@ -863,6 +876,7 @@ namespace ControlerAtm.LogicaNegocio
             finally
             {
                 conBdd.cerrar_conexion_base();
+                
             }
             return mensaje;
         }

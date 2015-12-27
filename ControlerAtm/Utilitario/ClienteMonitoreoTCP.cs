@@ -31,6 +31,8 @@ namespace ControlerAtm.Utilitario
             int i;
             i = stream.Read(bytes, 0, bytes.Length);
                     datos = System.Text.Encoding.UTF8.GetString(bytes, 0, i);
+                    stream.Close();
+                    cliente.Close();
             return datos;
         }
 

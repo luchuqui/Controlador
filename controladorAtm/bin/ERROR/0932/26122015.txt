@@ -1,0 +1,20 @@
+17:55:47 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 273
+17:58:55 en System.Net.Sockets.Socket.get_Available()
+   en System.Net.Sockets.NetworkStream.get_DataAvailable()
+   en controladorAtm.ConexionTCP.recepcion_de_datos() en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 247
+   en controladorAtm.ConexionTCP.cliente_servicio() en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 176
+17:59:39 en System.Net.Sockets.Socket.get_Available()
+   en System.Net.Sockets.NetworkStream.get_DataAvailable()
+   en controladorAtm.ConexionTCP.recepcion_de_datos() en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 247
+   en controladorAtm.ConexionTCP.cliente_servicio() en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 176
+18:09:32 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 273
+18:21:42 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 273
+18:24:12 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 273
+18:28:43 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 273
+19:51:59 en System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   en controladorAtm.ConexionTCP.envio_string(String datoIn) en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 273

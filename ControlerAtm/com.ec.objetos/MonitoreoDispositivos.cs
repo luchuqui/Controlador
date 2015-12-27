@@ -110,5 +110,12 @@ namespace ControlerAtm.com.ec.objetos
             get;
         }
 
+        [DataMember]
+        public string ipTerminal
+        {
+            set;
+            get;
+        }
+
     }
 }
