@@ -64,3 +64,13 @@ C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\b
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\bin\Debug\ControlerAtm.pdb
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\obj\Debug\controladorAtm.exe
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\obj\Debug\controladorAtm.pdb
+D:\Documentos\GitHub\Controlador\controladorAtm\obj\Debug\controladorAtm.exe
+D:\Documentos\GitHub\Controlador\controladorAtm\obj\Debug\controladorAtm.pdb
+D:\Documentos\GitHub\Controlador\controladorAtm\bin\Debug\controladorAtm.exe
+D:\Documentos\GitHub\Controlador\controladorAtm\bin\Debug\controladorAtm.pdb
+D:\Documentos\GitHub\Controlador\controladorAtm\bin\Debug\ControlerAtm.dll
+D:\Documentos\GitHub\Controlador\controladorAtm\bin\Debug\ControlerAtm.pdb
+D:\Documentos\GitHub\Controlador\controladorAtm\obj\Debug\ResolveAssemblyReference.cache
+D:\Documentos\GitHub\Controlador\controladorAtm\obj\Debug\controladorAtm.PantallaIncial.resources
+D:\Documentos\GitHub\Controlador\controladorAtm\obj\Debug\controladorAtm.Properties.Resources.resources
+D:\Documentos\GitHub\Controlador\controladorAtm\obj\Debug\controladorAtm.csproj.GenerateResource.Cache

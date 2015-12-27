@@ -33,3 +33,8 @@ C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\bin
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\bin\Debug\ControlerAtm.pdb
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\obj\Debug\ControlerAtm.dll
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\obj\Debug\ControlerAtm.pdb
+D:\Documentos\GitHub\Controlador\ControlerAtm\bin\Debug\ControlerAtm.dll
+D:\Documentos\GitHub\Controlador\ControlerAtm\bin\Debug\ControlerAtm.pdb
+D:\Documentos\GitHub\Controlador\ControlerAtm\obj\Debug\ResolveAssemblyReference.cache
+D:\Documentos\GitHub\Controlador\ControlerAtm\obj\Debug\ControlerAtm.dll
+D:\Documentos\GitHub\Controlador\ControlerAtm\obj\Debug\ControlerAtm.pdb
