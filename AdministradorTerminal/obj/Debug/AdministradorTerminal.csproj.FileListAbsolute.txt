@@ -45,3 +45,10 @@ C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\AdministradorTer
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\AdministradorTerminal\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\AdministradorTerminal\obj\Debug\AdministradorTerminal.dll
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\AdministradorTerminal\obj\Debug\AdministradorTerminal.pdb
+D:\Documentos\GitHub\Controlador\AdministradorTerminal\bin\AdministradorTerminal.dll
+D:\Documentos\GitHub\Controlador\AdministradorTerminal\bin\AdministradorTerminal.pdb
+D:\Documentos\GitHub\Controlador\AdministradorTerminal\bin\ControlerAtm.dll
+D:\Documentos\GitHub\Controlador\AdministradorTerminal\bin\ControlerAtm.pdb
+D:\Documentos\GitHub\Controlador\AdministradorTerminal\obj\Debug\ResolveAssemblyReference.cache
+D:\Documentos\GitHub\Controlador\AdministradorTerminal\obj\Debug\AdministradorTerminal.dll
+D:\Documentos\GitHub\Controlador\AdministradorTerminal\obj\Debug\AdministradorTerminal.pdb

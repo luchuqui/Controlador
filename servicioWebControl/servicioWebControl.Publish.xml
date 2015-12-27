@@ -1,18 +1,18 @@
 <publishData>
-  <publishTarget publishUrl="C:\SITIOSWEBIIS\WSControlador\">
-    <file relUrl="bin/servicioWebControl.pdb" publishTime="12/26/2015 19:51:17" />
-    <file relUrl="bin/servicioWebControl.dll" publishTime="12/26/2015 19:51:17" />
-    <file relUrl="servicio_web_controlador.asmx" publishTime="10/08/2015 15:41:00" />
-    <file relUrl="bin/ControlerAtm.pdb" publishTime="12/26/2015 19:51:11" />
-    <file relUrl="bin/ControlerAtm.dll" publishTime="12/26/2015 19:51:11" />
-    <file relUrl="Web.config" publishTime="12/26/2015 12:55:32" />
-  </publishTarget>
   <publishTarget publishUrl="D:\SITIOSWEBIIS\WSControlador\">
-    <file relUrl="bin/servicioWebControl.pdb" publishTime="12/13/2015 14:10:30" />
-    <file relUrl="bin/servicioWebControl.dll" publishTime="12/13/2015 14:10:31" />
-    <file relUrl="servicio_web_controlador.asmx" publishTime="11/01/2015 15:30:43" />
-    <file relUrl="bin/ControlerAtm.pdb" publishTime="12/13/2015 14:10:30" />
-    <file relUrl="bin/ControlerAtm.dll" publishTime="12/13/2015 14:10:30" />
-    <file relUrl="Web.config" publishTime="11/01/2015 15:30:43" />
+    <file relUrl="bin/servicioWebControl.pdb" publishTime="12/27/2015 11:50:48" />
+    <file relUrl="bin/servicioWebControl.dll" publishTime="12/27/2015 11:50:48" />
+    <file relUrl="servicio_web_controlador.asmx" publishTime="12/27/2015 10:04:39" />
+    <file relUrl="bin/ControlerAtm.pdb" publishTime="12/27/2015 11:50:47" />
+    <file relUrl="bin/ControlerAtm.dll" publishTime="12/27/2015 11:50:47" />
+    <file relUrl="Web.config" publishTime="12/27/2015 10:04:39" />
+  </publishTarget>
+  <publishTarget publishUrl="C:\SITIOSWEBIIS\WSControlador\">
+    <file relUrl="bin/servicioWebControl.pdb" publishTime="12/27/2015 10:54:53" />
+    <file relUrl="bin/servicioWebControl.dll" publishTime="12/27/2015 10:54:53" />
+    <file relUrl="servicio_web_controlador.asmx" publishTime="12/27/2015 10:04:39" />
+    <file relUrl="bin/ControlerAtm.pdb" publishTime="12/27/2015 10:54:53" />
+    <file relUrl="bin/ControlerAtm.dll" publishTime="12/27/2015 10:54:53" />
+    <file relUrl="Web.config" publishTime="12/27/2015 10:04:39" />
   </publishTarget>
 </publishData>

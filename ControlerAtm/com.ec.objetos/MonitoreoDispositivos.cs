@@ -17,7 +17,7 @@ namespace ControlerAtm.com.ec.objetos
         }
 
         [DataMember]
-        public int estado_lectora
+        public string estado_lectora
         {
             set;
             get;

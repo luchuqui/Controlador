@@ -47,3 +47,10 @@ C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\servicioWebContr
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\servicioWebControl\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\servicioWebControl\obj\Debug\servicioWebControl.dll
 C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\servicioWebControl\obj\Debug\servicioWebControl.pdb
+D:\Documentos\GitHub\Controlador\servicioWebControl\bin\servicioWebControl.dll
+D:\Documentos\GitHub\Controlador\servicioWebControl\bin\servicioWebControl.pdb
+D:\Documentos\GitHub\Controlador\servicioWebControl\bin\ControlerAtm.dll
+D:\Documentos\GitHub\Controlador\servicioWebControl\bin\ControlerAtm.pdb
+D:\Documentos\GitHub\Controlador\servicioWebControl\obj\Debug\ResolveAssemblyReference.cache
+D:\Documentos\GitHub\Controlador\servicioWebControl\obj\Debug\servicioWebControl.dll
+D:\Documentos\GitHub\Controlador\servicioWebControl\obj\Debug\servicioWebControl.pdb
