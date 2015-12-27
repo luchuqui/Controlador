@@ -123,7 +123,7 @@ namespace controladorAtm.ProtocoloTerminal
                 sum[i] = int.Parse(alarma.estado_dispositivo[i].ToString());
             }
             monitoreoC.id_atm = terminal.id_atm;
-            monitoreoC.estado_lectora = conf[3];// En esta posición se encuentra el estado de lectora
+            monitoreoC.estado_lectora = conf[3].ToString();// En esta posición se encuentra el estado de lectora
             monitoreoC.estado_dispensador = conf[4].ToString();
             monitoreoC.estado_impresora = conf[6].ToString();
             monitoreoC.estado_impresora_jrnl = conf[7].ToString();
@@ -137,7 +137,7 @@ namespace controladorAtm.ProtocoloTerminal
             /*Ver estados severidad en pagina 445 NDC tabla 9-13*/
 
             monitoreoS.id_atm = terminal.id_atm;
-            monitoreoS.estado_lectora = sum[3];// En esta posición se encuentra el estado de lectora
+            monitoreoS.estado_lectora = sum[3].ToString();// En esta posición se encuentra el estado de lectora
             monitoreoS.estado_dispensador = sum[4].ToString();
             monitoreoS.estado_impresora = sum[6].ToString();
             monitoreoS.estado_impresora_jrnl = sum[7].ToString();

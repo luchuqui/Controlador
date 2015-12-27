@@ -26,6 +26,7 @@ namespace AdministradorTerminal.Contenido
             HtmlTableCell celdaNum = new HtmlTableCell();
             HtmlTableCell celdaTer = new HtmlTableCell();
             HtmlTableCell celdaGab = new HtmlTableCell();
+            HtmlTableCell celdaDis = new HtmlTableCell();
             HtmlTableCell celdaLec = new HtmlTableCell();
             HtmlTableCell celdaImp = new HtmlTableCell();
             HtmlTableCell celdaMod = new HtmlTableCell();
@@ -36,7 +37,8 @@ namespace AdministradorTerminal.Contenido
             celdaTer.InnerText = "Terminal";
             celdaEst.InnerText = "Conexión";
             celdaGab.InnerText = "Gavetas";
-            celdaGab.ColSpan = 6;
+            celdaGab.ColSpan = 5;
+            celdaDis.InnerText = "Dispensador";
             celdaLlave.InnerText = "Llave";
             celdaLec.InnerText = "Lectora";
             celdaImp.InnerText = "Impresora";
@@ -47,6 +49,7 @@ namespace AdministradorTerminal.Contenido
             fila.Cells.Add(celdaTer);
             fila.Cells.Add(celdaEst);
             fila.Cells.Add(celdaGab);
+            fila.Cells.Add(celdaDis);
             fila.Cells.Add(celdaLec);
             fila.Cells.Add(celdaImp);
             fila.Cells.Add(celdaMod);
@@ -131,11 +134,12 @@ namespace AdministradorTerminal.Contenido
                 HtmlTableCell celdaGab2 = new HtmlTableCell();
                 HtmlTableCell celdaGab3 = new HtmlTableCell();
                 HtmlTableCell celdaGab4 = new HtmlTableCell();
-                HtmlTableCell celdaGab5 = new HtmlTableCell();
+                //HtmlTableCell celdaGab5 = new HtmlTableCell();
                 HtmlTableCell celdaRecha = new HtmlTableCell();
                 HtmlTableCell celdaLec = new HtmlTableCell();
                 HtmlTableCell celdaMod = new HtmlTableCell();
                 HtmlTableCell celdaImp = new HtmlTableCell();
+                HtmlTableCell celdaDis = new HtmlTableCell();
                 HtmlTableCell celdaEst = new HtmlTableCell();
                 HtmlTableCell celdaProceso = new HtmlTableCell();
                 HtmlTableCell celdaLlave = new HtmlTableCell();
@@ -187,7 +191,8 @@ namespace AdministradorTerminal.Contenido
                     terminal.estado_gaveta3 = "10:No determinado";
                     terminal.estado_gaveta4 = "10:No determinado";
                     terminal.estado_gaveta5 = "10:No determinado";
-                    //terminal.estado_lectora = 10; revisar no hay estado determinado de la letora
+                    terminal.estado_dispensador = "10:No determinado";
+                    terminal.estado_lectora = "10:No determinado";
                     terminal.estado_impresora = "10:No determinado";
                 }
                 
@@ -195,22 +200,24 @@ namespace AdministradorTerminal.Contenido
                 Image gaveta2 = obtener_imagen(terminal.estado_gaveta2, "Gaveta 2");
                 Image gaveta3 = obtener_imagen(terminal.estado_gaveta3, "Gaveta 3");
                 Image gaveta4 = obtener_imagen(terminal.estado_gaveta4, "Gaveta 4");
-                Image gaveta5 = obtener_imagen(terminal.estado_gaveta5, "Gaveta 5");
+                //Image gaveta5 = obtener_imagen(terminal.estado_gaveta5, "Gaveta 5");
                 Image gavetaR = obtener_imagen(terminal.estado_gaveta5, "Gaveta Rechazo");
-                Image lectora = obtener_imagen(terminal.estado_gaveta5, "Lectora");
+                Image lectora = obtener_imagen(terminal.estado_lectora, "Lectora");
                 Image impresora = obtener_imagen(terminal.estado_impresora, "Impresora");
-                
+                Image dispensador = obtener_imagen(terminal.estado_dispensador, "Dispensador");
+
                 celdaEst.Controls.Add(estadoConexion);
                 celdaGab1.Controls.Add(gaveta1);
                 celdaGab2.Controls.Add(gaveta2);
                 celdaGab3.Controls.Add(gaveta3);
                 celdaGab4.Controls.Add(gaveta4);
-                celdaGab5.Controls.Add(gaveta5);
+                //celdaGab5.Controls.Add(gaveta5);
                 celdaRecha.Controls.Add(gavetaR);
                 celdaLec.Controls.Add(lectora);
                 celdaImp.Controls.Add(impresora);
                 celdaMod.Controls.Add(supervisor);
                 celdaLlave.Controls.Add(llave);
+                celdaDis.Controls.Add(dispensador);
 
                 Button btnEl = new Button();
                 btnEl.Text = "Sucesos";
@@ -226,8 +233,9 @@ namespace AdministradorTerminal.Contenido
                 fila.Cells.Add(celdaGab2);
                 fila.Cells.Add(celdaGab3);
                 fila.Cells.Add(celdaGab4);
-                fila.Cells.Add(celdaGab5);
+                //fila.Cells.Add(celdaGab5);
                 fila.Cells.Add(celdaRecha);
+                fila.Cells.Add(celdaDis);
                 fila.Cells.Add(celdaLec);
                 fila.Cells.Add(celdaImp);
                 fila.Cells.Add(celdaMod);
