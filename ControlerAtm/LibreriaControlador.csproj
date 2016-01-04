@@ -81,6 +81,7 @@
     <Compile Include="Utilitario\LecturaEscrituraArchivo.cs" />
     <Compile Include="Utilitario\MensajeSistema.cs" />
     <Compile Include="Utilitario\MensajeTexto.cs" />
+    <Compile Include="Utilitario\NotificacionEnviar.cs" />
     <Compile Include="Utilitario\Seguridad.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

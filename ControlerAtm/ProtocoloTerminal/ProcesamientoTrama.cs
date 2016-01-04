@@ -59,6 +59,7 @@ namespace controladorAtm.ProtocoloTerminal
                 {
                     /*CODIGO TIPO 8 SIGNIFICA QUE ES UNA ALARMA SOLICITADA,
                       CODIGO F SOLICITUD DE CONTADORES LEER SI SE VALID*/
+                    alarma.descriptor = campos[3];
                     if (campos[3].Equals("8"))
                     {
                         alarma.tipo_alarma = "A";
@@ -83,10 +84,11 @@ namespace controladorAtm.ProtocoloTerminal
                     }
                         /* ESTADOS DE DISPOSITIVOS */
                     else if(campos[3].Equals("F")){
-                        alarma.id_tipo_dispositivo = campos[3];
+                        //alarma.descriptor = campos[3];
                         alarma.estado_suministro = campos[5];
                         alarma.estado_diagnostico = campos[6];
                         alarma.estado_dispositivo = campos[7];
+                        
                     }
                 }
                 else if (campos[0].Equals("1"))// comando a terminal 

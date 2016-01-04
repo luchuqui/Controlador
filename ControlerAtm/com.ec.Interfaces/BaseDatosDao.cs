@@ -15,7 +15,7 @@ namespace ControlerAtm.com.ec.Interfaces
         void insertar_perfil(PerfilObj perfil);
         List<MenuObj> obtener_menu(UsuarioObj usuario);
         void insertar_modelo(ModeloObj modelo);
-        void insertar_alarmas(AlarmasObj alarmas);
+        string insertar_alarmas(AlarmasObj alarmas);
         void insertar_atm(AtmObj atm);
         void insertar_suceso(SucesoObj suceso);
         void insertar_menu(MenuObj menu);
@@ -48,5 +48,7 @@ namespace ControlerAtm.com.ec.Interfaces
         List<BeanMenuPerfil> obtener_perfil_menu(int codigoPerfil);
         List<MonitoreoDispositivos> obtener_alarmaByUsuario(UsuarioObj usuario);
         void insertar_actualizar_monitoreo_dispositivos(MonitoreoDispositivos monitoreo);
+        string obtener_descripcion_error(int error,string tipoDispositivo);
+        List<UsuarioObj> obtener_usuario_por_terminal(AtmObj atm);
     }
 }

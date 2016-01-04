@@ -312,7 +312,7 @@ namespace ControlerAtm.com.ec.BaseDatos
             }
         }
 
-        public void insertar_alarmas(AlarmasObj alarmas)
+        public string insertar_alarmas(AlarmasObj alarmas)
         {
             SqlCommand cmd = new SqlCommand("insertar_alarmas_sp", conn);
             cmd.CommandType = CommandType.StoredProcedure;
@@ -374,10 +374,23 @@ namespace ControlerAtm.com.ec.BaseDatos
             {
                 cmd.Parameters.AddWithValue("@tipoAlarma", alarmas.tipo_alarma);
             }
-            
+            if (alarmas.descriptor == null)
+            {
+                cmd.Parameters.AddWithValue("@descriptor", DBNull.Value);
+            }
+            else
+            {
+                cmd.Parameters.AddWithValue("@descriptor", alarmas.descriptor);
+            }
+            SqlParameter envioNotificacion = new SqlParameter("@envio","sin valor");
+            envioNotificacion.Direction = ParameterDirection.Output;
+            //envioNotificacion.Value = "0:sinValor";
+            cmd.Parameters.Add(envioNotificacion);
+
             try
             {
                 cmd.ExecuteNonQuery();
+                return cmd.Parameters["@envio"].Value.ToString();
             }
             catch (ArgumentException ex)
             {
@@ -1704,6 +1717,96 @@ namespace ControlerAtm.com.ec.BaseDatos
                 logs.escritura_archivo_string(ex.Message);
                 //logs.cerrar_archivo();
                 throw new ExInsertarRegistro(ex.Message);
+            }
+        }
+
+        #endregion
+
+        #region Miembros de BaseDatosDao
+
+
+        public string obtener_descripcion_error(int error, string tipoDispositivo)
+        {
+            SqlCommand cmd;
+            cmd = new SqlCommand("obtener_descripcion_error_dispositivo_sp", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@tipo_dispositivo", tipoDispositivo);
+            cmd.Parameters.AddWithValue("@codigo_error", error);
+            string mensaje = null;
+            try
+            {
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable tb = new DataTable("lsAlarma");
+                da.Fill(tb);
+                for (int i = 0; i < tb.Rows.Count; i++)
+                {
+                    mensaje = tb.Rows[i][0].ToString();
+                }
+                return mensaje;
+            }
+            catch (IndexOutOfRangeException ex)
+            {
+                logs.escritura_archivo_string(ex.Message);
+                throw new ExpObtenerRegistro(MensajeSistema.reg_no_existe);
+            }
+            catch (ArgumentNullException ex)
+            {
+                logs.escritura_archivo_string(ex.Message);
+                throw new ExpObtenerRegistro(MensajeSistema.reg_no_existe);
+            }
+            catch (Exception ex)
+            {
+                logs.escritura_archivo_string(ex.Message);
+                throw new Exception(MensajeSistema.error_Conexion);
+            }
+        }
+
+        #endregion
+
+        #region Miembros de BaseDatosDao
+
+
+        public List<UsuarioObj> obtener_usuario_por_terminal(AtmObj atm)
+        {
+            SqlCommand cmd = new SqlCommand("obtener_usuario_by_atm_sp", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@id_atm", atm.id_atm);
+            List<UsuarioObj> usuarios = new List<UsuarioObj>();
+            try
+            {
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable tb = new DataTable("usuarioObj");
+                da.Fill(tb);
+                for (int i = 0; i < tb.Rows.Count; i++)
+                {
+                    UsuarioObj usuario = new UsuarioObj();
+                    usuario.id = Convert.ToInt16(tb.Rows[i][0].ToString());
+                    usuario.nombre = tb.Rows[i][1].ToString();
+                    usuario.apellido = tb.Rows[i][2].ToString();
+                    usuario.cedula = tb.Rows[i][3].ToString();
+                    usuario.correo = tb.Rows[i][4].ToString();
+                    usuario.telefono = tb.Rows[i][5].ToString();
+                    usuarios.Add(usuario);
+                }
+                return usuarios;
+            }
+            catch (IndexOutOfRangeException ex)
+            {
+                logs.escritura_archivo_string(ex.Message);
+                //logs.cerrar_archivo();
+                throw new ExpObtenerRegistro(MensajeSistema.reg_no_existe);
+            }
+            catch (ArgumentNullException ex)
+            {
+                logs.escritura_archivo_string(ex.Message);
+                //logs.cerrar_archivo();
+                throw new ExpObtenerRegistro(MensajeSistema.reg_no_existe);
+            }
+            catch (Exception ex)
+            {
+                logs.escritura_archivo_string(ex.Message);
+                //logs.cerrar_archivo();
+                throw new Exception(MensajeSistema.reg_no_existe);
             }
         }
 

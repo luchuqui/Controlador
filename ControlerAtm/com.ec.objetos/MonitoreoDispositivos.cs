@@ -117,5 +117,6 @@ namespace ControlerAtm.com.ec.objetos
             get;
         }
 
+        
     }
 }

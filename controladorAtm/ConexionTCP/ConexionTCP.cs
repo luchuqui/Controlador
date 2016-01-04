@@ -10,6 +10,7 @@ using ControlerAtm.com.ec.BaseDatos;
 using ControlerAtm.com.ec.objetos;
 using ControlerAtm.com.ec.Excepciones;
 using controladorAtm.ProtocoloTerminal;
+using ControlerAtm.Utilitario;
 
 namespace controladorAtm
 {
@@ -33,6 +34,8 @@ namespace controladorAtm
         private System.Timers.Timer verificacionConexion;
         private int segSondeo = 30;
         private MonitoreoDispositivos mt;
+        
+        private NotificacionEnviar notificacion;
         /*Constructor para enviar los datos del servicio sin considerar el objeto richText Box */
         public ConexionTCP(TcpClient clie, ConfiguracionServicio serviceConf,AtmObj terminales,BddSQLServer conexion)
 
@@ -82,6 +85,11 @@ namespace controladorAtm
                 conBdd.insertar_actualizar_monitoreo_dispositivos(mt);// Como incia conexion se rocede a encerar
                 mt.tipo_estado = "S";
                 conBdd.insertar_actualizar_monitoreo_dispositivos(mt);// Como incia conexion se rocede a encerar
+                string parametroEnvio = conBdd.obtenerParametro(3).valor;
+                string parametroMsg = conBdd.obtenerParametro(6).valor;
+                string parametroCorreo = conBdd.obtenerParametro(1).valor;
+                string pathGuardado = conBdd.obtenerParametro(5).valor;
+                notificacion = new NotificacionEnviar(parametroCorreo.Split(':'), parametroMsg.Split(':'), pathGuardado, parametroEnvio.Split(':'));
             }
             catch (Exception ex) {
                 error.escritura_archivo_string(ex.Message);
@@ -137,6 +145,11 @@ namespace controladorAtm
                 conBdd.insertar_actualizar_monitoreo_dispositivos(mt);// Como incia conexion se rocede a encerar
                 mt.tipo_estado = "S";
                 conBdd.insertar_actualizar_monitoreo_dispositivos(mt);// Como incia conexion se rocede a encerar
+                string parametroEnvio = conBdd.obtenerParametro(3).valor;
+                string parametroMsg = conBdd.obtenerParametro(6).valor;
+                string parametroCorreo = conBdd.obtenerParametro(1).valor;
+                string pathGuardado = conBdd.obtenerParametro(5).ToString();
+                notificacion = new NotificacionEnviar(parametroCorreo.Split(':'), parametroMsg.Split(':'), pathGuardado, parametroEnvio.Split(':'));
             }
             catch (Exception ex)
             {
@@ -180,11 +193,12 @@ namespace controladorAtm
                         datoResp("[" + terminal.codigo + "]:" + datoRespuesta.Substring(2, datoRespuesta.Length - 2));
                         mensajeEnvioRecep = parseoAlrma.parseaTramaIngreso(datoRespuesta.Substring(2, datoRespuesta.Length - 2));
                         mensajeEnvioRecep.envio_recepcion = 1; //cero envio, uno recibo
-                
-                        conBdd.insertar_alarmas(mensajeEnvioRecep);
-                        if (mensajeEnvioRecep.id_tipo_dispositivo != null)
+                        /*Si al momento de inserta devuelve 1 se procede con el envio de la notificacion a los usuarios*/
+                        string enviarStr = conBdd.insertar_alarmas(mensajeEnvioRecep);
+                        int enviar = int.Parse(enviarStr);
+                        if (mensajeEnvioRecep.descriptor != null)
                         {
-                            if (mensajeEnvioRecep.id_tipo_dispositivo.Equals("F"))
+                            if (mensajeEnvioRecep.descriptor.Equals("F"))
                             {
                                 List<MonitoreoDispositivos> mts = parseoAlrma.parseaTramaAlarmaDispositivo(mensajeEnvioRecep);
                                 foreach (MonitoreoDispositivos tmp in mts)
@@ -192,15 +206,31 @@ namespace controladorAtm
                                     conBdd.insertar_actualizar_monitoreo_dispositivos(tmp);
                                 }
                             }
-                            else if (mensajeEnvioRecep.id_tipo_dispositivo.Equals("P"))
-                            {
-                                /*con estado 2 indica si entro o no a modo supervisor*/
-                                if (mensajeEnvioRecep.estado_dispositivo.Equals("2"))
+                        }
+                        else if(mensajeEnvioRecep.id_tipo_dispositivo != null){
+                                if (mensajeEnvioRecep.id_tipo_dispositivo.Equals("P"))
                                 {
-                                    terminal.modoSupervisor = mensajeEnvioRecep.error_severidad == "1";
-                                    conBdd.actualizar_terminal(terminal);
+                                /*con estado 2 indica si entro o no a modo supervisor*/
+                                    if (mensajeEnvioRecep.estado_dispositivo.Equals("2"))
+                                    {
+                                        terminal.modoSupervisor = mensajeEnvioRecep.error_severidad == "1";
+                                        conBdd.actualizar_terminal(terminal);
+                                    }
                                 }
-                            }
+                                if (enviar == 1)
+                                {
+                                    if (mensajeEnvioRecep.error_severidad == null) {
+                                        mensajeEnvioRecep.error_severidad = "99";
+                                    }
+                                    string mensaje = conBdd.obtener_descripcion_error(int.Parse(mensajeEnvioRecep.error_severidad), mensajeEnvioRecep.id_tipo_dispositivo);
+                                    if (string.IsNullOrEmpty(mensaje)) {
+                                        mensaje = "Notificacion prueba, terminal " + terminal.codigo;
+                                    }
+                                    List<UsuarioObj> sendUsuario = new List<UsuarioObj>();
+                                    sendUsuario = conBdd.obtener_usuario_por_terminal(terminal);
+                                    mensaje += "Cajero :" + terminal.codigo;
+                                    notificacion.enviarNotificacionUsuario(sendUsuario, mensaje,"alarma id");
+                                }
                         }
                         datoRespuesta = "";
                     }

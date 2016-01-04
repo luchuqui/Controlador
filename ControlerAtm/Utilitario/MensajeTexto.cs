@@ -107,6 +107,7 @@ namespace ControlerAtm.Utilitario
                 puertoSerial.DataBits = bitDatos;
                 puertoSerial.ReadTimeout = tiempoEspera;
                 puertoSerial.WriteTimeout = tiempoEspera;
+                puertoSerial.Encoding = Encoding.Default;
             }
             catch (FormatException e)
             {
@@ -141,7 +142,9 @@ namespace ControlerAtm.Utilitario
         {
             try
             {
-                // Comando de comprobación                
+                // Comando de comprobación 
+                foreach (string numeroFono in telefonos)
+                {
                 puertoSerial.WriteLine("AT");
                 System.Threading.Thread.Sleep(tiempoEspera*1000);
                 puertoSerial.WriteLine("ATZ");
@@ -149,8 +152,7 @@ namespace ControlerAtm.Utilitario
                 // Pasamo a modo SMS Texto
                 puertoSerial.WriteLine("AT+CMGF=1");
                 System.Threading.Thread.Sleep(tiempoEspera * 1000);
-                foreach (string numeroFono in telefonos)
-                {
+                
                     if (!string.IsNullOrEmpty(numeroFono))
                     {
                         // Enviamos el numero al que queremos enviar el SMS
@@ -173,6 +175,21 @@ namespace ControlerAtm.Utilitario
                 errorSMS.escritura_archivo_string(e.Message + "\t" + e.StackTrace);
                 return 1; // envia mensaje con error
             }
+        }
+
+        #endregion
+
+        #region Miembros de NotificacionDao
+
+
+        public void asignar_destinatario(string destinatario)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void limpiarDestinatarios()
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

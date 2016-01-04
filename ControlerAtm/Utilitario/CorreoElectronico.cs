@@ -85,5 +85,18 @@ namespace ControlerAtm.Utilitario
         }
 
         #endregion
+
+        #region Miembros de NotificacionDao
+
+        public void limpiarDestinatarios() {
+            correo.To.Clear();
+        }
+
+        public void asignar_destinatario(string destinatario)
+        {
+            correo.To.Add(new MailAddress(destinatario));
+        }
+
+        #endregion
     }
 }

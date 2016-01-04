@@ -1,0 +1,2 @@
+18:54:41 String[12]: la propiedad Size tiene un tamaño no válido de 0.
+18:56:58 String[12]: la propiedad Size tiene un tamaño no válido de 0.

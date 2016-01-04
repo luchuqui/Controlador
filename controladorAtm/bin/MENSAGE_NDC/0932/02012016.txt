@@ -1,0 +1,1025 @@
+13:09:24 Índice fuera de los límites de la matriz.
+13:09:24 12
+13:09:24 000
+13:09:24 
+13:09:24 R04
+13:09:32 Índice fuera de los límites de la matriz.
+13:09:32 12
+13:09:32 000
+13:09:32 
+13:09:32 R04
+13:09:46 Índice fuera de los límites de la matriz.
+13:09:46 12
+13:09:46 000
+13:09:46 
+13:09:46 R09
+13:23:30 Índice fuera de los límites de la matriz.
+13:23:30 12
+13:23:30 000
+13:23:30 
+13:23:30 R04
+13:28:28 Índice fuera de los límites de la matriz.
+13:28:28 12
+13:28:28 000
+13:28:28 
+13:28:28 R09
+13:31:34 Índice fuera de los límites de la matriz.
+13:31:34 12
+13:31:34 000
+13:31:34 
+13:31:34 R09
+13:41:05 Índice fuera de los límites de la matriz.
+13:41:05 12
+13:41:05 000
+13:41:05 
+13:41:05 R04
+13:41:16 Índice fuera de los límites de la matriz.
+13:41:16 12
+13:41:16 000
+13:41:16 
+13:41:16 R04
+13:41:36 Índice fuera de los límites de la matriz.
+13:41:36 12
+13:41:36 000
+13:41:36 
+13:41:36 R05
+13:41:49 Índice fuera de los límites de la matriz.
+13:41:49 12
+13:41:49 000
+13:41:49 
+13:41:49 R04
+13:45:40 Índice fuera de los límites de la matriz.
+13:45:40 12
+13:45:40 000
+13:45:40 
+13:45:40 R04
+13:45:51 Índice fuera de los límites de la matriz.
+13:45:51 12
+13:45:51 000
+13:45:51 
+13:45:51 R04
+13:45:58 Índice fuera de los límites de la matriz.
+13:45:58 12
+13:45:58 000
+13:45:58 
+13:45:58 R04
+13:46:07 Índice fuera de los límites de la matriz.
+13:46:07 12
+13:46:07 000
+13:46:07 
+13:46:07 R04
+13:46:21 Índice fuera de los límites de la matriz.
+13:46:21 12
+13:46:21 000
+13:46:21 
+13:46:21 R04
+13:46:31 Índice fuera de los límites de la matriz.
+13:46:31 12
+13:46:31 000
+13:46:31 
+13:46:31 R04
+13:47:44 Índice fuera de los límites de la matriz.
+13:47:44 12
+13:47:44 000
+13:47:44 
+13:47:44 R04
+13:47:48 Índice fuera de los límites de la matriz.
+13:47:48 12
+13:47:48 000
+13:47:48 
+13:47:48 R04
+13:47:58 Índice fuera de los límites de la matriz.
+13:47:58 12
+13:47:58 000
+13:47:58 
+13:47:58 R04
+13:48:03 Índice fuera de los límites de la matriz.
+13:48:03 12
+13:48:03 000
+13:48:03 
+13:48:03 R04
+13:48:08 Índice fuera de los límites de la matriz.
+13:48:08 12
+13:48:08 000
+13:48:08 
+13:48:08 R04
+13:48:13 Índice fuera de los límites de la matriz.
+13:48:13 12
+13:48:13 000
+13:48:13 
+13:48:13 R04
+13:49:25 Índice fuera de los límites de la matriz.
+13:49:25 12
+13:49:25 000
+13:49:25 
+13:49:25 R04
+13:49:29 Índice fuera de los límites de la matriz.
+13:49:29 12
+13:49:29 000
+13:49:29 
+13:49:29 R04
+13:49:33 Índice fuera de los límites de la matriz.
+13:49:33 12
+13:49:33 000
+13:49:33 
+13:49:33 R04
+13:49:37 Índice fuera de los límites de la matriz.
+13:49:37 12
+13:49:37 000
+13:49:37 
+13:49:37 R04
+13:49:42 Índice fuera de los límites de la matriz.
+13:49:42 12
+13:49:42 000
+13:49:42 
+13:49:42 R04
+13:49:49 Índice fuera de los límites de la matriz.
+13:49:49 12
+13:49:49 000
+13:49:49 
+13:49:49 R04
+13:49:54 Índice fuera de los límites de la matriz.
+13:49:54 12
+13:49:54 000
+13:49:54 
+13:49:54 R04
+13:50:02 Índice fuera de los límites de la matriz.
+13:50:02 12
+13:50:02 000
+13:50:02 
+13:50:02 R04
+13:50:06 Índice fuera de los límites de la matriz.
+13:50:06 12
+13:50:06 000
+13:50:06 
+13:50:06 R04
+13:50:12 Índice fuera de los límites de la matriz.
+13:50:12 12
+13:50:12 000
+13:50:12 
+13:50:12 R04
+13:50:17 Índice fuera de los límites de la matriz.
+13:50:17 12
+13:50:17 000
+13:50:17 
+13:50:17 R04
+14:03:48 Índice fuera de los límites de la matriz.
+14:03:48 12
+14:03:48 000
+14:03:48 
+14:03:48 R04
+14:03:54 Índice fuera de los límites de la matriz.
+14:03:54 12
+14:03:54 000
+14:03:54 
+14:03:54 R04
+14:03:58 Índice fuera de los límites de la matriz.
+14:03:58 12
+14:03:58 000
+14:03:58 
+14:03:58 R04
+14:04:03 Índice fuera de los límites de la matriz.
+14:04:03 12
+14:04:03 000
+14:04:03 
+14:04:03 R04
+14:04:08 Índice fuera de los límites de la matriz.
+14:04:08 12
+14:04:08 000
+14:04:08 
+14:04:08 R04
+14:04:12 Índice fuera de los límites de la matriz.
+14:04:12 12
+14:04:12 000
+14:04:12 
+14:04:12 R04
+14:04:42 Índice fuera de los límites de la matriz.
+14:04:42 12
+14:04:42 000
+14:04:42 
+14:04:42 R04
+14:04:44 Índice fuera de los límites de la matriz.
+14:04:44 12
+14:04:44 000
+14:04:44 
+14:04:44 R09
+14:05:16 Índice fuera de los límites de la matriz.
+14:05:16 12
+14:05:16 000
+14:05:16 
+14:05:16 R04
+14:05:21 Índice fuera de los límites de la matriz.
+14:05:21 12
+14:05:21 000
+14:05:21 
+14:05:21 R04
+14:05:25 Índice fuera de los límites de la matriz.
+14:05:25 12
+14:05:25 000
+14:05:25 
+14:05:25 R04
+14:05:56 Índice fuera de los límites de la matriz.
+14:05:56 12
+14:05:56 000
+14:05:56 
+14:05:56 R04
+14:06:03 Índice fuera de los límites de la matriz.
+14:06:03 12
+14:06:03 000
+14:06:03 
+14:06:03 R04
+14:06:07 Índice fuera de los límites de la matriz.
+14:06:07 12
+14:06:07 000
+14:06:07 
+14:06:07 R04
+14:06:12 Índice fuera de los límites de la matriz.
+14:06:12 12
+14:06:12 000
+14:06:12 
+14:06:12 R04
+14:06:16 Índice fuera de los límites de la matriz.
+14:06:16 12
+14:06:16 000
+14:06:16 
+14:06:16 R04
+14:06:48 Índice fuera de los límites de la matriz.
+14:06:48 12
+14:06:48 000
+14:06:48 
+14:06:48 R04
+14:06:53 Índice fuera de los límites de la matriz.
+14:06:53 12
+14:06:53 000
+14:06:53 
+14:06:53 R04
+14:06:57 Índice fuera de los límites de la matriz.
+14:06:57 12
+14:06:57 000
+14:06:57 
+14:06:57 R04
+14:07:02 Índice fuera de los límites de la matriz.
+14:07:02 12
+14:07:02 000
+14:07:02 
+14:07:02 R04
+14:07:06 Índice fuera de los límites de la matriz.
+14:07:06 12
+14:07:06 000
+14:07:06 
+14:07:06 R04
+14:07:37 Índice fuera de los límites de la matriz.
+14:07:37 12
+14:07:37 000
+14:07:37 
+14:07:37 R04
+14:07:39 Índice fuera de los límites de la matriz.
+14:07:39 12
+14:07:39 000
+14:07:39 
+14:07:39 R04
+14:07:42 Índice fuera de los límites de la matriz.
+14:07:42 12
+14:07:42 000
+14:07:42 
+14:07:42 R04
+14:07:45 Índice fuera de los límites de la matriz.
+14:07:45 12
+14:07:45 000
+14:07:45 
+14:07:45 R04
+14:07:48 Índice fuera de los límites de la matriz.
+14:07:48 12
+14:07:48 000
+14:07:48 
+14:07:48 R04
+14:07:52 Índice fuera de los límites de la matriz.
+14:07:52 12
+14:07:52 000
+14:07:52 
+14:07:52 R04
+14:09:22 Índice fuera de los límites de la matriz.
+14:09:22 12
+14:09:22 000
+14:09:22 
+14:09:22 R04
+14:09:26 Índice fuera de los límites de la matriz.
+14:09:26 12
+14:09:26 000
+14:09:26 
+14:09:26 R04
+14:09:31 Índice fuera de los límites de la matriz.
+14:09:31 12
+14:09:31 000
+14:09:31 
+14:09:31 R04
+14:09:35 Índice fuera de los límites de la matriz.
+14:09:35 12
+14:09:35 000
+14:09:35 
+14:09:35 R04
+14:09:39 Índice fuera de los límites de la matriz.
+14:09:39 12
+14:09:39 000
+14:09:39 
+14:09:39 R04
+14:11:00 Índice fuera de los límites de la matriz.
+14:11:00 12
+14:11:00 000
+14:11:00 
+14:11:00 R04
+14:11:05 Índice fuera de los límites de la matriz.
+14:11:05 12
+14:11:05 000
+14:11:05 
+14:11:05 R04
+14:11:08 Índice fuera de los límites de la matriz.
+14:11:08 12
+14:11:08 000
+14:11:08 
+14:11:08 R04
+14:11:12 Índice fuera de los límites de la matriz.
+14:11:12 12
+14:11:12 000
+14:11:12 
+14:11:12 R04
+14:11:15 Índice fuera de los límites de la matriz.
+14:11:15 12
+14:11:15 000
+14:11:15 
+14:11:15 R04
+14:11:19 Índice fuera de los límites de la matriz.
+14:11:19 12
+14:11:19 000
+14:11:19 
+14:11:19 R04
+14:15:51 Índice fuera de los límites de la matriz.
+14:15:51 12
+14:15:51 000
+14:15:51 
+14:15:51 R04
+14:15:54 Índice fuera de los límites de la matriz.
+14:15:54 12
+14:15:54 000
+14:15:54 
+14:15:54 R04
+14:15:58 Índice fuera de los límites de la matriz.
+14:15:58 12
+14:15:58 000
+14:15:58 
+14:15:58 R04
+14:16:02 Índice fuera de los límites de la matriz.
+14:16:02 12
+14:16:02 000
+14:16:02 
+14:16:02 R04
+14:16:06 Índice fuera de los límites de la matriz.
+14:16:06 12
+14:16:06 000
+14:16:06 
+14:16:06 R04
+14:16:09 Índice fuera de los límites de la matriz.
+14:16:09 12
+14:16:09 000
+14:16:09 
+14:16:09 R04
+14:18:41 Índice fuera de los límites de la matriz.
+14:18:41 12
+14:18:41 000
+14:18:41 
+14:18:41 R04
+14:18:43 Índice fuera de los límites de la matriz.
+14:18:43 12
+14:18:43 000
+14:18:43 
+14:18:43 R04
+14:18:47 Índice fuera de los límites de la matriz.
+14:18:47 12
+14:18:47 000
+14:18:47 
+14:18:47 R04
+14:18:51 Índice fuera de los límites de la matriz.
+14:18:51 12
+14:18:51 000
+14:18:51 
+14:18:51 R04
+14:18:54 Índice fuera de los límites de la matriz.
+14:18:54 12
+14:18:54 000
+14:18:54 
+14:18:54 R04
+14:19:18 Índice fuera de los límites de la matriz.
+14:19:18 12
+14:19:18 000
+14:19:18 
+14:19:18 R04
+14:19:21 Índice fuera de los límites de la matriz.
+14:19:21 12
+14:19:21 000
+14:19:21 
+14:19:21 R04
+14:19:25 Índice fuera de los límites de la matriz.
+14:19:25 12
+14:19:25 000
+14:19:25 
+14:19:25 R04
+14:19:29 Índice fuera de los límites de la matriz.
+14:19:29 12
+14:19:29 000
+14:19:29 
+14:19:29 R04
+14:19:34 Índice fuera de los límites de la matriz.
+14:19:34 12
+14:19:34 000
+14:19:34 
+14:19:34 R04
+14:19:44 Índice fuera de los límites de la matriz.
+14:19:44 12
+14:19:44 000
+14:19:44 
+14:19:44 R04
+14:19:47 Índice fuera de los límites de la matriz.
+14:19:47 12
+14:19:47 000
+14:19:47 
+14:19:47 R04
+14:19:50 Índice fuera de los límites de la matriz.
+14:19:50 12
+14:19:50 000
+14:19:50 
+14:19:50 R04
+14:19:53 Índice fuera de los límites de la matriz.
+14:19:53 12
+14:19:53 000
+14:19:53 
+14:19:53 R04
+14:19:56 Índice fuera de los límites de la matriz.
+14:19:56 12
+14:19:56 000
+14:19:56 
+14:19:56 R04
+14:19:59 Índice fuera de los límites de la matriz.
+14:19:59 12
+14:19:59 000
+14:19:59 
+14:19:59 R04
+14:20:17 Índice fuera de los límites de la matriz.
+14:20:17 12
+14:20:17 000
+14:20:17 
+14:20:17 R04
+14:20:20 Índice fuera de los límites de la matriz.
+14:20:20 12
+14:20:20 000
+14:20:20 
+14:20:20 R04
+14:20:25 Índice fuera de los límites de la matriz.
+14:20:25 12
+14:20:25 000
+14:20:25 
+14:20:25 R04
+14:20:29 Índice fuera de los límites de la matriz.
+14:20:29 12
+14:20:29 000
+14:20:29 
+14:20:29 R04
+14:20:33 Índice fuera de los límites de la matriz.
+14:20:33 12
+14:20:33 000
+14:20:33 
+14:20:33 R04
+14:20:36 Índice fuera de los límites de la matriz.
+14:20:36 12
+14:20:36 000
+14:20:36 
+14:20:36 R04
+14:20:39 Índice fuera de los límites de la matriz.
+14:20:39 12
+14:20:39 000
+14:20:39 
+14:20:39 R04
+14:20:42 Índice fuera de los límites de la matriz.
+14:20:42 12
+14:20:42 000
+14:20:42 
+14:20:42 R04
+14:20:46 Índice fuera de los límites de la matriz.
+14:20:46 12
+14:20:46 000
+14:20:46 
+14:20:46 R04
+14:20:50 Índice fuera de los límites de la matriz.
+14:20:50 12
+14:20:50 000
+14:20:50 
+14:20:50 R04
+14:20:52 Índice fuera de los límites de la matriz.
+14:20:52 12
+14:20:52 000
+14:20:52 
+14:20:52 R04
+14:20:56 Índice fuera de los límites de la matriz.
+14:20:56 12
+14:20:56 000
+14:20:56 
+14:20:56 R04
+14:20:59 Índice fuera de los límites de la matriz.
+14:20:59 12
+14:20:59 000
+14:20:59 
+14:20:59 R04
+14:21:02 Índice fuera de los límites de la matriz.
+14:21:02 12
+14:21:02 000
+14:21:02 
+14:21:02 R04
+14:21:06 Índice fuera de los límites de la matriz.
+14:21:06 12
+14:21:06 000
+14:21:06 
+14:21:06 R04
+15:29:23 Índice fuera de los límites de la matriz.
+15:29:23 12
+15:29:23 000
+15:29:23 
+15:29:23 R04
+15:29:25 Índice fuera de los límites de la matriz.
+15:29:25 12
+15:29:25 000
+15:29:25 
+15:29:25 R04
+15:38:01 Índice fuera de los límites de la matriz.
+15:38:01 12
+15:38:01 000
+15:38:01 
+15:38:01 R04
+15:38:04 Índice fuera de los límites de la matriz.
+15:38:04 12
+15:38:04 000
+15:38:04 
+15:38:04 R04
+15:38:08 Índice fuera de los límites de la matriz.
+15:38:08 12
+15:38:08 000
+15:38:08 
+15:38:08 R04
+15:38:11 Índice fuera de los límites de la matriz.
+15:38:11 12
+15:38:11 000
+15:38:11 
+15:38:11 R04
+15:38:19 Índice fuera de los límites de la matriz.
+15:38:19 12
+15:38:19 000
+15:38:19 
+15:38:19 R04
+15:44:19 Índice fuera de los límites de la matriz.
+15:44:19 12
+15:44:19 000
+15:44:19 
+15:44:19 R04
+15:44:29 Índice fuera de los límites de la matriz.
+15:44:29 12
+15:44:29 000
+15:44:29 
+15:44:29 R04
+15:44:37 Índice fuera de los límites de la matriz.
+15:44:37 12
+15:44:37 000
+15:44:37 
+15:44:37 R04
+15:44:41 Índice fuera de los límites de la matriz.
+15:44:41 12
+15:44:41 000
+15:44:41 
+15:44:41 R04
+15:44:48 Índice fuera de los límites de la matriz.
+15:44:48 12
+15:44:48 000
+15:44:48 
+15:44:48 R04
+15:44:53 Índice fuera de los límites de la matriz.
+15:44:53 12
+15:44:53 000
+15:44:53 
+15:44:53 R04
+15:47:43 Índice fuera de los límites de la matriz.
+15:47:43 12
+15:47:43 000
+15:47:43 
+15:47:43 R04
+15:47:46 Índice fuera de los límites de la matriz.
+15:47:46 12
+15:47:46 000
+15:47:46 
+15:47:46 R04
+15:47:50 Índice fuera de los límites de la matriz.
+15:47:50 12
+15:47:50 000
+15:47:50 
+15:47:50 R04
+15:47:54 Índice fuera de los límites de la matriz.
+15:47:54 12
+15:47:54 000
+15:47:54 
+15:47:54 R04
+15:47:58 Índice fuera de los límites de la matriz.
+15:47:58 12
+15:47:58 000
+15:47:58 
+15:47:58 R04
+15:48:57 Índice fuera de los límites de la matriz.
+15:48:57 12
+15:48:57 000
+15:48:57 
+15:48:57 R04
+15:49:01 Índice fuera de los límites de la matriz.
+15:49:01 12
+15:49:01 000
+15:49:01 
+15:49:01 R04
+15:49:05 Índice fuera de los límites de la matriz.
+15:49:05 12
+15:49:05 000
+15:49:05 
+15:49:05 R04
+15:49:09 Índice fuera de los límites de la matriz.
+15:49:09 12
+15:49:09 000
+15:49:09 
+15:49:09 R04
+15:49:12 Índice fuera de los límites de la matriz.
+15:49:12 12
+15:49:12 000
+15:49:12 
+15:49:12 R04
+16:53:10 Índice fuera de los límites de la matriz.
+16:53:10 12
+16:53:10 000
+16:53:10 
+16:53:10 R04
+16:53:15 Índice fuera de los límites de la matriz.
+16:53:15 12
+16:53:15 000
+16:53:15 
+16:53:15 R04
+16:53:19 Índice fuera de los límites de la matriz.
+16:53:19 12
+16:53:19 000
+16:53:19 
+16:53:19 R04
+16:53:22 Índice fuera de los límites de la matriz.
+16:53:22 12
+16:53:22 000
+16:53:22 
+16:53:22 R04
+16:53:27 Índice fuera de los límites de la matriz.
+16:53:27 12
+16:53:27 000
+16:53:27 
+16:53:27 R04
+16:56:11 Índice fuera de los límites de la matriz.
+16:56:11 12
+16:56:11 000
+16:56:11 
+16:56:11 R04
+16:56:17 Índice fuera de los límites de la matriz.
+16:56:17 12
+16:56:17 000
+16:56:17 
+16:56:17 R04
+16:58:31 Índice fuera de los límites de la matriz.
+16:58:31 12
+16:58:31 000
+16:58:31 
+16:58:31 R04
+16:58:36 Índice fuera de los límites de la matriz.
+16:58:36 12
+16:58:36 000
+16:58:36 
+16:58:36 R04
+16:58:40 Índice fuera de los límites de la matriz.
+16:58:40 12
+16:58:40 000
+16:58:40 
+16:58:40 R04
+16:58:44 Índice fuera de los límites de la matriz.
+16:58:44 12
+16:58:44 000
+16:58:44 
+16:58:44 R04
+17:01:35 Índice fuera de los límites de la matriz.
+17:01:35 12
+17:01:35 000
+17:01:35 
+17:01:35 R04
+17:01:39 Índice fuera de los límites de la matriz.
+17:01:39 12
+17:01:39 000
+17:01:39 
+17:01:39 R04
+17:01:42 Índice fuera de los límites de la matriz.
+17:01:42 12
+17:01:42 000
+17:01:42 
+17:01:42 R04
+17:01:46 Índice fuera de los límites de la matriz.
+17:01:46 12
+17:01:46 000
+17:01:46 
+17:01:46 R04
+17:01:49 Índice fuera de los límites de la matriz.
+17:01:49 12
+17:01:49 000
+17:01:49 
+17:01:49 R04
+17:06:47 Índice fuera de los límites de la matriz.
+17:06:47 12
+17:06:47 000
+17:06:47 
+17:06:47 R04
+17:06:51 Índice fuera de los límites de la matriz.
+17:06:51 12
+17:06:51 000
+17:06:51 
+17:06:51 R04
+17:06:55 Índice fuera de los límites de la matriz.
+17:06:55 12
+17:06:55 000
+17:06:55 
+17:06:55 R04
+17:06:58 Índice fuera de los límites de la matriz.
+17:06:58 12
+17:06:58 000
+17:06:58 
+17:06:58 R04
+17:07:01 Índice fuera de los límites de la matriz.
+17:07:01 12
+17:07:01 000
+17:07:01 
+17:07:01 R04
+17:07:05 Índice fuera de los límites de la matriz.
+17:07:05 12
+17:07:05 000
+17:07:05 
+17:07:05 R04
+17:13:25 Índice fuera de los límites de la matriz.
+17:13:25 12
+17:13:25 000
+17:13:25 
+17:13:25 R04
+17:13:28 Índice fuera de los límites de la matriz.
+17:13:28 12
+17:13:28 000
+17:13:28 
+17:13:28 R04
+17:13:33 Índice fuera de los límites de la matriz.
+17:13:33 12
+17:13:33 000
+17:13:33 
+17:13:33 R04
+17:13:36 Índice fuera de los límites de la matriz.
+17:13:36 12
+17:13:36 000
+17:13:36 
+17:13:36 R04
+17:13:39 Índice fuera de los límites de la matriz.
+17:13:39 12
+17:13:39 000
+17:13:39 
+17:13:39 R04
+17:21:00 Índice fuera de los límites de la matriz.
+17:21:00 12
+17:21:00 000
+17:21:00 
+17:21:00 R04
+17:21:04 Índice fuera de los límites de la matriz.
+17:21:04 12
+17:21:04 000
+17:21:04 
+17:21:04 R04
+17:21:08 Índice fuera de los límites de la matriz.
+17:21:08 12
+17:21:08 000
+17:21:08 
+17:21:08 R04
+17:29:11 Índice fuera de los límites de la matriz.
+17:29:11 12
+17:29:11 000
+17:29:11 
+17:29:11 R04
+17:29:14 Índice fuera de los límites de la matriz.
+17:29:14 12
+17:29:14 000
+17:29:14 
+17:29:14 R04
+17:29:17 Índice fuera de los límites de la matriz.
+17:29:18 12
+17:29:18 000
+17:29:18 
+17:29:18 R04
+17:29:21 Índice fuera de los límites de la matriz.
+17:29:21 12
+17:29:21 000
+17:29:21 
+17:29:21 R04
+17:29:25 Índice fuera de los límites de la matriz.
+17:29:25 12
+17:29:25 000
+17:29:25 
+17:29:25 R04
+17:29:28 Índice fuera de los límites de la matriz.
+17:29:28 12
+17:29:28 000
+17:29:28 
+17:29:28 R04
+17:35:17 Índice fuera de los límites de la matriz.
+17:35:17 12
+17:35:17 000
+17:35:17 
+17:35:17 R04
+17:35:21 Índice fuera de los límites de la matriz.
+17:35:21 12
+17:35:21 000
+17:35:21 
+17:35:21 R04
+17:35:32 Índice fuera de los límites de la matriz.
+17:35:32 12
+17:35:32 000
+17:35:32 
+17:35:32 R04
+17:35:35 Índice fuera de los límites de la matriz.
+17:35:35 12
+17:35:35 000
+17:35:35 
+17:35:35 R04
+17:35:38 Índice fuera de los límites de la matriz.
+17:35:38 12
+17:35:38 000
+17:35:38 
+17:35:38 R04
+17:35:41 Índice fuera de los límites de la matriz.
+17:35:41 12
+17:35:41 000
+17:35:41 
+17:35:41 R04
+19:11:32 Índice fuera de los límites de la matriz.
+19:11:32 12
+19:11:32 000
+19:11:32 
+19:11:32 R04
+19:11:37 Índice fuera de los límites de la matriz.
+19:11:37 12
+19:11:37 000
+19:11:37 
+19:11:37 R04
+19:11:40 Índice fuera de los límites de la matriz.
+19:11:40 12
+19:11:40 000
+19:11:40 
+19:11:40 R04
+19:11:44 Índice fuera de los límites de la matriz.
+19:11:44 12
+19:11:44 000
+19:11:44 
+19:11:44 R04
+19:11:48 Índice fuera de los límites de la matriz.
+19:11:48 12
+19:11:48 000
+19:11:48 
+19:11:48 R04
+19:11:53 Índice fuera de los límites de la matriz.
+19:11:53 12
+19:11:53 000
+19:11:53 
+19:11:53 R04
+19:12:59 Índice fuera de los límites de la matriz.
+19:12:59 12
+19:12:59 000
+19:12:59 
+19:12:59 R04
+19:13:06 Índice fuera de los límites de la matriz.
+19:13:06 12
+19:13:06 000
+19:13:06 
+19:13:06 R04
+19:13:11 Índice fuera de los límites de la matriz.
+19:13:11 12
+19:13:11 000
+19:13:11 
+19:13:11 R04
+19:13:14 Índice fuera de los límites de la matriz.
+19:13:14 12
+19:13:14 000
+19:13:14 
+19:13:14 R04
+19:13:18 Índice fuera de los límites de la matriz.
+19:13:18 12
+19:13:18 000
+19:13:18 
+19:13:18 R04
+19:13:22 Índice fuera de los límites de la matriz.
+19:13:22 12
+19:13:22 000
+19:13:22 
+19:13:22 R04
+19:13:53 Índice fuera de los límites de la matriz.
+19:13:53 12
+19:13:53 000
+19:13:53 
+19:13:53 R04
+19:13:57 Índice fuera de los límites de la matriz.
+19:13:57 12
+19:13:57 000
+19:13:57 
+19:13:57 R04
+19:14:01 Índice fuera de los límites de la matriz.
+19:14:01 12
+19:14:01 000
+19:14:01 
+19:14:01 R04
+19:14:05 Índice fuera de los límites de la matriz.
+19:14:05 12
+19:14:05 000
+19:14:05 
+19:14:05 R04
+19:14:09 Índice fuera de los límites de la matriz.
+19:14:09 12
+19:14:09 000
+19:14:09 
+19:14:09 R04
+19:14:44 Índice fuera de los límites de la matriz.
+19:14:44 12
+19:14:44 000
+19:14:44 
+19:14:44 R04
+19:14:48 Índice fuera de los límites de la matriz.
+19:14:48 12
+19:14:48 000
+19:14:48 
+19:14:48 R04
+19:14:52 Índice fuera de los límites de la matriz.
+19:14:52 12
+19:14:52 000
+19:14:52 
+19:14:52 R04
+19:14:58 Índice fuera de los límites de la matriz.
+19:14:58 12
+19:14:58 000
+19:14:58 
+19:14:58 R04
+19:15:01 Índice fuera de los límites de la matriz.
+19:15:01 12
+19:15:01 000
+19:15:01 
+19:15:01 R04
+19:17:59 Índice fuera de los límites de la matriz.
+19:17:59 12
+19:17:59 000
+19:17:59 
+19:17:59 R04
+19:18:11 Índice fuera de los límites de la matriz.
+19:18:11 12
+19:18:11 000
+19:18:11 
+19:18:11 R04
+19:18:15 Índice fuera de los límites de la matriz.
+19:18:15 12
+19:18:15 000
+19:18:15 
+19:18:15 R04
+19:18:17 Índice fuera de los límites de la matriz.
+19:18:17 12
+19:18:17 000
+19:18:17 
+19:18:17 R04
+19:18:20 Índice fuera de los límites de la matriz.
+19:18:20 12
+19:18:20 000
+19:18:20 
+19:18:20 R04
+19:27:19 Índice fuera de los límites de la matriz.
+19:27:19 12
+19:27:19 000
+19:27:19 
+19:27:19 R04
+19:27:22 Índice fuera de los límites de la matriz.
+19:27:22 12
+19:27:22 000
+19:27:22 
+19:27:22 R04
+19:27:26 Índice fuera de los límites de la matriz.
+19:27:26 12
+19:27:26 000
+19:27:26 
+19:27:26 R04
+19:27:30 Índice fuera de los límites de la matriz.
+19:27:30 12
+19:27:30 000
+19:27:30 
+19:27:30 R04
+19:27:33 Índice fuera de los límites de la matriz.
+19:27:33 12
+19:27:33 000
+19:27:33 
+19:27:33 R04

@@ -105,5 +105,12 @@ namespace ControlerAtm.com.ec.objetos
             set;
             get;
         }
+        
+        [DataMember]
+        public string descriptor
+        {
+            set;
+            get;
+        }
     }
 }

@@ -1,0 +1,6 @@
+14:19:44 No se puede encontrar una parte de la ruta de acceso 'C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\bin\Debug\ControlerAtm.com.ec.objetos.ParametroObj\LOG_CORREO\02012016.txt'.
+14:20:15 No se pudo enviar la notificacion electrónica, debido al siguiente error: Error al enviar correo.
+14:20:35 No se pudo enviar la notificacion electrónica, debido al siguiente error: Error al enviar correo.
+14:20:55 No se pudo enviar la notificacion electrónica, debido al siguiente error: Error al enviar correo.
+16:59:00 No se pudo enviar la notificacion electrónica, debido al siguiente error: Error al enviar correo.
+17:02:20 No se pudo enviar la notificacion electrónica, debido al siguiente error: Error al enviar correo.
