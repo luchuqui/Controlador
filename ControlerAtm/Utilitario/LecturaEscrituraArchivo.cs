@@ -89,25 +89,6 @@ namespace ControlerAtm.Utilitario
         
         public void archivo_guardar(string carpeta)
         {
-            //string tmpco = "";
-            //int tcont = 0;
-            //pathGuardar = Path.GetFullPath("WSControlador");
-            //pathGuardar = Directory.GetCurrentDirectory();
-            //pathGuardar = "c:\\CONTROLADOR_TERMINAL\\";
-            //for (int i = pathGuardar.Length - 1; i > 0; i--)
-            //{
-            //    tmpco = pathGuardar[i].ToString();
-            //    if (tmpco.Equals("\\"))
-            //    {
-            //        tcont++;
-            //    }
-            //    if (tcont == 2)
-            //    {
-            //        tcont = i;
-            //        break;
-            //    }
-            //}
-            //pathGuardar = pathGuardar.Substring(0, tcont) + @"\" + carpeta;
             pathGuardar = pathGuardar + carpeta;
         }
 

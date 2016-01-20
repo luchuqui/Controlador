@@ -15,7 +15,7 @@
 <asp:UpdatePanel ID = "panelActualizar" runat = "server" UpdateMode = "Conditional">
 <ContentTemplate>
     <asp:Panel ID="Panel1" runat = "server" Width = "100%" >
-        <table id = "tb_terminales" runat = "server" style = "z-index: 1; text-align :center" border = "2" width = "100%">
+        <table id = "tb_terminales" runat = "server" style = "z-index: 1; text-align :center; font-size: small;" border = "2" width = "100%">
         </table>
         
     </asp:Panel>
@@ -45,8 +45,8 @@
             </asp:TableRow>
         </asp:Table>
         </asp:Panel>
-    <asp:Panel runat = "server" ID = "detalleEventos" Width = "70%">
-        <table id = "tb_evento" runat = "server" style = "z-index: 1" border = "2" width = "100%">
+    <asp:Panel runat = "server" ID = "detalleEventos" Width = "90%">
+        <table id = "tb_evento" runat = "server" style = "z-index: 1; font-size: small;" border = "2" width = "100%">
         </table>
     </asp:Panel>
 </ContentTemplate>

@@ -12,8 +12,6 @@ namespace controladorAtm
     {
         private String pathAbrir; // direccion donde se va a abrir o guardar el archivo
         private String pathGuardar;
-        private string sLine;
-        StreamReader objReader; //realiza la lectura del archivo
         StreamWriter objWrite;  //realiza la escritura del archivo
         ArrayList arrText;
         private XmlDocument xml;
@@ -25,7 +23,6 @@ namespace controladorAtm
             pathGuardar = "c:\\" + cambiar_fecha(System.DateTime.Now.Date.ToString()) + ".txt";
             pathAbrir = @"D:\Mis Documentos\TESIS\Programa\Config.cfg";
             arrText = new ArrayList();
-            sLine = "";
             xml = new XmlDocument();
             configSrv = new ArrayList();
         }
@@ -45,14 +42,12 @@ namespace controladorAtm
             pathGuardar = "c:\\" + cambiar_fecha(System.DateTime.Now.Date.ToString()) + ".txt";
             pathAbrir = @"D:\Mis Documentos\TESIS\Programa\Config.cfg";
             arrText = new ArrayList();
-            sLine = "";
             logs = tmp;
             xml = new XmlDocument();
         }
 
         public void cerrar_archivo()
         {
-            objReader.Close();
             objWrite.Close();
         }
 
@@ -64,46 +59,6 @@ namespace controladorAtm
         public ArrayList obtener_datos_array()
         {
             return arrText;
-        }
-
-        public void lectura_archivo()
-        {
-            try
-            {
-                objReader = new StreamReader(pathAbrir);
-                while (sLine != null)
-                {
-                    sLine = objReader.ReadLine();
-                    if (sLine != null)
-                        arrText.Add(sLine);
-                }
-                objReader.Close();
-            }
-            catch (FileNotFoundException ex)
-            {
-                throw ex;
-            }
-            catch (UnauthorizedAccessException ex)
-            {
-                throw ex;
-            }
-
-        }
-
-        public void escritura_archivo(string sOutput)
-        {
-            objWrite = new StreamWriter(pathGuardar, true);
-            objWrite.WriteLine(sOutput);
-            objWrite.Close();
-        }
-
-        public void escritura_archivo_txbx()
-        {
-            string nameArchivo;
-            nameArchivo = pathGuardar + @"\" + cambiar_fecha(System.DateTime.Now.Date.ToString()) + ".txt";
-            objWrite = new StreamWriter(nameArchivo, true);
-            objWrite.WriteLine(nameArchivo);
-            objWrite.Close();
         }
 
         public void escritura_archivo_strSplit(string [] mensaje)
@@ -187,33 +142,6 @@ namespace controladorAtm
             return fecha;
         }
 
-        public ArrayList procesar_datos_configuracion()
-        {
-            ArrayList datos_conecxion = new ArrayList();
-            String datoConf;
-            String temp;
-            int conta; ;
-            for (int i = 0; i < arrText.Count; i++)
-            {
-                datoConf = arrText[i].ToString();
-                conta = 0; ;
-                for (int j = 0; j < datoConf.Length; j++)
-                {
-                    //saco los datos desde que llega el primer simbolo = o :
-                    temp = datoConf[j].ToString();
-                    if (temp.Equals("=") || temp.Equals(":"))
-                    {
-                        conta = (datoConf.Length) - 1;
-                        conta = conta - j;
-                        datos_conecxion.Add(datoConf.Substring(j + 1, conta));
-                        break;
-
-                    }
-                }
-            }
-            return datos_conecxion;
-        }
-
         public void archivo_abrir(string carpeta)
         {
             String tmpco = "";
@@ -244,27 +172,6 @@ namespace controladorAtm
             //MessageBox.Show(pathAbrir);
         }
 
-        public void archivo_guardar(string carpeta)
-        {
-            String tmpco = "";
-            int tcont = 0;
-            pathGuardar = Path.GetFullPath(carpeta);
-            for (int i = pathGuardar.Length - 1; i > 0; i--)
-            {
-                tmpco = pathGuardar[i].ToString();
-                if (tmpco.Equals("\\"))
-                {
-                    tcont++;
-                }
-                if (tcont == 2)
-                {
-                    tcont = i;
-                    break;
-                }
-            }
-            pathGuardar = pathGuardar.Substring(0, tcont) + @"\" + carpeta;
-        }
-
         public void archivo_guardar(string carpeta, string nombreServicioCarpeta)
         {
             String tmpco = "";
@@ -284,75 +191,6 @@ namespace controladorAtm
                 }
             }
             pathGuardar = pathGuardar.Substring(0, tcont) + @"\" + carpeta + @"\" + nombreServicioCarpeta;
-        }
-
-        public void escribir_cfg(ArrayList tmpar)
-        {
-
-            if (System.IO.File.Exists(pathAbrir))
-            {
-                System.IO.File.Delete(pathAbrir);
-            }
-            objWrite = new StreamWriter(pathAbrir, true);
-            //objWrite.WriteLine("[PortSwitch]="+tmpar[0]);
-            objWrite.WriteLine("[modoOpeInter]=" + tmpar[0]);
-            objWrite.WriteLine("[HostCoac]=" + tmpar[1]);
-            objWrite.WriteLine("[PuertoCoac]=" + tmpar[2]);
-            objWrite.WriteLine("[PuertoRtc]=" + tmpar[3]);
-            objWrite.WriteLine("[UrlWS]=" + tmpar[4]);
-            objWrite.Close();
-        }
-
-        //public List<string> lectura_de_archivo_configuracion(string nombreArchivo)
-        public List<string> lectura_de_archivo_configuracion()
-        {
-            string line;
-            //string path = System.AppDomain.CurrentDomain.BaseDirectory + nombreArchivo;
-            List<string> lineas = new List<string>();
-            StreamReader sr = null;
-            try
-            {
-                //Pass the file path and file name to the StreamReader constructor
-                sr = new StreamReader(pathAbrir);
-
-                //Read the first line of text
-                line = sr.ReadLine();
-
-                //Continue to read until you reach end of file
-                while (line != null)
-                {
-                    lineas.Add(line.Split('=')[1]);
-                    line = sr.ReadLine();
-                }
-
-                sr.Close();
-
-            }
-            catch (FileNotFoundException ex)
-            {
-                string message = ex.StackTrace;
-                List<string> datosConf = new List<string>();
-                if (pathAbrir.ToLower().Contains("config"))
-                {
-                    datosConf.Add("modo_operacion=1");
-                    datosConf.Add("host_coac=127.0.0.1");
-                    datosConf.Add("puerto_host=2001");
-                    datosConf.Add("puerto_rtc=2001");
-                    datosConf.Add("urlWs=http://localhost/test.asmx");
-                    datosConf.Add("tamanio_trama=659");
-                    datosConf.Add("codigo_usuario_servicio=test");
-                    datosConf.Add("contrase_servicio=12345");
-                    datosConf.Add("ip_autorizadora=127.0.0.1");
-                    datosConf.Add("host_name_autorizador=localhost");
-                }
-                lineas = escribir_archivo(datosConf, pathAbrir);
-            }
-            catch (Exception e)
-            {
-                throw new Exception(e.Message);
-            }
-            return lineas;
-
         }
 
         public void cargar_archivo_configuracionXml()
@@ -445,13 +283,9 @@ namespace controladorAtm
                 datosConfig.numero = num.ToString();
                 datosConfig.ip = nipServidor[0].InnerText;
                 datosConfig.puerto = int.Parse(npuertoServidor[0].InnerText);
-                //datosConfig.urlWs = nurlWs[0].InnerText;
-                
                 datosConfig.dll = ndll[0].InnerText;
                 datosConfig.nombreServicio = nNombre[0].InnerText;
                 datosConfig.estado = false;
-                //ServidorEscuchaUno srv = new ServidorEscuchaUno(datosConfig);
-                //datosConfig.servicioClase = "terminal";
                 datosServicio.Add(datosConfig);
                 
             }

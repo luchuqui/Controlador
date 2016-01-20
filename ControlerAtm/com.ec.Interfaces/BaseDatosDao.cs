@@ -50,5 +50,6 @@ namespace ControlerAtm.com.ec.Interfaces
         void insertar_actualizar_monitoreo_dispositivos(MonitoreoDispositivos monitoreo);
         string obtener_descripcion_error(int error,string tipoDispositivo);
         List<UsuarioObj> obtener_usuario_por_terminal(AtmObj atm);
+        List<DetalleDescripcionObj> obtener_detalle_alarma_terminal(AtmObj atm);
     }
 }

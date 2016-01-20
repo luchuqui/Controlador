@@ -165,5 +165,23 @@ namespace servicioWebControl
             return mensaje;
         }
 
+        [WebMethod]
+        public List<DetalleDescripcionObj> obtener_detalle_alarma_terminal()
+        {
+            AtmObj atm = new AtmObj();
+            atm.id_atm = 1;
+            atm.codigo = "0932";
+            try
+            {
+                return controlUsr.controlObtencionDescripcion(atm);
+            }
+            catch (Exception e) {
+                List<DetalleDescripcionObj> ls = new List<DetalleDescripcionObj>();
+                ls.Add(new DetalleDescripcionObj());
+                ls[0].descripcion_mensaje = e.Message + " _ " + e.StackTrace;
+                return ls;
+            }
+        }
+
     }
 }

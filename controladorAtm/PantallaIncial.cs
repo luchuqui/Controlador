@@ -47,6 +47,7 @@ namespace controladorAtm
                 miConfiguracion.dll = servicio.dll;
                 serv = new ServidorEscucha(miConfiguracion, txbx_visor_evento, terminales, dataGridMonitorDispositivos, conBdd);
                 hiloPrincipal = new Thread((ThreadStart)serv.aceptar_conexion);
+                
             }
             catch (Exception e) {
                 txbx_visor_evento.SelectionColor = Color.Red;

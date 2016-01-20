@@ -37,9 +37,16 @@ namespace controladorAtm.ProtocoloTerminal
                         alarma.id_tipo_dispositivo = campos[3].Substring(0, 1);
                         if (alarma.id_tipo_dispositivo.Equals("P"))
                         {
+                            
                             alarma.estado_dispositivo = campos[3].Substring(1, 1);// estado de nivel P
-                            alarma.error_severidad = campos[3].Substring(2,campos[3].Length-2); // datos adicionales
-                            // si es 2 llega el 0 modo supervisor exit, 1 modo supervisor ingreso
+                            if (alarma.estado_dispositivo.Equals("2"))
+                            {
+                                alarma.error_severidad = campos[3].Substring(2, campos[3].Length - 2); // datos adicionales
+                                // si es 2 llega el 0 modo supervisor exit, 1 modo supervisor ingreso
+                            }
+                            else {
+                                alarma.estado_suministro = campos[3].Substring(2, campos[3].Length - 2); // aca obtiene datos de los dispositivos
+                            }
                             
                         }
                         else {

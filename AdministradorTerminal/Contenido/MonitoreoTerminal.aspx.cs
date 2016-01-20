@@ -14,10 +14,12 @@ namespace AdministradorTerminal.Contenido
     {
         private MonitoreoDispositivos[] terminalesUsuario;
         //private int filaSeleccionada;
+        private AtmObj terminal;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             // se cargan los terminales que tiene el usuario
+            terminal = (AtmObj)Session["terminal"];
             if (tb_terminales != null) {
                 tb_terminales.Rows.Clear();
             }
@@ -66,16 +68,18 @@ namespace AdministradorTerminal.Contenido
             HtmlTableCell celdaDato = new HtmlTableCell();
             HtmlTableCell celdaTipoError = new HtmlTableCell();
             HtmlTableCell celdaDescripcion = new HtmlTableCell();
-            
+            HtmlTableCell celdaVerEvento = new HtmlTableCell();
             celdaNume.InnerText = "#";
             celdaHora.InnerText = "Hora hh:mm:ss";
-            celdaDato.InnerText = "Mensaje Terminal";
-            celdaTipoError.InnerText = "Tipo Error";
-            celdaDescripcion.InnerText = "Descripcion Error";
+            celdaDato.InnerText = "Tipo Mensaje";
+            celdaTipoError.InnerText = "Evento";
+            celdaDescripcion.InnerText = "información Evento";
+            celdaVerEvento.InnerText = "Ver información";
             filaE.Cells.Add(celdaHora);
             filaE.Cells.Add(celdaDato);
             filaE.Cells.Add(celdaTipoError);
             filaE.Cells.Add(celdaDescripcion);
+            filaE.Cells.Add(celdaVerEvento);
             filaE.BgColor = "4E4545";
             filaE.Style.Value = "color: #FFFFFF";
             tb_evento.Rows.Add(filaE);
@@ -87,6 +91,15 @@ namespace AdministradorTerminal.Contenido
                 {
                     cargar_datos_tabla(terminalesUsuario);
                     
+                }
+            }
+            if (terminal != null) {
+                this.lbl_codigoTerminal.Text = terminal.codigo;
+                this.lbl_fechaEvento.Text = System.DateTime.Now.ToString("yyyy-MM-dd");
+                DetalleDescripcionObj[] detalles = Globales.servicio.obtener_detalle_alarma_terminal(terminal);
+                if (detalles != null)
+                {
+                    cargar_datos_enventos(detalles);
                 }
             }
         }
@@ -103,20 +116,38 @@ namespace AdministradorTerminal.Contenido
             }
         }
 
-        private void cargar_datos_eventos() {
-            HtmlTableRow filaE = new HtmlTableRow();
-            
-            HtmlTableCell celdaNum = new HtmlTableCell();
-            HtmlTableCell celdaHora = new HtmlTableCell();
-            HtmlTableCell celdaDato = new HtmlTableCell();
-            HtmlTableCell celdaTipoError = new HtmlTableCell();
-            HtmlTableCell celdaDescripcion = new HtmlTableCell();
-            celdaNum.InnerText = "#";
-            celdaHora.InnerText = "Hora hh:mm:ss";
-            celdaDato.InnerText = "Mensaje Terminal";
-            celdaTipoError.InnerText = "Tipo Error";
-            celdaDescripcion.InnerText = "Descripcion Error";
+        private void cargar_datos_enventos(DetalleDescripcionObj[] eventosTerminal) {
+            int i = 0;
+            foreach (DetalleDescripcionObj d in eventosTerminal)
+            {
+                HtmlTableRow fila = new HtmlTableRow();
+                HtmlTableCell horaEvento = new HtmlTableCell();
+                HtmlTableCell mensajeTerminal = new HtmlTableCell();
+                HtmlTableCell tipoError = new HtmlTableCell();
+                HtmlTableCell descripcionError = new HtmlTableCell();
+                HtmlTableCell verEvento = new HtmlTableCell();
+                Button btnEl = new Button();
+                btnEl.Text = "Ver Eventos";
+                btnEl.ToolTip = "Descripción de ventos cajero";
+                btnEl.Click += new EventHandler(this.verDescripcionSucesos);
+                verEvento.Align = "Center";
+                btnEl.ID = "btnEl_" + i;
+                verEvento.Controls.Add(btnEl);
 
+                horaEvento.InnerText = d.fecha_registro.ToString("hh:mm:ss");
+                mensajeTerminal.InnerText = d.descripcion_mensaje;
+                tipoError.InnerText = d.tipo_estado;
+                descripcionError.InnerText = d.tipo_mensaje;
+                //Al final agrega los datos a la final
+                fila.Cells.Add(horaEvento);
+                fila.Cells.Add(mensajeTerminal);
+                fila.Cells.Add(tipoError);
+                fila.Cells.Add(descripcionError);
+                fila.Cells.Add(verEvento);
+                this.tb_evento.Rows.Add(fila);
+                i++;
+            }
+        
         }
 
         private void cargar_datos_tabla(MonitoreoDispositivos[] terminales)
@@ -246,6 +277,7 @@ namespace AdministradorTerminal.Contenido
             }
             Session["terminalSistemaUsr"] = terminales;
         }
+        
         private void eventoBtnSucesos(object sender, EventArgs e)
         {
             string [] nombre = ((Button)sender).ID.Split('_');
@@ -253,15 +285,36 @@ namespace AdministradorTerminal.Contenido
             MonitoreoDispositivos tm = terminalesUsuario[posicion];
             this.lbl_codigoTerminal.Text = tm.codigo_atm;
             this.lbl_fechaEvento.Text = System.DateTime.Now.ToString("yyyy-MM-dd");
+            AtmObj atm = new AtmObj();
+            atm.codigo = tm.codigo_atm;
+            atm.id_atm = tm.id_atm;
+            Session["terminal"] = atm;
+            DetalleDescripcionObj[] detalles = Globales.servicio.obtener_detalle_alarma_terminal(atm);
+            if (detalles != null) {
+                
+                cargar_datos_enventos(detalles);
+            }
             //Globales.servicio.obtener_alarma_atm();
         }
 
+        private void verDescripcionSucesos(object sender, EventArgs e)
+        {
+            string[] nombre = ((Button)sender).ID.Split('_');
+            int posicion = int.Parse(nombre[1]) - 1;
+            MonitoreoDispositivos tm = terminalesUsuario[posicion];
+            this.lbl_codigoTerminal.Text = tm.codigo_atm;
+            this.lbl_fechaEvento.Text = System.DateTime.Now.ToString("yyyy-MM-dd");
+            AtmObj atm = new AtmObj();
+            atm.codigo = tm.codigo_atm;
+            atm.id_atm = tm.id_atm;
+            //ACA SE DEBE COLOCAR UNA NUEVA VENTANA PARA MOSTRAR LOS EVENTOS
+        }
 
         private Image obtener_imagen(string valor, string dispostivo) {
             string[] datos = valor.Split(':');
             Image img = new Image();
             img.ToolTip = dispostivo + " " + datos[1];
-            img.Width = 40;
+            img.Width = 30;
             img.ImageUrl = "~/Imagenes/editclear.png";
             if (datos[0].Equals("0"))
             {

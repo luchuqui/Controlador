@@ -61,6 +61,7 @@
     <Compile Include="com.ec.objetos\AvanceObj.cs" />
     <Compile Include="com.ec.objetos\BeanMenuPerfil.cs" />
     <Compile Include="com.ec.objetos\ConfiguracionServicio.cs" />
+    <Compile Include="com.ec.objetos\DetalleDescripcionObj.cs" />
     <Compile Include="com.ec.objetos\MenuObj.cs" />
     <Compile Include="com.ec.objetos\ModeloObj.cs" />
     <Compile Include="com.ec.objetos\MonitoreoDispositivos.cs" />

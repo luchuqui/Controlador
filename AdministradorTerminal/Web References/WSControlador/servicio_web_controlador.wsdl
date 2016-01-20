@@ -369,6 +369,8 @@
           <s:element minOccurs="0" maxOccurs="1" name="estado_suministro" type="s:string" />
           <s:element minOccurs="0" maxOccurs="1" name="tipo_mensaje" type="s:string" />
           <s:element minOccurs="0" maxOccurs="1" name="tipo_comando" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipo_alarma" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="descriptor" type="s:string" />
         </s:sequence>
       </s:complexType>
       <s:element name="obtener_alarma_atmResponse">
@@ -480,6 +482,34 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="obtener_detalle_alarma_terminal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="atm" type="tns:AtmObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtener_detalle_alarma_terminalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtener_detalle_alarma_terminalResult" type="tns:ArrayOfDetalleDescripcionObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDetalleDescripcionObj">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DetalleDescripcionObj" nillable="true" type="tns:DetalleDescripcionObj" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DetalleDescripcionObj">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="tipo_mensaje" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mensaje_ndc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_registro" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipo_estado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion_mensaje" type="s:string" />
+        </s:sequence>
+      </s:complexType>
     </s:schema>
   </wsdl:types>
   <wsdl:message name="login_usuarioSoapIn">
@@ -614,6 +644,12 @@
   <wsdl:message name="enviarComandoTerminalSoapOut">
     <wsdl:part name="parameters" element="tns:enviarComandoTerminalResponse" />
   </wsdl:message>
+  <wsdl:message name="obtener_detalle_alarma_terminalSoapIn">
+    <wsdl:part name="parameters" element="tns:obtener_detalle_alarma_terminal" />
+  </wsdl:message>
+  <wsdl:message name="obtener_detalle_alarma_terminalSoapOut">
+    <wsdl:part name="parameters" element="tns:obtener_detalle_alarma_terminalResponse" />
+  </wsdl:message>
   <wsdl:portType name="Service1Soap">
     <wsdl:operation name="login_usuario">
       <wsdl:input message="tns:login_usuarioSoapIn" />
@@ -702,6 +738,10 @@
     <wsdl:operation name="enviarComandoTerminal">
       <wsdl:input message="tns:enviarComandoTerminalSoapIn" />
       <wsdl:output message="tns:enviarComandoTerminalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtener_detalle_alarma_terminal">
+      <wsdl:input message="tns:obtener_detalle_alarma_terminalSoapIn" />
+      <wsdl:output message="tns:obtener_detalle_alarma_terminalSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="Service1Soap" type="tns:Service1Soap">
@@ -904,6 +944,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="obtener_detalle_alarma_terminal">
+      <soap:operation soapAction="http://controladorAtm.org/obtener_detalle_alarma_terminal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="Service1Soap12" type="tns:Service1Soap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
@@ -1098,6 +1147,15 @@
     </wsdl:operation>
     <wsdl:operation name="enviarComandoTerminal">
       <soap12:operation soapAction="http://controladorAtm.org/enviarComandoTerminal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtener_detalle_alarma_terminal">
+      <soap12:operation soapAction="http://controladorAtm.org/obtener_detalle_alarma_terminal" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

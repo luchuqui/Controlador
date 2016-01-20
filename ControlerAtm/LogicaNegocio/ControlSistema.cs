@@ -164,14 +164,14 @@ namespace ControlerAtm.LogicaNegocio
             return menus;
         }
 
-        public UsuarioObj control_login_usuario(string nick_usuario, string contrase)
+        public UsuarioObj control_login_usuario(string documento_usr, string contrase)
         {
             conBdd.abrir_conexion_base();
             UsuarioObj u;
             string mensajeError = string.Empty;
             try
             {
-                u = conBdd.obtener_usuario(nick_usuario);
+                u = conBdd.obtener_usuario(documento_usr);
                 contrase = seguridad.encriptar_informacion(contrase);
                 if (!u.contrasenia.Equals(contrase))
                 {
@@ -180,7 +180,7 @@ namespace ControlerAtm.LogicaNegocio
                         u.estado = "B";// Bloqueo usuario
                         mensajeError = MensajeSistema.usuario_bloqueado;
                         notificacion("Su usuario ha sido bloqueado " +
-                            "por el sistema debido a 3 intentos fallidos", MensajeSistema.usuario_bloqueado, u);
+                            "por el sistema debido a "+numeroIntentos+" intentos fallidos", MensajeSistema.usuario_bloqueado, u);
                     }
                     else if (u.estado.Equals("A"))
                     {
@@ -881,5 +881,23 @@ namespace ControlerAtm.LogicaNegocio
             return mensaje;
         }
 
+        public List<DetalleDescripcionObj> controlObtencionDescripcion(AtmObj atm) {
+            List<DetalleDescripcionObj> descripcion = new List<DetalleDescripcionObj>();
+            conBdd.abrir_conexion_base();
+            //List<DetalleDescripcionObj> descripcion = new List<DetalleDescripcionObj>();
+            try
+            {
+                descripcion = conBdd.obtener_detalle_alarma_terminal(atm);
+            }
+            catch (Exception e)
+            {
+                logSistema.escritura_archivo_string(e.Message);
+            }
+            finally
+            {
+                conBdd.cerrar_conexion_base();
+            }
+            return descripcion;
+        }
     }
 }

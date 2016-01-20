@@ -282,21 +282,12 @@ namespace controladorAtm
         {
             try
             {
-                //if (hiloServidor != null)
-                //{
                     opc = false;
-                    //if (hiloServidor.IsAlive) {
                         foreach(ConexionTCP terminal in terminalesConectadas){
                             terminal.cerrar_conexion();
                         }
                         servidor.Stop();
                         terminalesConectadas.Clear();
-                        //hiloServidor.Interrupt();
-                    //}
-                //}
-                //opc = false;
-                //TcpClient sockcli = new TcpClient(parametrosconfig.ip, parametrosconfig.puerto);
-                //sockcli.Close();
             }
             catch (SocketException ex)
             {
