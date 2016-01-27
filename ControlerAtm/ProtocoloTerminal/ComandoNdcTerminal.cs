@@ -40,6 +40,18 @@ namespace controladorAtm
 
         public string getTramaComandoTerminal()
         {
+            //trailer = "  ";
+            int longitud = (claseMensaje
+            + banderaRespuesta
+            + separador
+            + luno
+            + separador
+            + numeroSecuencia
+            + separador
+            + codigoComando
+            + modificadorComando
+            + trailer).Length+2;
+            cabecera = Char.ConvertFromUtf32(0).ToString() + Char.ConvertFromUtf32(longitud).ToString();
             return cabecera
             + claseMensaje
             + banderaRespuesta
@@ -78,13 +90,13 @@ namespace controladorAtm
         public void setEnviarInformacionFechaHora()
         {
             codigoComando = "8";
-            modificadorComando = "4";// Se solicita el estadod sensores 
+            //modificadorComando = "4";// Se solicita el estadod sensores 
  
         }
 
         public void setEnviarSolicitudContadores() {
             codigoComando = "4";
-            modificadorComando = "1"; // 1 solicita mensaje basico contadores
+            modificadorComando = "2"; // 1 solicita mensaje basico contadores
             // 2 solicita mensaje extendido
         }
         #endregion

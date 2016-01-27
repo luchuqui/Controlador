@@ -5,6 +5,6 @@
     <DireccionIP>0.0.0.0</DireccionIP>
     <Puerto>1000</Puerto>
     <conexionBDD>Data Source=127.0.0.1;Initial Catalog=NDC_BDD;User ID=ControladorBDD;Password=123456</conexionBDD>
-    <dllServicio>127.0.0.1</dllServicio>
+	<ipServicioAdmin>127.0.0.1</ipServicioAdmin>
   </Servicio>
 </Servicios>

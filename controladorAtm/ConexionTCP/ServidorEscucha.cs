@@ -120,7 +120,6 @@ namespace controladorAtm
                         if (ipMonitoreo.Equals(ipSolicitud))
                         {
                             envioComandoTerminal(cliente);
-                            
                         }
                         else {
                             mensaje_error_sistema("No autorizada para conectarse ...", Color.Red);
@@ -219,7 +218,8 @@ namespace controladorAtm
             string ipSolicitud = clienteCmd.Client.RemoteEndPoint.ToString().Split(':')[0];
             string mensajeCmd = string.Empty;
             /*1.- debo de receptar lo solicitado*/
-            NetworkStream ncomand = new NetworkStream(clienteCmd.Client);
+            //NetworkStream ncomand = new NetworkStream(clienteCmd.Client);
+            NetworkStream ncomand = clienteCmd.GetStream();
                     try
                     {
                     string datosCmd = string.Empty;
@@ -228,12 +228,14 @@ namespace controladorAtm
                     i = ncomand.Read(bytes, 0, bytes.Length);
                     datosCmd = System.Text.Encoding.UTF8.GetString(bytes, 0, i);/*Datos recibidos para el comando*/
                     string[] procesoCmd = datosCmd.Split(':');
-                    mensaje_error_sistema("Envio comando ip Terminal :"+procesoCmd[0], Color.Green);    
+                    mensaje_error_sistema("Datos Recibidos comando :" + datosCmd, Color.Tomato);    
+                    mensaje_error_sistema("Envio comando ip Terminal :"+procesoCmd[0], Color.Tomato);    
                     foreach (ConexionTCP connAtm in terminalesConectadas)
                     {
                         if (connAtm.get_Terminal_Atm().ip.Equals(procesoCmd[0]))
                         {
-                            connAtm.envio_string(procesoCmd[1]);
+                            //connAtm.envio_string(procesoCmd[1]);
+                            connAtm.envio_comandoTerminal(procesoCmd[1]);
                             //mensajeCmd=connAtm.envioRecepcionString(procesoCmd[1]);
                             mensajeCmd = "220009";
                             break;
@@ -255,16 +257,17 @@ namespace controladorAtm
             {
                 mensaje_error_sistema(e.Message, Color.Green);    
             }
-            finally {
-                try
-                {
-                    ncomand.Close();
-                    //clienteCmd.Close();
-                }
-                catch (Exception e) {
-                    mensaje_error_sistema(e.Message, Color.Green);    
-                }
-            }
+                    //ncomand.Flush();
+            //finally {
+            //    try
+            //    {
+            //        ncomand.Close();
+            //        clienteCmd.Close();
+            //    }
+            //    catch (Exception e) {
+            //        mensaje_error_sistema(e.Message, Color.Green);    
+            //    }
+            //}
 
                 
         }
@@ -310,8 +313,14 @@ namespace controladorAtm
         public void mensaje_error_sistema(string mensaje, Color colorFuente)
         {
             limpiar_lineas_visor();
-            visor.SelectionColor = colorFuente;
-            visor.AppendText(System.DateTime.Now.ToString("hh:mm:ss") + " " + mensaje + "\r");
+            try
+            {
+                visor.SelectionColor = colorFuente;
+                visor.AppendText(System.DateTime.Now.ToString("hh:mm:ss") + " " + mensaje + "\r");
+            }
+            catch (Exception e) { 
+            
+            }
         }
 
         public void limpiar_lineas_visor()

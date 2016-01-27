@@ -166,11 +166,11 @@ namespace servicioWebControl
         }
 
         [WebMethod]
-        public List<DetalleDescripcionObj> obtener_detalle_alarma_terminal()
+        public List<DetalleDescripcionObj> obtener_detalle_alarma_terminal(AtmObj atm)
         {
-            AtmObj atm = new AtmObj();
+            /*AtmObj atm = new AtmObj();
             atm.id_atm = 1;
-            atm.codigo = "0932";
+            atm.codigo = "0932";*/
             try
             {
                 return controlUsr.controlObtencionDescripcion(atm);

@@ -277,13 +277,19 @@ namespace controladorAtm
                 XmlNodeList nipServidor = nodo.GetElementsByTagName("DireccionIP");
                 XmlNodeList npuertoServidor = nodo.GetElementsByTagName("Puerto");
                 XmlNodeList conBDD = nodo.GetElementsByTagName("conexionBDD");
-                XmlNodeList ndll = nodo.GetElementsByTagName("dllServicio");
+                XmlNodeList ndll = nodo.GetElementsByTagName("ipServicioAdmin");
                 ConfiguracionServicio datosConfig = new ConfiguracionServicio();
                 datosConfig.conexion = conBDD[0].InnerText;
                 datosConfig.numero = num.ToString();
                 datosConfig.ip = nipServidor[0].InnerText;
                 datosConfig.puerto = int.Parse(npuertoServidor[0].InnerText);
-                datosConfig.dll = ndll[0].InnerText;
+                try
+                {
+                    datosConfig.dll = ndll[0].InnerText;
+                }
+                catch (NullReferenceException e) {
+                    datosConfig.dll = "127.0.0.1";
+                }
                 datosConfig.nombreServicio = nNombre[0].InnerText;
                 datosConfig.estado = false;
                 datosServicio.Add(datosConfig);

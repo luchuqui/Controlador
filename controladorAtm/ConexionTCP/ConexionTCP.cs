@@ -32,7 +32,7 @@ namespace controladorAtm
         private bool clienteConectado = true; /*Bandera para verificar si el terminal sigue conectado*/
         private BddSQLServer conBdd; /*Manejador de conexion a la base de datos*/
         private System.Timers.Timer verificacionConexion;
-        private int segSondeo = 30;
+        private int segSondeo = 60;
         private MonitoreoDispositivos mt;
         
         private NotificacionEnviar notificacion;
@@ -45,7 +45,8 @@ namespace controladorAtm
                 this.terminal = terminales;
                 cliente = clie;
                 stream = new NetworkStream(cliente.Client);
-                stream.ReadTimeout = 3000;
+                stream.ReadTimeout = 10000;
+                stream.WriteTimeout = 10000;
                 terminalArchivo = new archivoRW();
                 error = new archivoRW();
 
@@ -109,7 +110,8 @@ namespace controladorAtm
                 cliente = clie;
                 stream = new NetworkStream(cliente.Client);
                 sincronico = true;
-                stream.ReadTimeout = 3000;
+                stream.ReadTimeout = 10000;
+                stream.WriteTimeout = 10000;
                 terminalArchivo = new archivoRW();
                 error = new archivoRW();
                 terminalArchivo.archivo_guardar("MENSAGE_TERMINAL", terminal.codigo);
@@ -200,10 +202,13 @@ namespace controladorAtm
                         {
                             if (mensajeEnvioRecep.descriptor.Equals("F"))
                             {
-                                List<MonitoreoDispositivos> mts = parseoAlrma.parseaTramaAlarmaDispositivo(mensajeEnvioRecep);
-                                foreach (MonitoreoDispositivos tmp in mts)
+                                if (mensajeEnvioRecep.id_tipo_dispositivo.Equals("1"))
                                 {
-                                    conBdd.insertar_actualizar_monitoreo_dispositivos(tmp);
+                                    List<MonitoreoDispositivos> mts = parseoAlrma.parseaTramaAlarmaDispositivo(mensajeEnvioRecep);
+                                    foreach (MonitoreoDispositivos tmp in mts)
+                                    {
+                                        conBdd.insertar_actualizar_monitoreo_dispositivos(tmp);
+                                    }
                                 }
                             }
                         }
@@ -299,30 +304,61 @@ namespace controladorAtm
             {
                 byte[] msg = new byte[datoIn.Length];
                 msg = System.Text.Encoding.UTF8.GetBytes(datoIn);
-                if (stream.CanWrite)
+                if (stream.CanWrite && !stream.DataAvailable)
                 {
-                    stream.Write(msg, 0, msg.Length);
+                    if (!string.IsNullOrEmpty(datoIn))
+                    {
+                        stream.Write(msg, 0, msg.Length);
+                    }
                 }
             }
             catch (ObjectDisposedException ex)
             {
-                error.escritura_archivo_string(ex.StackTrace);
+                error.escritura_archivo_string(ex.Message+"\t"+ex.StackTrace + "\t" + datoIn);
                 //mensaje_error_sistema(ex.Message, Color.Red);
+                cerrar_conexion();
             }
             catch (ArgumentNullException ex)
             {
-                error.escritura_archivo_string(ex.StackTrace);
+                error.escritura_archivo_string(ex.Message + "\t" + ex.StackTrace + "\t" + datoIn);
                 //mensaje_error_sistema(ex.Message, Color.Red);
+                cerrar_conexion();
             }
             catch (IOException ex) {
-                error.escritura_archivo_string(ex.StackTrace);
+                error.escritura_archivo_string(ex.Message + "\t" + ex.StackTrace + "\t" + datoIn);
                 cerrar_conexion();
             }
             catch (Exception ex)
             {
-                error.escritura_archivo_string(ex.StackTrace);
-                
+                error.escritura_archivo_string(ex.Message + "\t" + ex.StackTrace + "\t" + datoIn);
+                cerrar_conexion();
             }
+        }
+
+        public void envio_comandoTerminal(string comando)
+        {
+            ComandoNdcTerminal cmdT = new ComandoNdcTerminal();
+            if (comando.Equals("1")) { 
+                cmdT.setPonerEnServicio();
+            }
+            else if (comando.Equals("2"))
+            {
+                cmdT.setPonerFueraServicio();
+            }
+            else if (comando.Equals("4"))
+            {
+                cmdT.setEnviarSolicitudContadores();
+            }
+            else if (comando.Equals("8"))
+            {
+                cmdT.setEnviarInformacionFechaHora();
+            }
+
+            else {
+                return;
+            }
+            terminalArchivo.escritura_archivo_string("["+terminal.codigo+"]>>>" + cmdT.getTramaComandoTerminal());
+            envio_string(cmdT.getTramaComandoTerminal());
         }
 
         public string envioRecepcionString(string mensajeEnvio)

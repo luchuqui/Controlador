@@ -828,29 +828,14 @@ namespace ControlerAtm.LogicaNegocio
                 string valorBusqueda = terminal.ip+":"+terminal.id_atm;
                 terminales = conBdd.obtener_terminal(valorBusqueda,false);
                 ClienteMonitoreoTCP conn = new ClienteMonitoreoTCP(hostComunicacion);
-                ComandoNdcTerminal  commandoNDC = new ComandoNdcTerminal();
-                if(comando.Equals("1")){
-                    commandoNDC.setPonerEnServicio();
-                }
-                else if (comando.Equals("2"))
-                {
-                    commandoNDC.setPonerFueraServicio();
-                }
-                else if (comando.Equals("4"))
-                {
-                    commandoNDC.setEnviarSolicitudContadores();
-                }
-                else if (comando.Equals("8"))
-                {
-                    commandoNDC.setEnviarInformacionFechaHora();
-                }
+                
 
                 foreach(AtmObj ter in terminales){
                     try
                     {
                         if (ter.conexion)
                         {
-                            mensaje += "[" + ter.codigo + "]" + conn.envioRecepcionString(ter.ip + ":" + commandoNDC.getTramaComandoTerminal()) + "\n";
+                            mensaje += "[" + ter.codigo + "]" + conn.envioRecepcionString(ter.ip + ":" + comando) + "\n";
                         }
                         else {
                             mensaje += "[" + ter.codigo + "] Terminal desconectado \n";

@@ -1835,7 +1835,7 @@ namespace ControlerAtm.com.ec.BaseDatos
                     //detalle.mensaje_ndc = "";
                     detalle.fecha_registro = DateTime.Parse(tb.Rows[i][2].ToString());
                     detalle.tipo_estado = tb.Rows[i][3].ToString();
-                    detalle.tipo_mensaje = tb.Rows[i][4].ToString().Replace((char)0, (char)94).Replace((char)28,(char)127);
+                    detalle.tipo_mensaje = tb.Rows[i][4].ToString().Replace((char)0, (char)94).Replace((char)28, (char)127).Replace((char)29, (char)128);
                     detalles.Add(detalle);
                 }
                 return detalles;

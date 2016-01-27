@@ -170,6 +170,13 @@
     <Compile Include="Contenido\Usuario.aspx.designer.cs">
       <DependentUpon>Usuario.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Contenido\VentanaEmergente.aspx.cs">
+      <DependentUpon>VentanaEmergente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contenido\VentanaEmergente.aspx.designer.cs">
+      <DependentUpon>VentanaEmergente.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CuadroMensaje.cs" />
     <Compile Include="Globales.cs" />
     <Compile Include="Contenido\MenuUsuario.Master.cs">
@@ -236,6 +243,7 @@
     <Content Include="Contenido\ObservacionEvento.aspx" />
     <Content Include="Contenido\Terminal_Responsable.aspx" />
     <Content Include="Contenido\Usuario.aspx" />
+    <Content Include="Contenido\VentanaEmergente.aspx" />
     <Content Include="CSS\estiloMain.css" />
     <Content Include="CSS\main.js" />
     <Content Include="Imagenes\acceso_sistema.jpg" />

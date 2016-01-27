@@ -1,0 +1,6 @@
+19:02:37 en controladorAtm.ProtocoloTerminal.ProcesamientoTrama.parseaTramaAlarmaDispositivo(AlarmasObj alarma) en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\ProtocoloTerminal\ProcesamientoTrama.cs:línea 140
+   en controladorAtm.ConexionTCP.cliente_servicio() en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 205
+19:03:50 en controladorAtm.ProtocoloTerminal.ProcesamientoTrama.parseaTramaAlarmaDispositivo(AlarmasObj alarma) en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\ProtocoloTerminal\ProcesamientoTrama.cs:línea 141
+   en controladorAtm.ConexionTCP.cliente_servicio() en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 205
+19:08:26 en controladorAtm.ProtocoloTerminal.ProcesamientoTrama.parseaTramaAlarmaDispositivo(AlarmasObj alarma) en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\ProtocoloTerminal\ProcesamientoTrama.cs:línea 141
+   en controladorAtm.ConexionTCP.cliente_servicio() en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\controladorAtm\ConexionTCP\ConexionTCP.cs:línea 205

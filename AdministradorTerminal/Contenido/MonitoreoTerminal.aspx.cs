@@ -15,93 +15,98 @@ namespace AdministradorTerminal.Contenido
         private MonitoreoDispositivos[] terminalesUsuario;
         //private int filaSeleccionada;
         private AtmObj terminal;
-
+        private DetalleDescripcionObj[] decripcion;
         protected void Page_Load(object sender, EventArgs e)
         {
             // se cargan los terminales que tiene el usuario
             terminal = (AtmObj)Session["terminal"];
-            if (tb_terminales != null) {
-                tb_terminales.Rows.Clear();
-            }
-            setAutoRefresh();
-            HtmlTableRow fila = new HtmlTableRow();
-            HtmlTableCell celdaNum = new HtmlTableCell();
-            HtmlTableCell celdaTer = new HtmlTableCell();
-            HtmlTableCell celdaGab = new HtmlTableCell();
-            HtmlTableCell celdaDis = new HtmlTableCell();
-            HtmlTableCell celdaLec = new HtmlTableCell();
-            HtmlTableCell celdaImp = new HtmlTableCell();
-            HtmlTableCell celdaMod = new HtmlTableCell();
-            HtmlTableCell celdaEst = new HtmlTableCell();
-            HtmlTableCell celdaLlave = new HtmlTableCell();
-            HtmlTableCell celdaProceso = new HtmlTableCell();
-            celdaNum.InnerText = "#";
-            celdaTer.InnerText = "Terminal";
-            celdaEst.InnerText = "Conexión";
-            celdaGab.InnerText = "Gavetas";
-            celdaGab.ColSpan = 5;
-            celdaDis.InnerText = "Dispensador";
-            celdaLlave.InnerText = "Llave";
-            celdaLec.InnerText = "Lectora";
-            celdaImp.InnerText = "Impresora";
-            celdaMod.InnerText = "Modo";
-            celdaProceso.InnerText = "Eventos";
-            
-            fila.Cells.Add(celdaNum);
-            fila.Cells.Add(celdaTer);
-            fila.Cells.Add(celdaEst);
-            fila.Cells.Add(celdaGab);
-            fila.Cells.Add(celdaDis);
-            fila.Cells.Add(celdaLec);
-            fila.Cells.Add(celdaImp);
-            fila.Cells.Add(celdaMod);
-            fila.Cells.Add(celdaLlave);
-            fila.Cells.Add(celdaProceso);
-            fila.BgColor = "4E4545";
-            fila.Style.Value = "color: #FFFFFF";
-            tb_terminales.Rows.Add(fila);
-
-            HtmlTableRow filaE = new HtmlTableRow();
-
-            HtmlTableCell celdaNume = new HtmlTableCell();
-            HtmlTableCell celdaHora = new HtmlTableCell();
-            HtmlTableCell celdaDato = new HtmlTableCell();
-            HtmlTableCell celdaTipoError = new HtmlTableCell();
-            HtmlTableCell celdaDescripcion = new HtmlTableCell();
-            HtmlTableCell celdaVerEvento = new HtmlTableCell();
-            celdaNume.InnerText = "#";
-            celdaHora.InnerText = "Hora hh:mm:ss";
-            celdaDato.InnerText = "Tipo Mensaje";
-            celdaTipoError.InnerText = "Evento";
-            celdaDescripcion.InnerText = "información Evento";
-            celdaVerEvento.InnerText = "Ver información";
-            filaE.Cells.Add(celdaHora);
-            filaE.Cells.Add(celdaDato);
-            filaE.Cells.Add(celdaTipoError);
-            filaE.Cells.Add(celdaDescripcion);
-            filaE.Cells.Add(celdaVerEvento);
-            filaE.BgColor = "4E4545";
-            filaE.Style.Value = "color: #FFFFFF";
-            tb_evento.Rows.Add(filaE);
-            UsuarioObj usrSesion = (UsuarioObj)Session["usuario"];
-            if (usrSesion != null)
-            {
-                terminalesUsuario = Globales.servicio.obtener_monitoreo_dipositivos(usrSesion);
-                if (terminalesUsuario != null)
+                if (tb_terminales != null)
                 {
-                    cargar_datos_tabla(terminalesUsuario);
-                    
+                    tb_terminales.Rows.Clear();
+                } if (tb_evento != null) {
+                    tb_evento.Rows.Clear();
                 }
-            }
-            if (terminal != null) {
-                this.lbl_codigoTerminal.Text = terminal.codigo;
-                this.lbl_fechaEvento.Text = System.DateTime.Now.ToString("yyyy-MM-dd");
-                DetalleDescripcionObj[] detalles = Globales.servicio.obtener_detalle_alarma_terminal(terminal);
-                if (detalles != null)
+                setAutoRefresh();
+                HtmlTableRow fila = new HtmlTableRow();
+                HtmlTableCell celdaNum = new HtmlTableCell();
+                HtmlTableCell celdaTer = new HtmlTableCell();
+                HtmlTableCell celdaGab = new HtmlTableCell();
+                HtmlTableCell celdaDis = new HtmlTableCell();
+                HtmlTableCell celdaLec = new HtmlTableCell();
+                HtmlTableCell celdaImp = new HtmlTableCell();
+                HtmlTableCell celdaMod = new HtmlTableCell();
+                HtmlTableCell celdaEst = new HtmlTableCell();
+                HtmlTableCell celdaLlave = new HtmlTableCell();
+                HtmlTableCell celdaProceso = new HtmlTableCell();
+                celdaNum.InnerText = "#";
+                celdaTer.InnerText = "Terminal";
+                celdaEst.InnerText = "Conexión";
+                celdaGab.InnerText = "Gavetas";
+                celdaGab.ColSpan = 5;
+                celdaDis.InnerText = "Dispensador";
+                celdaLlave.InnerText = "Llave";
+                celdaLec.InnerText = "Lectora";
+                celdaImp.InnerText = "Impresora";
+                celdaMod.InnerText = "Modo";
+                celdaProceso.InnerText = "Eventos";
+
+                fila.Cells.Add(celdaNum);
+                fila.Cells.Add(celdaTer);
+                fila.Cells.Add(celdaEst);
+                fila.Cells.Add(celdaGab);
+                fila.Cells.Add(celdaDis);
+                fila.Cells.Add(celdaLec);
+                fila.Cells.Add(celdaImp);
+                fila.Cells.Add(celdaMod);
+                fila.Cells.Add(celdaLlave);
+                fila.Cells.Add(celdaProceso);
+                fila.BgColor = "4E4545";
+                fila.Style.Value = "color: #FFFFFF";
+                tb_terminales.Rows.Add(fila);
+
+                HtmlTableRow filaE = new HtmlTableRow();
+
+                HtmlTableCell celdaNume = new HtmlTableCell();
+                HtmlTableCell celdaHora = new HtmlTableCell();
+                HtmlTableCell celdaDato = new HtmlTableCell();
+                HtmlTableCell celdaTipoError = new HtmlTableCell();
+                HtmlTableCell celdaDescripcion = new HtmlTableCell();
+                HtmlTableCell celdaVerEvento = new HtmlTableCell();
+                celdaNume.InnerText = "#";
+                celdaHora.InnerText = "Hora hh:mm:ss";
+                celdaDato.InnerText = "Tipo Mensaje";
+                celdaTipoError.InnerText = "Evento";
+                celdaDescripcion.InnerText = "información Evento";
+                celdaVerEvento.InnerText = "Ver información";
+                filaE.Cells.Add(celdaHora);
+                filaE.Cells.Add(celdaDato);
+                filaE.Cells.Add(celdaTipoError);
+                filaE.Cells.Add(celdaDescripcion);
+                filaE.Cells.Add(celdaVerEvento);
+                filaE.BgColor = "4E4545";
+                filaE.Style.Value = "color: #FFFFFF";
+                tb_evento.Rows.Add(filaE);
+
+                UsuarioObj usrSesion = (UsuarioObj)Session["usuario"];
+                if (usrSesion != null && !IsCallback)
                 {
-                    cargar_datos_enventos(detalles);
+                    terminalesUsuario = Globales.servicio.obtener_monitoreo_dipositivos(usrSesion);
+                    if (terminalesUsuario != null)
+                    {
+                        cargar_datos_tabla(terminalesUsuario);
+
+                    }
                 }
-            }
+                if (terminal != null)
+                {
+                    this.lbl_codigoTerminal.Text = terminal.codigo;
+                    this.lbl_fechaEvento.Text = System.DateTime.Now.ToString("yyyy-MM-dd");
+                    DetalleDescripcionObj[] detalles = Globales.servicio.obtener_detalle_alarma_terminal(terminal);
+                    if (detalles != null)
+                    {
+                        cargar_datos_enventos(detalles);
+                    }
+                }
         }
 
 
@@ -126,15 +131,17 @@ namespace AdministradorTerminal.Contenido
                 HtmlTableCell tipoError = new HtmlTableCell();
                 HtmlTableCell descripcionError = new HtmlTableCell();
                 HtmlTableCell verEvento = new HtmlTableCell();
-                Button btnEl = new Button();
-                btnEl.Text = "Ver Eventos";
-                btnEl.ToolTip = "Descripción de ventos cajero";
-                btnEl.Click += new EventHandler(this.verDescripcionSucesos);
-                verEvento.Align = "Center";
-                btnEl.ID = "btnEl_" + i;
-                verEvento.Controls.Add(btnEl);
+                Button btnES = new Button();
+                btnES.Text = "Ver Eventos";
+                btnES.ToolTip = "Descripción de ventos cajero";
+                //btnES.Click += new EventHandler(this.verDescripcionSucesos);
+                //btnES.Click += new MouseEventHandler(this.verDescripcionSucesos);
+                btnES.Click += new EventHandler(this.verDescripcionSucesos);
+                //verEvento.Align = "Center";
+                btnES.ID = "btnEl_" + i;
+                verEvento.Controls.Add(btnES);
 
-                horaEvento.InnerText = d.fecha_registro.ToString("hh:mm:ss");
+                horaEvento.InnerText = d.fecha_registro.ToString("HH:mm:ss");
                 mensajeTerminal.InnerText = d.descripcion_mensaje;
                 tipoError.InnerText = d.tipo_estado;
                 descripcionError.InnerText = d.tipo_mensaje;
@@ -147,7 +154,7 @@ namespace AdministradorTerminal.Contenido
                 this.tb_evento.Rows.Add(fila);
                 i++;
             }
-        
+             
         }
 
         private void cargar_datos_tabla(MonitoreoDispositivos[] terminales)
@@ -253,9 +260,9 @@ namespace AdministradorTerminal.Contenido
                 Button btnEl = new Button();
                 btnEl.Text = "Sucesos";
                 btnEl.ToolTip = "Visualizar eventos del Terminal";
-                btnEl.Click += new EventHandler(this.eventoBtnSucesos);
                 celdaProceso.Align = "Center";
                 btnEl.ID = "btnEl_" + i;
+                btnEl.Click += new EventHandler(this.eventoBtnSucesos);
                 celdaProceso.Controls.Add(btnEl);
                 fila.Cells.Add(celdaNum);
                 fila.Cells.Add(celdaTer);
@@ -271,6 +278,7 @@ namespace AdministradorTerminal.Contenido
                 fila.Cells.Add(celdaImp);
                 fila.Cells.Add(celdaMod);
                 fila.Cells.Add(celdaLlave);
+                //fila.Controls.Add(celdaProceso);
                 fila.Cells.Add(celdaProceso);
                 tb_terminales.Rows.Add(fila);
                 i++;
@@ -290,11 +298,11 @@ namespace AdministradorTerminal.Contenido
             atm.id_atm = tm.id_atm;
             Session["terminal"] = atm;
             DetalleDescripcionObj[] detalles = Globales.servicio.obtener_detalle_alarma_terminal(atm);
-            if (detalles != null) {
-                
+            if (detalles != null)
+            {
+
                 cargar_datos_enventos(detalles);
             }
-            //Globales.servicio.obtener_alarma_atm();
         }
 
         private void verDescripcionSucesos(object sender, EventArgs e)
@@ -307,6 +315,7 @@ namespace AdministradorTerminal.Contenido
             AtmObj atm = new AtmObj();
             atm.codigo = tm.codigo_atm;
             atm.id_atm = tm.id_atm;
+            Page.ClientScript.RegisterStartupScript(this.GetType(), "refresh", "ventanaSecundaria(~/Contenido/VentanaEmergente.aspx);", true);
             //ACA SE DEBE COLOCAR UNA NUEVA VENTANA PARA MOSTRAR LOS EVENTOS
         }
 

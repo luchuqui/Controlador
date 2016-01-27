@@ -18,6 +18,11 @@
     <script src="../Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
     <script src="../Scripts/jquery.dynDateTime.min.js" type="text/javascript"></script>
     <script src="../Scripts/calendar-es.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function ventanaSecundaria(URL) {
+            window.open(URL, "ventana1", "width=120,height=300,scrollbars=NO")
+        }
+    </script> 
     <%--<link href="Styles/calendar-blue.css" rel="stylesheet" type="text/css" />--%>
 </head>
 <body>

@@ -92,9 +92,25 @@ namespace controladorAtm.ProtocoloTerminal
                         /* ESTADOS DE DISPOSITIVOS */
                     else if(campos[3].Equals("F")){
                         //alarma.descriptor = campos[3];
-                        alarma.estado_suministro = campos[5];
-                        alarma.estado_diagnostico = campos[6];
-                        alarma.estado_dispositivo = campos[7];
+                        if (campos[4].StartsWith("1"))// envio de configuracion de informacion
+                        {
+                            alarma.id_tipo_dispositivo = "1";
+                            alarma.estado_suministro = campos[5];
+                            alarma.estado_diagnostico = campos[6];
+                            alarma.estado_dispositivo = campos[7];
+                        }
+                        else if (campos[4].StartsWith("2")) { // envio de estado de contadores
+                            alarma.id_tipo_dispositivo = "2";
+                            alarma.estado_suministro = campos[4];
+                        }
+                        else if (campos[4].StartsWith("7A"))// envio de contadores extendidos
+                        { // envio de estado de contadores
+                            alarma.id_tipo_dispositivo = "7";
+                            string[] otrosValores = campos[4].Split((char)29);// char 29 GS
+                            alarma.estado_suministro = otrosValores[1];
+                            alarma.estado_diagnostico = otrosValores[2];
+                        }
+
                         
                     }
                 }

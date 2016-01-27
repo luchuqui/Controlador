@@ -7,21 +7,19 @@
     </asp:Panel>
 </asp:Content>
 <asp:Content ID="agregarPerfilPage" ContentPlaceHolderID="contenidoPagina" Runat="Server">
-<div>
+    <div>
     <asp:ScriptManager ID = "scriptPanelDatos" runat = "server">
     </asp:ScriptManager>
 </div>
 
 <asp:UpdatePanel ID = "panelActualizar" runat = "server" UpdateMode = "Conditional">
 <ContentTemplate>
-    <asp:Panel ID="Panel1" runat = "server" Width = "100%" >
-        <table id = "tb_terminales" runat = "server" style = "z-index: 1; text-align :center; font-size: small;" border = "2" width = "100%">
+    <asp:Panel ID="Panel1" runat = "server" Width = "100%" ScrollBars = "Vertical" Height="200px">
+        <table id = "tb_terminales" runat = "server" style = "z-index: 1; text-align :center; font-size: small; table-layout: fixed;" border = "2" width = "100%">
         </table>
         
     </asp:Panel>
-    <div> <br /></div>
     <asp:Panel ID="Panel3" runat = "server" Width = "70%" HorizontalAlign="Left">
-    
         <asp:Table ID = "tablaDatos" runat = "server">
             <asp:TableRow>
                 <asp:TableCell> 
@@ -45,7 +43,7 @@
             </asp:TableRow>
         </asp:Table>
         </asp:Panel>
-    <asp:Panel runat = "server" ID = "detalleEventos" Width = "90%">
+    <asp:Panel runat = "server" ID = "detalleEventos" Width = "90%" ScrollBars = "Vertical" Height="200px">
         <table id = "tb_evento" runat = "server" style = "z-index: 1; font-size: small;" border = "2" width = "100%">
         </table>
     </asp:Panel>
