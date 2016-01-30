@@ -7,6 +7,8 @@ using System.IO.Ports;
 
 namespace ControlerAtm.Utilitario
 {
+    /*Permite realizar el envio de notificaciones via sms, mediante 
+     * comunicacion serial y uso comandos AT*/
     public class MensajeTexto : NotificacionDao
     {
         private string puetoCom;

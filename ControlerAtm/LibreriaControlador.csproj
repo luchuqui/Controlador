@@ -75,7 +75,6 @@
     <Compile Include="ProtocoloTerminal\IProcesarTrama.cs" />
     <Compile Include="ProtocoloTerminal\ITramaTerminalComando.cs" />
     <Compile Include="ProtocoloTerminal\ProcesamientoTrama.cs" />
-    <Compile Include="Utilitario\archivoRW.cs" />
     <Compile Include="Utilitario\ClienteMonitoreoTCP.cs" />
     <Compile Include="Utilitario\CorreoElectronico.cs" />
     <Compile Include="Utilitario\GeneracionClave.cs" />

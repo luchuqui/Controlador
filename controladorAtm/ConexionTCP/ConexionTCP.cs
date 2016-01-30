@@ -18,8 +18,8 @@ namespace controladorAtm
     {
         private TcpClient cliente; /*Ciente tcp para atender las peticiones de los cajeros*/
         private NetworkStream stream; /* Buffer para enviar o recibir los datos del terminal*/
-        private archivoRW terminalArchivo; /* Clase implementada para realizar la escritra de eventos que genera el cajero*/
-        private archivoRW error; /*Escritura de archivos para almacenar los errores producidos por la aplicacion*/
+        private LecturaEscrituraArchivo terminalArchivo; /* Clase implementada para realizar la escritra de eventos que genera el cajero*/
+        private LecturaEscrituraArchivo error; /*Escritura de archivos para almacenar los errores producidos por la aplicacion*/
         public event datoIngresoServicio datoIn; /*Variable para pasar la informacion entre clases en este caso datos entrada*/
         public event datoIngresoServicio datoResp; /*Variable para pasar la informacion entre clases en este caso datos salida*/
         //private RichTextBox visor; /*Objeto para mostrar la informacion en la pantalla del cliente*/
@@ -47,8 +47,8 @@ namespace controladorAtm
                 stream = new NetworkStream(cliente.Client);
                 stream.ReadTimeout = 10000;
                 stream.WriteTimeout = 10000;
-                terminalArchivo = new archivoRW();
-                error = new archivoRW();
+                terminalArchivo = new LecturaEscrituraArchivo();
+                error = new LecturaEscrituraArchivo();
 
                 terminalArchivo.archivo_guardar("MENSAGE_TERMINAL", terminal.codigo);//Almacena en la carpeta MENSAGE_TERMINAL y en la sub carpeta codigo terminal
                 error.archivo_guardar("ERROR", terminal.codigo);
@@ -110,10 +110,10 @@ namespace controladorAtm
                 cliente = clie;
                 stream = new NetworkStream(cliente.Client);
                 sincronico = true;
-                stream.ReadTimeout = 10000;
-                stream.WriteTimeout = 10000;
-                terminalArchivo = new archivoRW();
-                error = new archivoRW();
+                stream.ReadTimeout = 10000;// Tiempo esperado para lectura
+                stream.WriteTimeout = 10000; // Tiempo esperado para la escritura
+                terminalArchivo = new LecturaEscrituraArchivo();
+                error = new LecturaEscrituraArchivo();
                 terminalArchivo.archivo_guardar("MENSAGE_TERMINAL", terminal.codigo);
                 error.archivo_guardar("ERROR", terminal.codigo);
                 configurarServicio = serviceConf;

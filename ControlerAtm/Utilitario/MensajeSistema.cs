@@ -5,6 +5,7 @@ using System.Text;
 
 namespace ControlerAtm.Utilitario
 {
+    /*Mensajes de notificacion de error para la aplicacion del sistema*/
     public class MensajeSistema
     {
         public const string actualizacion_ok = "Actualizacion datos correcta ";

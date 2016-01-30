@@ -6,6 +6,7 @@ using ControlerAtm.com.ec.objetos;
 
 namespace ControlerAtm.Utilitario
 {
+    /*Une las dos tipos de notificacion para que se envien simultaneamente*/
     public class NotificacionEnviar
     {
         private CorreoElectronico email;

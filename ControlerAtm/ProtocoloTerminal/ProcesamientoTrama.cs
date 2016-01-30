@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using ControlerAtm.com.ec.objetos;
+using ControlerAtm.Utilitario;
 
 namespace controladorAtm.ProtocoloTerminal
 {
+    /*Permite realizar el precesamiento de tramas ndc, de alarmas*/
     public class ProcesamientoTrama:IProcesarTrama
     {
-        private archivoRW errorNDC; /*Archivo para almacenar las alertas del cajero*/
+        private LecturaEscrituraArchivo errorNDC; /*Archivo para almacenar las alertas del cajero*/
         private AtmObj terminal;
         public ProcesamientoTrama(AtmObj terminal) {
-            errorNDC = new archivoRW();
+            errorNDC = new LecturaEscrituraArchivo();
             errorNDC.archivo_guardar("MENSAGE_NDC", terminal.codigo);//Almacena en la carpeta MENSAGE_TERMINAL y en la sub carpeta codigo terminal
             this.terminal = terminal;
         }
@@ -65,7 +67,7 @@ namespace controladorAtm.ProtocoloTerminal
                 else if (campos[0].Equals("22"))
                 {
                     /*CODIGO TIPO 8 SIGNIFICA QUE ES UNA ALARMA SOLICITADA,
-                      CODIGO F SOLICITUD DE CONTADORES LEER SI SE VALID*/
+                      CODIGO F SOLICITUD DE CONTADORES Y ESTADOS DE DISPOSITIVOS GENERAL*/
                     alarma.descriptor = campos[3];
                     if (campos[3].Equals("8"))
                     {

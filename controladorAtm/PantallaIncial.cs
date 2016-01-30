@@ -10,6 +10,7 @@ using System.Threading;
 using ControlerAtm.com.ec.BaseDatos;
 using ControlerAtm.com.ec.objetos;
 using System.Collections;
+using ControlerAtm.Utilitario;
 
 namespace controladorAtm
 {
@@ -18,15 +19,15 @@ namespace controladorAtm
         public Thread hiloPrincipal;
         private BddSQLServer conBdd;
         private ServidorEscucha serv;
-        private archivoRW configuracion;
-        private archivoRW aux;
+        private LecturaEscrituraArchivo configuracion;
+        private LecturaEscrituraArchivo aux;
         private ConfiguracionServicio servicio;
         private ArrayList  terminales;
         private string down = "SIN CONEXION";
         public PantallaIncial()
         {
-            configuracion = new archivoRW();
-            aux = new archivoRW();
+            configuracion = new LecturaEscrituraArchivo();
+            aux = new LecturaEscrituraArchivo();
             configuracion.archivo_abrir("Config\\configServicio.xml");
             aux.archivo_abrir("");
             servicio = configuracion.obtenerDatosXml()[0];

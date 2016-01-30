@@ -6,6 +6,7 @@ using System.Runtime.Serialization;
 
 namespace ControlerAtm.com.ec.objetos
 {
+    /*Descripcion de mensajes NDC filtrados para el usuaario*/
     [DataContract]
     public class DetalleDescripcionObj
     {

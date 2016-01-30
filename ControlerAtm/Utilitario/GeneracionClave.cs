@@ -5,6 +5,7 @@ using System.Text;
 
 namespace ControlerAtm.Utilitario
 {
+    /*Clase utilizada para realizar una  generacion de numeros y letras aleatorios, solo para generacion de clave*/
     public class GeneracionClave
     {
         private int longitud;

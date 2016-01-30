@@ -7,9 +7,10 @@ using System.IO;
 
 namespace ControlerAtm.Utilitario
 {
+    /*Clase utilizada para encriptar y desencriptar la contraseña del usuario en el sistema*/
     public class Seguridad
     {
-        private Rijndael rijndael;
+        private Rijndael rijndael; //encripcion AES
         private byte[] key;
         private byte[] iv;
 
