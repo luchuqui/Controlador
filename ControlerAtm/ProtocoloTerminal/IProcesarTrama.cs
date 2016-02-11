@@ -10,5 +10,6 @@ namespace controladorAtm.ProtocoloTerminal
     {
         AlarmasObj parseaTramaIngreso(string tramaIng);
         List<MonitoreoDispositivos> parseaTramaAlarmaDispositivo(AlarmasObj alarma);
+        DetalleDescripcionObj procesamientoDescripcion(DetalleDescripcionObj detalle);
     }
 }

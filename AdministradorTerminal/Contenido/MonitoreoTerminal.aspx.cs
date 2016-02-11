@@ -71,18 +71,18 @@ namespace AdministradorTerminal.Contenido
                 HtmlTableCell celdaDato = new HtmlTableCell();
                 HtmlTableCell celdaTipoError = new HtmlTableCell();
                 HtmlTableCell celdaDescripcion = new HtmlTableCell();
-                HtmlTableCell celdaVerEvento = new HtmlTableCell();
+                //HtmlTableCell celdaVerEvento = new HtmlTableCell();
                 celdaNume.InnerText = "#";
                 celdaHora.InnerText = "Hora hh:mm:ss";
                 celdaDato.InnerText = "Tipo Mensaje";
                 celdaTipoError.InnerText = "Evento";
                 celdaDescripcion.InnerText = "información Evento";
-                celdaVerEvento.InnerText = "Ver información";
+                //celdaVerEvento.InnerText = "Ver información";
                 filaE.Cells.Add(celdaHora);
                 filaE.Cells.Add(celdaDato);
                 filaE.Cells.Add(celdaTipoError);
                 filaE.Cells.Add(celdaDescripcion);
-                filaE.Cells.Add(celdaVerEvento);
+                //filaE.Cells.Add(celdaVerEvento);
                 filaE.BgColor = "4E4545";
                 filaE.Style.Value = "color: #FFFFFF";
                 tb_evento.Rows.Add(filaE);
@@ -130,7 +130,7 @@ namespace AdministradorTerminal.Contenido
                 HtmlTableCell mensajeTerminal = new HtmlTableCell();
                 HtmlTableCell tipoError = new HtmlTableCell();
                 HtmlTableCell descripcionError = new HtmlTableCell();
-                HtmlTableCell verEvento = new HtmlTableCell();
+                //HtmlTableCell verEvento = new HtmlTableCell();
                 Button btnES = new Button();
                 btnES.Text = "Ver Eventos";
                 btnES.ToolTip = "Descripción de ventos cajero";
@@ -139,18 +139,21 @@ namespace AdministradorTerminal.Contenido
                 btnES.Click += new EventHandler(this.verDescripcionSucesos);
                 //verEvento.Align = "Center";
                 btnES.ID = "btnEl_" + i;
-                verEvento.Controls.Add(btnES);
-
+                //verEvento.Controls.Add(btnES);
+                Label lblTemp = new Label();
                 horaEvento.InnerText = d.fecha_registro.ToString("HH:mm:ss");
                 mensajeTerminal.InnerText = d.descripcion_mensaje;
                 tipoError.InnerText = d.tipo_estado;
-                descripcionError.InnerText = d.tipo_mensaje;
+                //descripcionError.InnerText = d.tipo_mensaje;
+                lblTemp.ToolTip = d.detalle_descripcion;
+                lblTemp.Text = d.tipo_mensaje;
+                descripcionError.Controls.Add(lblTemp);
                 //Al final agrega los datos a la final
                 fila.Cells.Add(horaEvento);
                 fila.Cells.Add(mensajeTerminal);
                 fila.Cells.Add(tipoError);
                 fila.Cells.Add(descripcionError);
-                fila.Cells.Add(verEvento);
+                //fila.Cells.Add(verEvento);
                 this.tb_evento.Rows.Add(fila);
                 i++;
             }

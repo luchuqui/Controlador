@@ -1,10 +1,10 @@
 <publishData>
   <publishTarget publishUrl="C:\SITIOSWEBIIS\WSControlador\">
-    <file relUrl="bin/servicioWebControl.pdb" publishTime="01/24/2016 20:14:06" />
-    <file relUrl="bin/servicioWebControl.dll" publishTime="01/24/2016 20:14:06" />
+    <file relUrl="bin/servicioWebControl.pdb" publishTime="02/10/2016 22:08:47" />
+    <file relUrl="bin/servicioWebControl.dll" publishTime="02/10/2016 22:08:47" />
     <file relUrl="servicio_web_controlador.asmx" publishTime="10/08/2015 15:41:00" />
-    <file relUrl="bin/ControlerAtm.pdb" publishTime="01/24/2016 20:14:05" />
-    <file relUrl="bin/ControlerAtm.dll" publishTime="01/24/2016 20:14:06" />
+    <file relUrl="bin/ControlerAtm.pdb" publishTime="02/10/2016 22:08:47" />
+    <file relUrl="bin/ControlerAtm.dll" publishTime="02/10/2016 22:08:47" />
     <file relUrl="Web.config" publishTime="12/26/2015 12:55:32" />
   </publishTarget>
   <publishTarget publishUrl="D:\SITIOSWEBIIS\WSControlador\">

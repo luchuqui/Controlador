@@ -1055,6 +1055,10 @@ namespace AdministradorTerminal.WSControlador {
         
         private string descripcion_mensajeField;
         
+        private string tipo_dispositivoField;
+        
+        private string detalle_descripcionField;
+        
         /// <comentarios/>
         public string tipo_mensaje {
             get {
@@ -1102,6 +1106,26 @@ namespace AdministradorTerminal.WSControlador {
             }
             set {
                 this.descripcion_mensajeField = value;
+            }
+        }
+        
+        /// <comentarios/>
+        public string tipo_dispositivo {
+            get {
+                return this.tipo_dispositivoField;
+            }
+            set {
+                this.tipo_dispositivoField = value;
+            }
+        }
+        
+        /// <comentarios/>
+        public string detalle_descripcion {
+            get {
+                return this.detalle_descripcionField;
+            }
+            set {
+                this.detalle_descripcionField = value;
             }
         }
     }

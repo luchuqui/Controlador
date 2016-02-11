@@ -27,6 +27,7 @@ namespace ControlerAtm.Utilitario
             string telefonos = string.Empty;
             string correos = string.Empty;
             email.limpiarDestinatarios();
+            mensajeEnvio += " ";
             foreach (UsuarioObj u in usuarios) {
                 /*Parametro almacenado en la base de datos, 1 Habilitado, 0 deshabilitado*/
                 if (servicioHabilitado[0].Equals("1")) { 

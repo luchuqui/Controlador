@@ -170,7 +170,7 @@ namespace servicioWebControl
         {
             /*AtmObj atm = new AtmObj();
             atm.id_atm = 1;
-            atm.codigo = "0932";*/
+            atm.codigo = "ATM001";*/
             try
             {
                 return controlUsr.controlObtencionDescripcion(atm);

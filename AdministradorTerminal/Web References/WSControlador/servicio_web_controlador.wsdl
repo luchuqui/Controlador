@@ -508,6 +508,8 @@
           <s:element minOccurs="1" maxOccurs="1" name="fecha_registro" type="s:dateTime" />
           <s:element minOccurs="0" maxOccurs="1" name="tipo_estado" type="s:string" />
           <s:element minOccurs="0" maxOccurs="1" name="descripcion_mensaje" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipo_dispositivo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="detalle_descripcion" type="s:string" />
         </s:sequence>
       </s:complexType>
     </s:schema>

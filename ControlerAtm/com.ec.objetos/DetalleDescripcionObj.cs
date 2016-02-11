@@ -44,5 +44,20 @@ namespace ControlerAtm.com.ec.objetos
             set;
             get;
         }
+
+        [DataMember]
+        public string tipo_dispositivo
+        {
+            set;
+            get;
+        }
+
+        [DataMember]
+        public string detalle_descripcion        {
+            set;
+            get;
+        }
+
+
     }
 }

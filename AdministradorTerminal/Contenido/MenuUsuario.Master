@@ -65,6 +65,7 @@
 			<ul>
 			    <li><a href="MonitoreoTerminal.aspx">Monitorear</a></li>
 				<li><a href="Envio_Comandos.aspx">Enviar Comandos</a></li>
+				<li><a href="AtencionEvento.aspx">Atender Eventos</a></li>
 			</ul>
 		</li>
 		

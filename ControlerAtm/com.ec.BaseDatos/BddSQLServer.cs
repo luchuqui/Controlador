@@ -8,6 +8,7 @@ using ControlerAtm.com.ec.Excepciones;
 using ControlerAtm.com.ec.objetos;
 using System.Data;
 using ControlerAtm.Utilitario;
+using controladorAtm.ProtocoloTerminal;
 namespace ControlerAtm.com.ec.BaseDatos
 {
     public class BddSQLServer : BaseDatosDao
@@ -312,7 +313,7 @@ namespace ControlerAtm.com.ec.BaseDatos
             }
         }
 
-        public string insertar_alarmas(AlarmasObj alarmas)
+        public string[] insertar_alarmas(AlarmasObj alarmas)
         {
             SqlCommand cmd = new SqlCommand("insertar_alarmas_sp", conn);
             cmd.CommandType = CommandType.StoredProcedure;
@@ -384,13 +385,19 @@ namespace ControlerAtm.com.ec.BaseDatos
             }
             SqlParameter envioNotificacion = new SqlParameter("@envio","sin valor");
             envioNotificacion.Direction = ParameterDirection.Output;
-            //envioNotificacion.Value = "0:sinValor";
             cmd.Parameters.Add(envioNotificacion);
+            SqlParameter id_alarma = new SqlParameter("@id_alarma", 0);
+            id_alarma.Direction = ParameterDirection.Output;
+            //envioNotificacion.Value = "0:sinValor";
+            cmd.Parameters.Add(id_alarma);
 
             try
             {
                 cmd.ExecuteNonQuery();
-                return cmd.Parameters["@envio"].Value.ToString();
+                string id_ = cmd.Parameters["@id_alarma"].Value.ToString();
+                string envio_ = cmd.Parameters["@envio"].Value.ToString();
+                string [] datos = {id_,envio_};
+                return datos;
             }
             catch (ArgumentException ex)
             {
@@ -1409,8 +1416,14 @@ namespace ControlerAtm.com.ec.BaseDatos
                     }catch(FormatException e){
                         string msa = e.Message;
                         avance.usuario_atiende = 0;
+                    } try
+                    {
+                        avance.usuario_notifica = Convert.ToInt16(tb.Rows[i][7].ToString());
                     }
-                    avance.usuario_notifica = Convert.ToInt16(tb.Rows[i][7].ToString());
+                    catch (FormatException e) {
+                        string msa = e.Message;
+                        avance.usuario_atiende = 0;
+                    }
                     avance.fecha_registro = tb.Rows[i][8].ToString();
                     avances.Add(avance);
                 } 
@@ -1836,13 +1849,15 @@ namespace ControlerAtm.com.ec.BaseDatos
                     detalle.fecha_registro = DateTime.Parse(tb.Rows[i][2].ToString());
                     detalle.tipo_estado = tb.Rows[i][3].ToString();
                     detalle.tipo_mensaje = tb.Rows[i][4].ToString().Replace((char)0, (char)94).Replace((char)28, (char)127).Replace((char)29, (char)128);
-                    detalles.Add(detalle);
+                    detalle.tipo_dispositivo = tb.Rows[i][5].ToString();
+                    ProcesamientoTrama pr = new ProcesamientoTrama(new AtmObj());
+                    detalles.Add(pr.procesamientoDescripcion(detalle));
                 }
                 return detalles;
             }
             catch (IndexOutOfRangeException ex)
             {
-                logs.escritura_archivo_string(ex.Message);
+                logs.escritura_archivo_string(ex.Message +"\t" + ex.StackTrace);
                 //logs.cerrar_archivo();
                 throw new ExpObtenerRegistro(MensajeSistema.reg_no_existe);
             }
@@ -1858,6 +1873,57 @@ namespace ControlerAtm.com.ec.BaseDatos
                 //logs.cerrar_archivo();
                 throw new Exception(MensajeSistema.reg_no_existe);
             }
+        }
+
+        #endregion
+
+        #region Miembros de BaseDatosDao
+
+
+        public DetalleDescripcionObj obtener_detalle_por_alarma_terminal(AlarmasObj alarma)
+        {
+            SqlCommand cmd = new SqlCommand("obtener_resumen_alerta_terminal_sp", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@id_suceso", alarma.id_alarma);
+            DetalleDescripcionObj detalle = new DetalleDescripcionObj();
+            try
+            {
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable tb = new DataTable("detalles");
+                da.Fill(tb);
+                for (int i = 0; i < tb.Rows.Count; i++)
+                {
+                    detalle.descripcion_mensaje = tb.Rows[i][0].ToString();
+                    //detalle.mensaje_ndc = tb.Rows[i][1].ToString();
+                    //detalle.mensaje_ndc = tb.Rows[i][1].ToString().Replace(char)28,(char));
+                    //detalle.mensaje_ndc = "";
+                    detalle.fecha_registro = DateTime.Parse(tb.Rows[i][2].ToString());
+                    detalle.tipo_estado = tb.Rows[i][3].ToString();
+                    detalle.tipo_mensaje = tb.Rows[i][4].ToString().Replace((char)0, (char)94).Replace((char)28, (char)127).Replace((char)29, (char)128);
+                    detalle.tipo_dispositivo = tb.Rows[i][5].ToString();
+                    
+                }
+                return detalle;    
+            }
+            catch (IndexOutOfRangeException ex)
+            {
+                logs.escritura_archivo_string(ex.Message + "\t" + ex.StackTrace);
+                //logs.cerrar_archivo();
+                throw new ExpObtenerRegistro(MensajeSistema.reg_no_existe);
+            }
+            catch (ArgumentNullException ex)
+            {
+                logs.escritura_archivo_string(ex.Message);
+                //logs.cerrar_archivo();
+                throw new ExpObtenerRegistro(MensajeSistema.reg_no_existe);
+            }
+            catch (Exception ex)
+            {
+                logs.escritura_archivo_string(ex.Message);
+                //logs.cerrar_archivo();
+                throw new Exception(MensajeSistema.reg_no_existe);
+            }
+
         }
 
         #endregion

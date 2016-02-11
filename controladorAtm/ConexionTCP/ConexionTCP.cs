@@ -196,7 +196,9 @@ namespace controladorAtm
                         mensajeEnvioRecep = parseoAlrma.parseaTramaIngreso(datoRespuesta.Substring(2, datoRespuesta.Length - 2));
                         mensajeEnvioRecep.envio_recepcion = 1; //cero envio, uno recibo
                         /*Si al momento de inserta devuelve 1 se procede con el envio de la notificacion a los usuarios*/
-                        string enviarStr = conBdd.insertar_alarmas(mensajeEnvioRecep);
+                        string [] resultado = conBdd.insertar_alarmas(mensajeEnvioRecep);
+                        string enviarStr = resultado[1];
+                        string id_suceso = resultado[0];
                         int enviar = int.Parse(enviarStr);
                         if (mensajeEnvioRecep.descriptor != null)
                         {
@@ -210,6 +212,7 @@ namespace controladorAtm
                                         conBdd.insertar_actualizar_monitoreo_dispositivos(tmp);
                                     }
                                 }
+                                
                             }
                         }
                         else if(mensajeEnvioRecep.id_tipo_dispositivo != null){
@@ -222,20 +225,27 @@ namespace controladorAtm
                                         conBdd.actualizar_terminal(terminal);
                                     }
                                 }
-                                if (enviar == 1)
-                                {
-                                    if (mensajeEnvioRecep.error_severidad == null) {
-                                        mensajeEnvioRecep.error_severidad = "99";
-                                    }
-                                    string mensaje = conBdd.obtener_descripcion_error(int.Parse(mensajeEnvioRecep.error_severidad), mensajeEnvioRecep.id_tipo_dispositivo);
-                                    if (string.IsNullOrEmpty(mensaje)) {
-                                        mensaje = "Notificacion prueba, terminal " + terminal.codigo;
-                                    }
-                                    List<UsuarioObj> sendUsuario = new List<UsuarioObj>();
-                                    sendUsuario = conBdd.obtener_usuario_por_terminal(terminal);
-                                    mensaje += "Cajero :" + terminal.codigo;
-                                    notificacion.enviarNotificacionUsuario(sendUsuario, mensaje,"alarma id");
-                                }
+                        }
+                        
+                        if (enviar == 1)
+                        {
+                            mensajeEnvioRecep.id_alarma = int.Parse(id_suceso);
+                            if (mensajeEnvioRecep.error_severidad == null)
+                            {
+                                mensajeEnvioRecep.error_severidad = "99";
+                            }
+                            DetalleDescripcionObj detalleDes = conBdd.obtener_detalle_por_alarma_terminal(mensajeEnvioRecep);
+                            //string mensaje = conBdd.obtener_descripcion_error(int.Parse(mensajeEnvioRecep.error_severidad), mensajeEnvioRecep.id_tipo_dispositivo);
+                            detalleDes = parseoAlrma.procesamientoDescripcion(detalleDes);
+                            string mensaje = detalleDes.detalle_descripcion;
+                            if (string.IsNullOrEmpty(mensaje))
+                            {
+                                mensaje = "Sin detalle, por favor consulte con el personal tecnico ";
+                            }
+                            List<UsuarioObj> sendUsuario = new List<UsuarioObj>();
+                            sendUsuario = conBdd.obtener_usuario_por_terminal(terminal);
+                            mensaje += " Cajero :" + terminal.codigo;
+                            notificacion.enviarNotificacionUsuario(sendUsuario, mensaje, id_suceso);
                         }
                         datoRespuesta = "";
                     }

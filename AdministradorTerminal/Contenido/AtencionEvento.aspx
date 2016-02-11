@@ -7,7 +7,7 @@
     </asp:Panel>
 </asp:Content>
 <asp:Content ID="agregarPerfilPage" ContentPlaceHolderID="contenidoPagina" Runat="Server">
-<asp:Panel runat = "server">
+    <asp:Panel runat = "server">
     <asp:Table runat = "server">
         <asp:TableRow>
             <asp:TableCell>
@@ -21,7 +21,48 @@
             </asp:TableCell>
         </asp:TableRow>
     </asp:Table>
-    <table id = "tb_evento" runat = "server" style = "z-index: 1" border = "2" width = "100%">
-    </table>
+    <div>
+    <asp:GridView ID="GridViewIncidente" HeaderStyle-BackColor="#e94f31" HeaderStyle-ForeColor="White"  
+                runat="server" AutoGenerateColumns="False" AllowPaging = "True" 
+                CellSpacing = "1"  OnRowCommand="edicion_fila_suceso" 
+                onpageindexchanged="GridViewIncidente_PageIndexChanged_" 
+                onpageindexchanging="GridViewIncidente_PageIndexChanging" 
+                Font-Size="Smaller" Width="100%">  
+                <Columns>  
+                    <asp:BoundField DataField="id_alarma" HeaderText="# Suceso" 
+                        ItemStyle-Width="100" >  
+                    <ItemStyle Width="11%"></ItemStyle>
+                    </asp:BoundField>
+                    
+                    <asp:BoundField DataField="fecha_registro" HeaderText="Fecha Incidente" 
+                        ItemStyle-Width="150" DataFormatString="{0:MM-dd-yyyy HH:mm}" >
+<ItemStyle Width="12%"></ItemStyle>
+                    </asp:BoundField>
+                    <asp:BoundField DataField="fecha_atencion" 
+                        ItemStyle-Width="150" DataFormatString="{0:MM-dd-yyyy HH:mm}" 
+                        HeaderText="Fecha Atencion" >
+                    <ItemStyle Width="12%"></ItemStyle>
+                    </asp:BoundField>
+                    
+                    
+                    
+                    <asp:BoundField DataField="atendido" HeaderText="Esta Atendido" 
+                        ItemStyle-Width="150" >    
+                    <ItemStyle Width="11%"></ItemStyle>
+                    </asp:BoundField>
+                    
+                    <asp:BoundField DataField="observacion" HeaderText="Trabajo Realizado" 
+                        ItemStyle-Width="100" >  
+                    <ItemStyle Width="40%"></ItemStyle>
+                    </asp:BoundField>
+                    
+                    <asp:ButtonField ButtonType="Button" CommandName="Edicion" Text="Edición"> 
+                        <ItemStyle Width="5%" />
+                    </asp:ButtonField>
+                </Columns>  
+
+                <HeaderStyle BackColor="#4E4545" ForeColor="White"></HeaderStyle>
+            </asp:GridView>
+    </div>
 </asp:Panel>
 </asp:Content>

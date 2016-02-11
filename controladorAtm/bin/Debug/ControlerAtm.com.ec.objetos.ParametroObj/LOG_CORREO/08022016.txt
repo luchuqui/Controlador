@@ -1,0 +1,2 @@
+13:04:07 No se pudo enviar la notificacion electrónica, debido al siguiente error: Error al enviar correo.
+13:15:21 No se pudo enviar la notificacion electrónica, debido al siguiente error: Error al enviar correo.

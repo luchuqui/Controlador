@@ -243,7 +243,7 @@ namespace ControlerAtm.LogicaNegocio
                         usuario.contrasenia = seguridad.encriptar_informacion(conNueva);
                         actualizar = true;
                         usuario.numero_intentos = 0;
-                        int [] isnotificado = notificacion("Usuario : " + usuario.nombre + " " + usuario.apellido+", Contraseña Reseteada : " + conNueva
+                        int [] isnotificado = notificacion("Usuario : " + usuario.nombre + " " + usuario.apellido+"\nContrasena acceso : " + conNueva
                             , MensajeSistema.contrasenia_generada, usuario);
                         mensaje = "Contraseña de usuario generada correctamente, se ha enviado una notificación vía";
                         if (isnotificado[0] > 1) {

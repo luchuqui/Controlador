@@ -1,0 +1,66 @@
+12:36:18 El puerto 'COM6' no existe.   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   en System.IO.Ports.SerialPort.Open()
+   en ControlerAtm.Utilitario.MensajeTexto.abrir_conexion() en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\Utilitario\MensajeTexto.cs:línea 77
+12:36:18 El puerto está cerrado.	   en System.IO.Ports.SerialPort.Write(String text)
+   en ControlerAtm.Utilitario.MensajeTexto.enviar_notificacion(String mensajeEnviar, String titulo) en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\Utilitario\MensajeTexto.cs:línea 150
+13:02:51 El puerto 'COM6' no existe.   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   en System.IO.Ports.SerialPort.Open()
+   en ControlerAtm.Utilitario.MensajeTexto.abrir_conexion() en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\Utilitario\MensajeTexto.cs:línea 77
+13:02:51 El puerto está cerrado.	   en System.IO.Ports.SerialPort.Write(String text)
+   en ControlerAtm.Utilitario.MensajeTexto.enviar_notificacion(String mensajeEnviar, String titulo) en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\Utilitario\MensajeTexto.cs:línea 150
+13:04:08 El puerto 'COM6' no existe.   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   en System.IO.Ports.SerialPort.Open()
+   en ControlerAtm.Utilitario.MensajeTexto.abrir_conexion() en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\Utilitario\MensajeTexto.cs:línea 77
+13:04:08 El puerto está cerrado.	   en System.IO.Ports.SerialPort.Write(String text)
+   en ControlerAtm.Utilitario.MensajeTexto.enviar_notificacion(String mensajeEnviar, String titulo) en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\Utilitario\MensajeTexto.cs:línea 150
+13:15:21 El puerto 'COM6' no existe.   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   en System.IO.Ports.SerialPort.Open()
+   en ControlerAtm.Utilitario.MensajeTexto.abrir_conexion() en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\Utilitario\MensajeTexto.cs:línea 77
+13:15:21 El puerto está cerrado.	   en System.IO.Ports.SerialPort.Write(String text)
+   en ControlerAtm.Utilitario.MensajeTexto.enviar_notificacion(String mensajeEnviar, String titulo) en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\Utilitario\MensajeTexto.cs:línea 150
+13:20:23 El puerto 'COM6' no existe.   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   en System.IO.Ports.SerialPort.Open()
+   en ControlerAtm.Utilitario.MensajeTexto.abrir_conexion() en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\Utilitario\MensajeTexto.cs:línea 77
+13:20:24 El puerto está cerrado.	   en System.IO.Ports.SerialPort.Write(String text)
+   en ControlerAtm.Utilitario.MensajeTexto.enviar_notificacion(String mensajeEnviar, String titulo) en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\Utilitario\MensajeTexto.cs:línea 150
+13:41:06 El puerto 'COM6' no existe.   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   en System.IO.Ports.SerialPort.Open()
+   en ControlerAtm.Utilitario.MensajeTexto.abrir_conexion() en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\Utilitario\MensajeTexto.cs:línea 77
+13:41:06 El puerto está cerrado.	   en System.IO.Ports.SerialPort.Write(String text)
+   en ControlerAtm.Utilitario.MensajeTexto.enviar_notificacion(String mensajeEnviar, String titulo) en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\Utilitario\MensajeTexto.cs:línea 150
+13:45:47 El puerto 'COM6' no existe.   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   en System.IO.Ports.SerialPort.Open()
+   en ControlerAtm.Utilitario.MensajeTexto.abrir_conexion() en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\Utilitario\MensajeTexto.cs:línea 77
+13:45:47 El puerto está cerrado.	   en System.IO.Ports.SerialPort.Write(String text)
+   en ControlerAtm.Utilitario.MensajeTexto.enviar_notificacion(String mensajeEnviar, String titulo) en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\Utilitario\MensajeTexto.cs:línea 150
+14:18:52 El puerto 'COM6' no existe.   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   en System.IO.Ports.SerialPort.Open()
+   en ControlerAtm.Utilitario.MensajeTexto.abrir_conexion() en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\Utilitario\MensajeTexto.cs:línea 77
+14:18:52 El puerto está cerrado.	   en System.IO.Ports.SerialPort.Write(String text)
+   en ControlerAtm.Utilitario.MensajeTexto.enviar_notificacion(String mensajeEnviar, String titulo) en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\Utilitario\MensajeTexto.cs:línea 150
+14:45:25 El puerto 'COM6' no existe.   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   en System.IO.Ports.SerialPort.Open()
+   en ControlerAtm.Utilitario.MensajeTexto.abrir_conexion() en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\Utilitario\MensajeTexto.cs:línea 77
+14:45:25 El puerto está cerrado.	   en System.IO.Ports.SerialPort.Write(String text)
+   en ControlerAtm.Utilitario.MensajeTexto.enviar_notificacion(String mensajeEnviar, String titulo) en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\Utilitario\MensajeTexto.cs:línea 150
+14:48:10 El puerto 'COM6' no existe.   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   en System.IO.Ports.SerialPort.Open()
+   en ControlerAtm.Utilitario.MensajeTexto.abrir_conexion() en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\Utilitario\MensajeTexto.cs:línea 77
+14:48:12 El puerto está cerrado.	   en System.IO.Ports.SerialPort.Write(String text)
+   en ControlerAtm.Utilitario.MensajeTexto.enviar_notificacion(String mensajeEnviar, String titulo) en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\Utilitario\MensajeTexto.cs:línea 150
+15:46:46 Uno de los dispositivos conectados al sistema no funciona.
+	   en System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   en System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
+   en System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   en System.IO.Ports.SerialPort.Write(String text)
+   en ControlerAtm.Utilitario.MensajeTexto.enviar_notificacion(String mensajeEnviar, String titulo) en C:\Users\Acer\Documents\GitHub\lucho\controladorAtm\Controlador\ControlerAtm\Utilitario\MensajeTexto.cs:línea 152
