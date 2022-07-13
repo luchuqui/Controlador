@@ -1,0 +1,350 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2BD8515A-F619-470C-96C3-EE79782AA0B9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AdministradorTerminal</RootNamespace>
+    <AssemblyName>AdministradorTerminal</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contenido\Default.aspx" />
+    <Content Include="Imagenes\inicio_sesion.png" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contenido\AtencionEvento.aspx.cs">
+      <DependentUpon>AtencionEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contenido\AtencionEvento.aspx.designer.cs">
+      <DependentUpon>AtencionEvento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contenido\ATM.aspx.cs">
+      <DependentUpon>ATM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contenido\ATM.aspx.designer.cs">
+      <DependentUpon>ATM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contenido\EditarPerfil.aspx.cs">
+      <DependentUpon>EditarPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contenido\EditarPerfil.aspx.designer.cs">
+      <DependentUpon>EditarPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contenido\AgregarPerfil.aspx.cs">
+      <DependentUpon>AgregarPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contenido\AgregarPerfil.aspx.designer.cs">
+      <DependentUpon>AgregarPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contenido\AgregarTerminal.aspx.cs">
+      <DependentUpon>AgregarTerminal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contenido\AgregarTerminal.aspx.designer.cs">
+      <DependentUpon>AgregarTerminal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contenido\CambioContrasenia.aspx.cs">
+      <DependentUpon>CambioContrasenia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contenido\CambioContrasenia.aspx.designer.cs">
+      <DependentUpon>CambioContrasenia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contenido\Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contenido\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contenido\EditarTerminal.aspx.cs">
+      <DependentUpon>EditarTerminal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contenido\EditarTerminal.aspx.designer.cs">
+      <DependentUpon>EditarTerminal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contenido\Envio_Comandos.aspx.cs">
+      <DependentUpon>Envio_Comandos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contenido\Envio_Comandos.aspx.designer.cs">
+      <DependentUpon>Envio_Comandos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contenido\MensajeBienvenida.aspx.cs">
+      <DependentUpon>MensajeBienvenida.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contenido\MensajeBienvenida.aspx.designer.cs">
+      <DependentUpon>MensajeBienvenida.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contenido\MonitoreoTerminal.aspx.cs">
+      <DependentUpon>MonitoreoTerminal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contenido\MonitoreoTerminal.aspx.designer.cs">
+      <DependentUpon>MonitoreoTerminal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contenido\NuevoEdicionATM.aspx.cs">
+      <DependentUpon>NuevoEdicionATM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contenido\NuevoEdicionATM.aspx.designer.cs">
+      <DependentUpon>NuevoEdicionATM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contenido\NuevoEdicionUsuario.aspx.cs">
+      <DependentUpon>NuevoEdicionUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contenido\NuevoEdicionUsuario.aspx.designer.cs">
+      <DependentUpon>NuevoEdicionUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contenido\ObservacionEvento.aspx.cs">
+      <DependentUpon>ObservacionEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contenido\ObservacionEvento.aspx.designer.cs">
+      <DependentUpon>ObservacionEvento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contenido\Terminal_Responsable.aspx.cs">
+      <DependentUpon>Terminal_Responsable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contenido\Terminal_Responsable.aspx.designer.cs">
+      <DependentUpon>Terminal_Responsable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contenido\Usuario.aspx.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contenido\Usuario.aspx.designer.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contenido\VentanaEmergente.aspx.cs">
+      <DependentUpon>VentanaEmergente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contenido\VentanaEmergente.aspx.designer.cs">
+      <DependentUpon>VentanaEmergente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuadroMensaje.cs" />
+    <Compile Include="Globales.cs" />
+    <Compile Include="Contenido\MenuUsuario.Master.cs">
+      <DependentUpon>MenuUsuario.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contenido\MenuUsuario.Master.designer.cs">
+      <DependentUpon>MenuUsuario.Master</DependentUpon>
+    </Compile>
+    <Compile Include="GridView\GridViewGroup.cs" />
+    <Compile Include="GridView\GridViewGroupList.cs" />
+    <Compile Include="GridView\GridViewHelper.cs" />
+    <Compile Include="GridView\GridViewSummary.cs" />
+    <Compile Include="GridView\GridViewSummaryList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSControlador\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contenido\EditarPerfil.aspx" />
+    <Content Include="Contenido\AgregarPerfil.aspx" />
+    <Content Include="Contenido\AgregarTerminal.aspx" />
+    <Content Include="Contenido\CambioContrasenia.aspx" />
+    <Content Include="Contenido\EditarTerminal.aspx" />
+    <Content Include="Contenido\MensajeBienvenida.aspx" />
+    <Content Include="Imagenes\Administracion.jpg" />
+    <Content Include="Imagenes\cerrarSession.gif" />
+    <Content Include="Imagenes\inicioSesion.jpg" />
+    <Content Include="Imagenes\sis_principal.PNG" />
+    <Content Include="Contenido\MenuUsuario.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://wscontrolador/WSControlador/servicio_web_controlador.asmx%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSControlador\</RelPath>
+      <UpdateFromURL>http://wscontrolador/WSControlador/servicio_web_controlador.asmx%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>AdministradorTerminal_WSControlador_Service1</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Browsers\chrome.browser" />
+    <Content Include="Contenido\AtencionEvento.aspx" />
+    <Content Include="Contenido\ATM.aspx" />
+    <Content Include="Contenido\Envio_Comandos.aspx" />
+    <Content Include="Contenido\MonitoreoTerminal.aspx" />
+    <Content Include="Contenido\NuevoEdicionATM.aspx" />
+    <Content Include="Contenido\NuevoEdicionUsuario.aspx" />
+    <Content Include="Contenido\ObservacionEvento.aspx" />
+    <Content Include="Contenido\Terminal_Responsable.aspx" />
+    <Content Include="Contenido\Usuario.aspx" />
+    <Content Include="Contenido\VentanaEmergente.aspx" />
+    <Content Include="CSS\estiloMain.css" />
+    <Content Include="CSS\main.js" />
+    <Content Include="Imagenes\acceso_sistema.jpg" />
+    <Content Include="Imagenes\btn_cerrar_.png" />
+    <Content Include="Imagenes\connect_creating.png" />
+    <Content Include="Imagenes\connect_established.png" />
+    <Content Include="Imagenes\connect_no.png" />
+    <Content Include="Imagenes\editclear.png" />
+    <Content Include="Imagenes\estado_amarillo.png" />
+    <Content Include="Imagenes\estado_azul.png" />
+    <Content Include="Imagenes\estado_azul_elec.png" />
+    <Content Include="Imagenes\estado_marron.png" />
+    <Content Include="Imagenes\estado_rojo.png" />
+    <Content Include="Imagenes\estado_rosado.png" />
+    <Content Include="Imagenes\estado_verde.png" />
+    <Content Include="Imagenes\No-entry.png" />
+    <Content Include="Imagenes\OK.png" />
+    <Content Include="Imagenes\procesando.gif" />
+    <Content Include="Imagenes\procesar.gif" />
+    <Content Include="Scripts\calendar-en.min.js" />
+    <Content Include="Scripts\calendar-es.min.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-latest.min.js" />
+    <Content Include="Scripts\jquery.dynDateTime.min.js" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSControlador\AlarmasObj.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSControlador\AtmObj.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSControlador\AvanceObj.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSControlador\BeanMenuPerfil.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSControlador\DetalleDescripcionObj.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSControlador\MenuObj.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSControlador\ModeloObj.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSControlador\MonitoreoDispositivos.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSControlador\PerfilObj.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WSControlador\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSControlador\servicio_web_controlador.wsdl" />
+    <None Include="Web References\WSControlador\UsuarioObj.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ControlerAtm\LibreriaControlador.csproj">
+      <Project>{C23EDB13-BA0D-4D0A-9A68-D86883511EA7}</Project>
+      <Name>LibreriaControlador</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2173</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

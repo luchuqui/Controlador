@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "controladorAtm", "controladorAtm\controladorAtm.csproj", "{0F7DEDBF-32B8-4EA1-9B6B-5FF5453B387A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdministradorTerminal", "AdministradorTerminal\AdministradorTerminal.csproj", "{2BD8515A-F619-470C-96C3-EE79782AA0B9}"
@@ -34,5 +36,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7DF715A-D74D-4CC0-9E8C-32CFE36C1910}
 	EndGlobalSection
 EndGlobal
